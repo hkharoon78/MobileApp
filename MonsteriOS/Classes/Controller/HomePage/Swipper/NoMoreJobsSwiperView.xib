@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoMoreJobsSwiperView" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="wmB-0V-rlN" id="cTn-Qi-P0Q"/>
+                <outlet property="iconView" destination="ZtZ-hh-dte" id="EEE-wi-SRp"/>
+                <outlet property="noMoreTitle" destination="C3R-kq-vzv" id="lLC-Sg-sVQ"/>
+                <outlet property="setPrefButton" destination="AYC-IS-ALw" id="xP6-kq-oGh"/>
+                <outlet property="subTitleLabel" destination="aYe-9T-Nap" id="g3B-VP-bo1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="234"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWb-74-jbF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="234"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZtZ-hh-dte">
+                            <rect key="frame" x="147.5" y="20" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="h3g-h4-8O3"/>
+                                <constraint firstAttribute="width" constant="80" id="mzC-iU-fLp"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3R-kq-vzv">
+                            <rect key="frame" x="8" y="108" width="359" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="pC2-pT-0OA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-9T-Nap">
+                            <rect key="frame" x="8" y="137" width="359" height="51"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYC-IS-ALw">
+                            <rect key="frame" x="168.5" y="196" width="38" height="30"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="mfn-af-toT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" title="Edit">
+                                <color key="titleColor" red="0.97254901959999995" green="0.98039215690000003" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="editButtonAction:" destination="-1" eventType="touchUpInside" id="XHe-Is-iZX"/>
+                            </connections>
+                        </button>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wmB-0V-rlN">
+                            <rect key="frame" x="177.5" y="50" width="20" height="20"/>
+                            <color key="color" red="0.2901960784" green="0.12941176469999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="C3R-kq-vzv" firstAttribute="leading" secondItem="dWb-74-jbF" secondAttribute="leading" constant="8" id="02e-LC-bez"/>
+                        <constraint firstItem="C3R-kq-vzv" firstAttribute="top" secondItem="ZtZ-hh-dte" secondAttribute="bottom" constant="8" id="5qY-24-7qZ"/>
+                        <constraint firstItem="wmB-0V-rlN" firstAttribute="centerY" secondItem="ZtZ-hh-dte" secondAttribute="centerY" id="7PR-I3-lPG"/>
+                        <constraint firstAttribute="trailing" secondItem="aYe-9T-Nap" secondAttribute="trailing" constant="8" id="9ab-qr-ggx"/>
+                        <constraint firstItem="AYC-IS-ALw" firstAttribute="top" secondItem="aYe-9T-Nap" secondAttribute="bottom" constant="8" id="H8N-s7-eDW"/>
+                        <constraint firstItem="ZtZ-hh-dte" firstAttribute="centerX" secondItem="dWb-74-jbF" secondAttribute="centerX" id="Lht-1g-Gr4"/>
+                        <constraint firstItem="wmB-0V-rlN" firstAttribute="centerX" secondItem="dWb-74-jbF" secondAttribute="centerX" id="OB4-Pr-jAh"/>
+                        <constraint firstAttribute="bottom" secondItem="AYC-IS-ALw" secondAttribute="bottom" constant="8" id="OSa-dt-FEj"/>
+                        <constraint firstItem="AYC-IS-ALw" firstAttribute="centerX" secondItem="dWb-74-jbF" secondAttribute="centerX" id="Rlp-TZ-ew5"/>
+                        <constraint firstItem="ZtZ-hh-dte" firstAttribute="top" secondItem="dWb-74-jbF" secondAttribute="top" constant="20" id="TvK-6k-qXg"/>
+                        <constraint firstItem="aYe-9T-Nap" firstAttribute="leading" secondItem="dWb-74-jbF" secondAttribute="leading" constant="8" id="fZl-Dt-KV9"/>
+                        <constraint firstItem="aYe-9T-Nap" firstAttribute="top" secondItem="C3R-kq-vzv" secondAttribute="bottom" constant="8" id="fjQ-lP-7xy"/>
+                        <constraint firstAttribute="trailing" secondItem="C3R-kq-vzv" secondAttribute="trailing" constant="8" id="fzV-5d-fxT"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="colorBorder">
+                            <color key="value" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dWb-74-jbF" secondAttribute="trailing" id="afO-S4-hvx"/>
+                <constraint firstItem="dWb-74-jbF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gNG-OZ-U3y"/>
+                <constraint firstItem="dWb-74-jbF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="kPZ-Yl-EJe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dWb-74-jbF" secondAttribute="bottom" id="wRN-Zi-OrV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="55.200000000000003" y="193.4032983508246"/>
+        </view>
+    </objects>
+</document>

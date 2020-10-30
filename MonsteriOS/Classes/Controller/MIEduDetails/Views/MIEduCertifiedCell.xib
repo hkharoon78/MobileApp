@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="209" id="KGk-i7-Jjw" customClass="MIEduCertifiedCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="208.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ja-Lb-s4i">
+                        <rect key="frame" x="0.0" y="10" width="320" height="198.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Certified SEO Professional VS-1084" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4H-fB-Dwx">
+                                <rect key="frame" x="18" y="13" width="284" height="28"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Type: Certification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28y-BM-UKY">
+                                <rect key="frame" x="18" y="44" width="284" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="vwV-3a-TBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keywords: Certificate in SEO | SEO Professional | SEO Courses" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9c-si-0BT">
+                                <rect key="frame" x="18" y="67" width="284" height="28.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Provider: VSkills - Govt. Certification" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsH-P3-rRP">
+                                <rect key="frame" x="18" y="98.5" width="284" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INR 4999.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2F-KU-yHr">
+                                <rect key="frame" x="18" y="141" width="284" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hlB-p3-Yp7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="18"/>
+                                <color key="textColor" red="0.36078431372549019" green="0.29019607843137252" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Excluding taxes)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5b-Db-dVO">
+                                <rect key="frame" x="18" y="164" width="284" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="zyQ-IY-YPj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="K4H-fB-Dwx" secondAttribute="trailing" constant="18" id="4mJ-LM-4dM"/>
+                            <constraint firstItem="s5b-Db-dVO" firstAttribute="top" secondItem="R2F-KU-yHr" secondAttribute="bottom" constant="2" id="6kr-7t-1yz"/>
+                            <constraint firstItem="R2F-KU-yHr" firstAttribute="leading" secondItem="5ja-Lb-s4i" secondAttribute="leading" constant="18" id="8Qy-YT-mCo"/>
+                            <constraint firstAttribute="trailing" secondItem="s5b-Db-dVO" secondAttribute="trailing" constant="18" id="KCB-15-KcD"/>
+                            <constraint firstItem="rsH-P3-rRP" firstAttribute="leading" secondItem="5ja-Lb-s4i" secondAttribute="leading" constant="18" id="LHz-N0-q1f"/>
+                            <constraint firstItem="28y-BM-UKY" firstAttribute="leading" secondItem="5ja-Lb-s4i" secondAttribute="leading" constant="18" id="Mkp-aD-Ra4"/>
+                            <constraint firstItem="K4H-fB-Dwx" firstAttribute="top" secondItem="5ja-Lb-s4i" secondAttribute="top" constant="13" id="Qdq-Qn-Jgp"/>
+                            <constraint firstAttribute="trailing" secondItem="R2F-KU-yHr" secondAttribute="trailing" constant="18" id="Yeu-9q-arm"/>
+                            <constraint firstItem="e9c-si-0BT" firstAttribute="top" secondItem="28y-BM-UKY" secondAttribute="bottom" constant="6" id="Z4H-IL-LeM"/>
+                            <constraint firstItem="R2F-KU-yHr" firstAttribute="top" secondItem="rsH-P3-rRP" secondAttribute="bottom" constant="28" id="btW-87-gJi"/>
+                            <constraint firstItem="s5b-Db-dVO" firstAttribute="leading" secondItem="5ja-Lb-s4i" secondAttribute="leading" constant="18" id="e0i-SS-NEX"/>
+                            <constraint firstItem="rsH-P3-rRP" firstAttribute="top" secondItem="e9c-si-0BT" secondAttribute="bottom" constant="3" id="fCy-8i-xfC"/>
+                            <constraint firstItem="e9c-si-0BT" firstAttribute="leading" secondItem="5ja-Lb-s4i" secondAttribute="leading" constant="18" id="jC6-Ym-TnI"/>
+                            <constraint firstItem="K4H-fB-Dwx" firstAttribute="leading" secondItem="5ja-Lb-s4i" secondAttribute="leading" constant="18" id="jzL-XY-ur9"/>
+                            <constraint firstAttribute="trailing" secondItem="e9c-si-0BT" secondAttribute="trailing" constant="18" id="mnN-5v-IOj"/>
+                            <constraint firstItem="28y-BM-UKY" firstAttribute="top" secondItem="K4H-fB-Dwx" secondAttribute="bottom" constant="3" id="pKN-c0-SeI"/>
+                            <constraint firstAttribute="trailing" secondItem="rsH-P3-rRP" secondAttribute="trailing" constant="18" id="pS9-m9-yZd"/>
+                            <constraint firstAttribute="trailing" secondItem="28y-BM-UKY" secondAttribute="trailing" constant="18" id="yU7-2L-JnM"/>
+                            <constraint firstAttribute="bottom" secondItem="s5b-Db-dVO" secondAttribute="bottom" constant="19.5" id="ysh-oc-2KJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="5ja-Lb-s4i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="64F-si-255"/>
+                    <constraint firstAttribute="bottom" secondItem="5ja-Lb-s4i" secondAttribute="bottom" id="Is2-Ur-1LF"/>
+                    <constraint firstItem="5ja-Lb-s4i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vwj-r2-DA3"/>
+                    <constraint firstAttribute="trailing" secondItem="5ja-Lb-s4i" secondAttribute="trailing" id="wTW-T0-A2g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="certifiedCourseName_lbl" destination="K4H-fB-Dwx" id="L3O-JI-Iix"/>
+                <outlet property="courseFee_lbl" destination="R2F-KU-yHr" id="1xx-hK-jX5"/>
+                <outlet property="courseKeywords_lbl" destination="e9c-si-0BT" id="w26-qM-VuI"/>
+                <outlet property="courseProivdedBy_lbl" destination="rsH-P3-rRP" id="72a-oB-rUQ"/>
+                <outlet property="courseTaxDescription_lbl" destination="s5b-Db-dVO" id="8vv-0c-P3f"/>
+                <outlet property="courseType_lbl" destination="28y-BM-UKY" id="2cT-bc-GUX"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="-25.637181409295355"/>
+        </tableViewCell>
+    </objects>
+</document>

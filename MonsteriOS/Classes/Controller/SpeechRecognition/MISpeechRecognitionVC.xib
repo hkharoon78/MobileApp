@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MISpeechRecognitionVC" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="micImgView" destination="FtU-QG-qvA" id="fmr-Yh-BRd"/>
+                <outlet property="speechLabel" destination="aAk-sy-fJA" id="wCC-3l-jv9"/>
+                <outlet property="titleLabel" destination="W47-rw-Yhc" id="rQt-dx-XdI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speak Now" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W47-rw-Yhc">
+                    <rect key="frame" x="20" y="50" width="335" height="21.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto Light" pointSize="18"/>
+                    <color key="textColor" red="0.12941176470588234" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAk-sy-fJA">
+                    <rect key="frame" x="20" y="81.5" width="335" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                    <color key="textColor" red="0.12941176469999999" green="0.16862745100000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S98-CJ-3Uf">
+                    <rect key="frame" x="162.5" y="592" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="S98-CJ-3Uf" secondAttribute="height" multiplier="1:1" id="MFv-Bh-nQp"/>
+                        <constraint firstAttribute="height" constant="50" id="ph8-9V-qlu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                    <state key="normal" image="cross"/>
+                    <connections>
+                        <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="UFb-YZ-ZNu"/>
+                    </connections>
+                </button>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic-ico" translatesAutoresizingMaskIntoConstraints="NO" id="FtU-QG-qvA">
+                    <rect key="frame" x="20" y="482" width="335" height="90"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="5Ea-2o-47e"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="uMU-Ap-aFL" appends="YES" id="g1a-Y9-8l3"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="S98-CJ-3Uf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="82q-KG-iLN"/>
+                <constraint firstItem="aAk-sy-fJA" firstAttribute="leading" secondItem="W47-rw-Yhc" secondAttribute="leading" id="8J5-PB-CR9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FtU-QG-qvA" secondAttribute="trailing" constant="20" id="91a-yS-CfZ"/>
+                <constraint firstItem="S98-CJ-3Uf" firstAttribute="top" secondItem="FtU-QG-qvA" secondAttribute="bottom" constant="20" id="DpJ-Ko-frl"/>
+                <constraint firstItem="aAk-sy-fJA" firstAttribute="trailing" secondItem="W47-rw-Yhc" secondAttribute="trailing" id="Egu-5X-hmi"/>
+                <constraint firstItem="aAk-sy-fJA" firstAttribute="top" secondItem="W47-rw-Yhc" secondAttribute="bottom" constant="10" id="FDg-ad-a5C"/>
+                <constraint firstItem="FtU-QG-qvA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="KSh-wn-Nlx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="W47-rw-Yhc" secondAttribute="trailing" constant="20" id="WSe-Uh-DCM"/>
+                <constraint firstItem="W47-rw-Yhc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="aof-e1-TRF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="S98-CJ-3Uf" secondAttribute="bottom" constant="25" id="caf-FT-TUj"/>
+                <constraint firstItem="W47-rw-Yhc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="sqw-mT-Woa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+        <tapGestureRecognizer id="uMU-Ap-aFL">
+            <connections>
+                <action selector="micAction:" destination="-1" id="Lg4-88-WT9"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="cross" width="23" height="23"/>
+        <image name="mic-ico" width="100" height="100"/>
+    </resources>
+</document>

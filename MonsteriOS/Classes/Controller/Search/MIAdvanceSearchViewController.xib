@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MIAdvanceSearchViewController" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBtn" destination="vKQ-4s-fZC" id="JwH-v0-yle"/>
+                <outlet property="tableView" destination="Vq9-VP-6wM" id="xmc-pY-96f"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vq9-VP-6wM">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="moc-9S-3P7"/>
+                        <outlet property="delegate" destination="-1" id="SNk-4J-F00"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPh-YB-zYa">
+                    <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKQ-4s-fZC">
+                            <rect key="frame" x="15" y="10" width="290" height="40"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                            <state key="normal" title="Search">
+                                <color key="titleColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="searchBtnAction:" destination="-1" eventType="touchUpInside" id="5N4-c5-tLX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vKQ-4s-fZC" firstAttribute="leading" secondItem="HPh-YB-zYa" secondAttribute="leading" constant="15" id="aCH-yn-ABo"/>
+                        <constraint firstItem="vKQ-4s-fZC" firstAttribute="top" secondItem="HPh-YB-zYa" secondAttribute="top" constant="10" id="e6D-cp-Je7"/>
+                        <constraint firstAttribute="height" constant="60" id="j0R-qo-gjE"/>
+                        <constraint firstAttribute="bottom" secondItem="vKQ-4s-fZC" secondAttribute="bottom" constant="10" id="nxi-8u-SP4"/>
+                        <constraint firstAttribute="trailing" secondItem="vKQ-4s-fZC" secondAttribute="trailing" constant="15" id="wb2-e9-LUG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vq9-VP-6wM" secondAttribute="trailing" id="2Gm-UO-056"/>
+                <constraint firstItem="HPh-YB-zYa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6JD-Lt-KEo"/>
+                <constraint firstItem="HPh-YB-zYa" firstAttribute="top" secondItem="Vq9-VP-6wM" secondAttribute="bottom" constant="10" id="DwL-Z8-Bar"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Vq9-VP-6wM" secondAttribute="bottom" constant="70" id="IES-ef-evl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HPh-YB-zYa" secondAttribute="bottom" id="Jbd-Io-xzd"/>
+                <constraint firstItem="Vq9-VP-6wM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c3Z-52-qm3"/>
+                <constraint firstItem="HPh-YB-zYa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pDh-wB-IuJ"/>
+                <constraint firstItem="Vq9-VP-6wM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="seg-Gw-m0W"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

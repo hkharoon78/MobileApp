@@ -1,0 +1,86 @@
+{
+    "data": [
+        {
+            "recruiterId": 423430,
+            "name": "rahul singh",
+            "companyId": 179490,
+            "kiwiRecruiterId": 408805,
+            "actionTimestamp": 1564025153000,
+            "avatarUrl": "/trex/butterfly/rec/v1/724f3c8f-4037-45f5-86b4-b089804b6f79-9375.jpg",
+            "companyName": "Monster",
+            "contactMedium": [
+                "EMAIL"
+            ],
+            "messageId": 10480964,
+            "messageViewed": false
+        },
+        {
+            "recruiterId": 274628,
+            "name": "manoj rambhad",
+            "companyId": 3709,
+            "kiwiRecruiterId": 259667,
+            "actionTimestamp": 1564061153000,
+            "followed": false,
+            "companyName": "HCL",
+            "contactMedium": [
+                "FaceBook"
+            ],
+            "messageId": 10468832,
+            "messageViewed": true
+        },
+        {
+            "recruiterId": 274628,
+            "name": "manoj rambhad",
+            "companyId": 3709,
+            "kiwiRecruiterId": 259667,
+            "actionTimestamp": 1564039553000,
+            "followed": false,
+            "companyName": "HCL",
+            "contactMedium": [
+                "FaceBook"
+            ],
+            "messageId": 10468832,
+            "messageViewed": true
+        },
+        {
+            "recruiterId": 274628,
+            "name": "manoj rambhad",
+            "companyId": 3709,
+            "kiwiRecruiterId": 259667,
+            "actionTimestamp": 1563781733000,
+            "followed": false,
+            "companyName": "HCL",
+            "contactMedium": [
+                "FaceBook"
+            ],
+            "messageId": 10468832,
+            "messageViewed": true
+        },
+        {
+            "recruiterId": 274628,
+            "name": "manoj rambhad",
+            "companyId": 3709,
+            "kiwiRecruiterId": 259667,
+            "actionTimestamp": 1562312933000,
+            "followed": false,
+            "companyName": "HCL",
+            "contactMedium": [
+                "FaceBook"
+            ],
+            "messageId": 10468832,
+            "messageViewed": true
+        }
+
+    ],
+    "meta": {
+        "paging": {
+            "cursors": {
+                "previous": "0"
+            },
+            "total": 7,
+            "limit": 10
+        },
+        "resultId": "88048dc3-ade8-4189-8e6a-c80c0e27be93"
+    }
+}
+

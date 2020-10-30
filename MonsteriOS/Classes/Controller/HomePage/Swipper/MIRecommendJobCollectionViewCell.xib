@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MIRecommendJobCollectionViewCell" id="gTV-IL-0wX" customClass="MIRecommendJobCollectionViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="212" height="212"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="212" height="212"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbJ-u7-cqE">
+                        <rect key="frame" x="0.0" y="0.0" width="212" height="212"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MbJ-u7-cqE" secondAttribute="bottom" id="iAq-rH-Xgk"/>
+                <constraint firstAttribute="trailing" secondItem="MbJ-u7-cqE" secondAttribute="trailing" id="j4f-t0-JCw"/>
+                <constraint firstItem="MbJ-u7-cqE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jgT-dJ-iNS"/>
+                <constraint firstItem="MbJ-u7-cqE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="v7x-lW-S6g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="212" height="212"/>
+            <connections>
+                <outlet property="containerView" destination="MbJ-u7-cqE" id="tbm-iP-rVd"/>
+            </connections>
+            <point key="canvasLocation" x="267.19999999999999" y="221.28935532233885"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="65" id="KGk-i7-Jjw" customClass="MIManageSubsNotificationSaveTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1r-df-gg0">
+                        <rect key="frame" x="0.0" y="0.0" width="337" height="64.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cS0-48-yjm">
+                                <rect key="frame" x="83.5" y="15" width="170" height="34.5"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="999" constant="36" id="b3x-sY-i9h"/>
+                                    <constraint firstAttribute="width" constant="170" id="qVR-21-wIM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450980389999999" green="0.89019607840000003" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cS0-48-yjm" secondAttribute="bottom" constant="15" id="7fb-eO-A6W"/>
+                            <constraint firstItem="cS0-48-yjm" firstAttribute="top" secondItem="o1r-df-gg0" secondAttribute="top" constant="15" id="DEm-9r-C73"/>
+                            <constraint firstItem="cS0-48-yjm" firstAttribute="centerX" secondItem="o1r-df-gg0" secondAttribute="centerX" id="Kn7-4V-c2p"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="o1r-df-gg0" secondAttribute="trailing" id="7qj-0k-mDz"/>
+                    <constraint firstAttribute="bottom" secondItem="o1r-df-gg0" secondAttribute="bottom" id="UT4-GJ-93w"/>
+                    <constraint firstItem="o1r-df-gg0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gGV-2g-0XA"/>
+                    <constraint firstItem="o1r-df-gg0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uzj-af-SR7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnSave" destination="cS0-48-yjm" id="643-aK-94h"/>
+            </connections>
+            <point key="canvasLocation" x="151.19999999999999" y="93.103448275862078"/>
+        </tableViewCell>
+    </objects>
+</document>

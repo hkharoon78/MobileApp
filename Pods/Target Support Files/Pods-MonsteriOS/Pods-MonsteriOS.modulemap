@@ -1,0 +1,6 @@
+framework module Pods_MonsteriOS {
+  umbrella header "Pods-MonsteriOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

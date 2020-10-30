@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MIVerifyEmailTemplateViewController" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="email_lbl" destination="Crj-sv-hzt" id="p54-Mc-LJe"/>
+                <outlet property="resendBtn" destination="ciJ-Ua-PqG" id="5oE-Sz-6h6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emailIcons" translatesAutoresizingMaskIntoConstraints="NO" id="mVK-Xq-F4R">
+                    <rect key="frame" x="148.5" y="47" width="78" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="NOZ-jy-f0C"/>
+                        <constraint firstAttribute="width" constant="78" id="hYV-XR-wsQ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check your inbox" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKz-EO-F5M">
+                    <rect key="frame" x="21" y="135" width="334" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent you a verification link on your email id" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APU-h2-Klo">
+                    <rect key="frame" x="21" y="170.5" width="334" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto Light" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crj-sv-hzt">
+                    <rect key="frame" x="21" y="209.5" width="334" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                    <color key="textColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haven’t recieved email?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRy-Ld-4nB">
+                    <rect key="frame" x="116" y="228.5" width="143" height="16.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto Light" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciJ-Ua-PqG">
+                    <rect key="frame" x="108.5" y="250" width="158" height="29"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                    <state key="normal" title="Resend verification email">
+                        <color key="titleColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="resendEmailAction:" destination="-1" eventType="touchUpInside" id="s5v-de-Nrq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="APU-h2-Klo" firstAttribute="top" secondItem="sKz-EO-F5M" secondAttribute="bottom" constant="16.5" id="8Dr-J8-Ppp"/>
+                <constraint firstItem="Crj-sv-hzt" firstAttribute="top" secondItem="APU-h2-Klo" secondAttribute="bottom" constant="22.5" id="B07-xn-Wal"/>
+                <constraint firstItem="sKz-EO-F5M" firstAttribute="top" secondItem="mVK-Xq-F4R" secondAttribute="bottom" constant="21" id="E2K-zm-mj5"/>
+                <constraint firstItem="DRy-Ld-4nB" firstAttribute="top" secondItem="Crj-sv-hzt" secondAttribute="bottom" constant="19" id="GAE-NX-yjC"/>
+                <constraint firstItem="mVK-Xq-F4R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KMS-8h-iu2"/>
+                <constraint firstItem="APU-h2-Klo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="R2d-Os-niJ"/>
+                <constraint firstItem="sKz-EO-F5M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="Zcp-O5-abi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Crj-sv-hzt" secondAttribute="trailing" constant="20" id="eSA-5C-Wee"/>
+                <constraint firstItem="ciJ-Ua-PqG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fTf-ER-7Yk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="APU-h2-Klo" secondAttribute="trailing" constant="20" id="g8S-ZM-TFD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sKz-EO-F5M" secondAttribute="trailing" constant="20" id="nBh-Ad-goq"/>
+                <constraint firstItem="Crj-sv-hzt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="svz-5g-qem"/>
+                <constraint firstItem="ciJ-Ua-PqG" firstAttribute="top" secondItem="DRy-Ld-4nB" secondAttribute="bottom" constant="5" id="uGf-qD-faz"/>
+                <constraint firstItem="DRy-Ld-4nB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vXm-gW-sGd"/>
+                <constraint firstItem="mVK-Xq-F4R" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="27" id="ytc-ds-JGa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-7.2000000000000002" y="146.17691154422789"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emailIcons" width="62" height="75"/>
+    </resources>
+</document>

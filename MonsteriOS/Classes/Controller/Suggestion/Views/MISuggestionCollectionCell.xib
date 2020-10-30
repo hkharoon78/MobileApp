@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="suggestioncell" id="gTV-IL-0wX" customClass="MISuggestionCollectionCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="45" height="41"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eue-0y-Z41">
+                        <rect key="frame" x="0.0" y="5" width="45" height="31"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAr-Hn-Drb">
+                                <rect key="frame" x="10" y="5" width="25" height="21"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.40392156862745099" green="0.22745098039215686" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sAr-Hn-Drb" firstAttribute="top" secondItem="Eue-0y-Z41" secondAttribute="top" constant="5" id="PsR-bs-Ibt"/>
+                            <constraint firstAttribute="bottom" secondItem="sAr-Hn-Drb" secondAttribute="bottom" constant="5" id="bLE-V8-Qc9"/>
+                            <constraint firstItem="sAr-Hn-Drb" firstAttribute="leading" secondItem="Eue-0y-Z41" secondAttribute="leading" constant="10" id="llA-3N-wJj"/>
+                            <constraint firstAttribute="trailing" secondItem="sAr-Hn-Drb" secondAttribute="trailing" constant="10" id="o4u-fo-QHf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Eue-0y-Z41" secondAttribute="bottom" constant="5" id="E7r-Wb-oRA"/>
+                <constraint firstItem="Eue-0y-Z41" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JFo-4U-k52"/>
+                <constraint firstAttribute="trailing" secondItem="Eue-0y-Z41" secondAttribute="trailing" id="ihv-Yy-p25"/>
+                <constraint firstItem="Eue-0y-Z41" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="iv1-JG-sjd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="89" height="41"/>
+            <connections>
+                <outlet property="titleLbl" destination="sAr-Hn-Drb" id="1qb-u2-gFt"/>
+                <outlet property="topView" destination="Eue-0y-Z41" id="5XH-Qp-KhD"/>
+            </connections>
+            <point key="canvasLocation" x="70.400000000000006" y="42.728635682158924"/>
+        </collectionViewCell>
+    </objects>
+</document>

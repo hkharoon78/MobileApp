@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>registration_date</key>
+	<string>1596619800000</string>
+	<key>registration_end_date</key>
+	<string>0</string>
+	<key>srpFilterEnable</key>
+	<false/>
+</dict>
+</plist>

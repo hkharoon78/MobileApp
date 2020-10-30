@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MIProfileVisibilityJobSearchReasonTableViewCell" rowHeight="55" id="KGk-i7-Jjw" customClass="MIProfileVisibilityJobSearchReasonTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWj-as-WZP">
+                        <rect key="frame" x="0.0" y="0.0" width="352" height="50"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcb-Zj-aQa">
+                                <rect key="frame" x="29" y="17" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="1q3-X6-4ke"/>
+                                    <constraint firstAttribute="width" constant="16" id="Hp3-9E-sKJ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="off-2"/>
+                                <state key="selected" image="off-1"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXO-yO-8sN">
+                                <rect key="frame" x="55" y="16.5" width="281" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FXO-yO-8sN" firstAttribute="centerY" secondItem="hcb-Zj-aQa" secondAttribute="centerY" id="2em-9R-cpq"/>
+                            <constraint firstAttribute="trailing" secondItem="FXO-yO-8sN" secondAttribute="trailing" constant="16" id="4Br-hl-4kh"/>
+                            <constraint firstItem="hcb-Zj-aQa" firstAttribute="centerY" secondItem="YWj-as-WZP" secondAttribute="centerY" id="YFH-Bs-q8E"/>
+                            <constraint firstAttribute="height" constant="50" id="g2E-S4-zRT"/>
+                            <constraint firstItem="hcb-Zj-aQa" firstAttribute="leading" secondItem="YWj-as-WZP" secondAttribute="leading" constant="29" id="o3k-V7-RmN"/>
+                            <constraint firstItem="FXO-yO-8sN" firstAttribute="leading" secondItem="hcb-Zj-aQa" secondAttribute="trailing" constant="10" id="rOh-9R-3gS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YWj-as-WZP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PFa-gE-gtg"/>
+                    <constraint firstAttribute="trailing" secondItem="YWj-as-WZP" secondAttribute="trailing" id="PwX-EA-dFp"/>
+                    <constraint firstItem="YWj-as-WZP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bIS-Ul-wdt"/>
+                    <constraint firstAttribute="bottom" secondItem="YWj-as-WZP" secondAttribute="bottom" id="uy7-aj-R4g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnJobSearchReason" destination="hcb-Zj-aQa" id="JES-G7-AGx"/>
+                <outlet property="lblJobSearchReason" destination="FXO-yO-8sN" id="gqw-oK-6N2"/>
+            </connections>
+            <point key="canvasLocation" x="163.19999999999999" y="159.67016491754123"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="off-1" width="18" height="18"/>
+        <image name="off-2" width="18" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MIProjectDetailTableCell" rowHeight="142" id="KGk-i7-Jjw" customClass="MIProjectDetailTableCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="141.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail of Project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNt-8w-W3t">
+                        <rect key="frame" x="10" y="15" width="300" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfQ-bR-PlE">
+                        <rect key="frame" x="10" y="41.5" width="300" height="85"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lex-aT-FWR">
+                                <rect key="frame" x="5" y="5" width="290" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="WZr-cf-BdL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="e8b-QM-fmi"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.12941176470588234" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lex-aT-FWR" secondAttribute="trailing" constant="5" id="Eh6-1E-5C4"/>
+                            <constraint firstItem="lex-aT-FWR" firstAttribute="leading" secondItem="sfQ-bR-PlE" secondAttribute="leading" constant="5" id="LjK-fy-Bm3"/>
+                            <constraint firstAttribute="bottom" secondItem="lex-aT-FWR" secondAttribute="bottom" constant="10" id="Tce-w9-yxv"/>
+                            <constraint firstItem="lex-aT-FWR" firstAttribute="top" secondItem="sfQ-bR-PlE" secondAttribute="top" constant="5" id="aGM-fS-9vR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="widthBorder">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="colorBorder">
+                                <color key="value" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="sfQ-bR-PlE" secondAttribute="trailing" constant="10" id="2KI-pk-Yqr"/>
+                    <constraint firstItem="NNt-8w-W3t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="NOs-S7-oYK"/>
+                    <constraint firstItem="sfQ-bR-PlE" firstAttribute="top" secondItem="NNt-8w-W3t" secondAttribute="bottom" constant="10" id="XhU-ZC-D5W"/>
+                    <constraint firstItem="NNt-8w-W3t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bAI-6k-thH"/>
+                    <constraint firstAttribute="trailing" secondItem="NNt-8w-W3t" secondAttribute="trailing" constant="10" id="dUE-l3-AsX"/>
+                    <constraint firstAttribute="bottom" secondItem="sfQ-bR-PlE" secondAttribute="bottom" constant="15" id="l0S-be-3WF"/>
+                    <constraint firstItem="sfQ-bR-PlE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="upe-gZ-FqU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textView" destination="lex-aT-FWR" id="dkJ-ca-dMH"/>
+                <outlet property="titleLabel" destination="NNt-8w-W3t" id="cIF-pB-C7s"/>
+            </connections>
+            <point key="canvasLocation" x="139.19999999999999" y="205.09745127436284"/>
+        </tableViewCell>
+    </objects>
+</document>

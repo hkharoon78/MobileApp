@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MIProjectDetailVC" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="saveButton" destination="T4x-h2-VtC" id="CCK-7o-ZYq"/>
+                <outlet property="tableView" destination="vfk-AD-wb1" id="R6j-jZ-Hfs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vfk-AD-wb1" customClass="TPKeyboardAvoidingTableView" customModule="MonsteriOS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="m0P-Xf-3hm">
+                        <rect key="frame" x="0.0" y="828" width="375" height="65"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4x-h2-VtC" customClass="AKLoadingButton" customModule="MonsteriOS" customModuleProvider="target">
+                                <rect key="frame" x="17" y="10" width="340" height="45"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.29019607843137252" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="i93-bT-r5s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="4"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="-1" eventType="touchUpInside" id="j2N-SY-wmM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T4x-h2-VtC" firstAttribute="leading" secondItem="m0P-Xf-3hm" secondAttribute="leading" constant="17" id="2EU-Di-pP7"/>
+                            <constraint firstAttribute="trailing" secondItem="T4x-h2-VtC" secondAttribute="trailing" constant="18" id="dsl-7n-gcp"/>
+                            <constraint firstItem="T4x-h2-VtC" firstAttribute="centerY" secondItem="m0P-Xf-3hm" secondAttribute="centerY" id="gST-3c-1WH"/>
+                            <constraint firstAttribute="height" constant="65" id="hSb-1F-dyX"/>
+                        </constraints>
+                    </view>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vfk-AD-wb1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="P6F-8E-uik"/>
+                <constraint firstItem="vfk-AD-wb1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UMZ-Xq-MBT"/>
+                <constraint firstItem="vfk-AD-wb1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="VUJ-EC-nc7"/>
+                <constraint firstItem="vfk-AD-wb1" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="mN2-r9-7wT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,120 @@
+{
+    "notificationUuid": "123",
+    "user_id": 123,
+    "profile_id": "",
+    "kiwi_profile_id": "",
+    "kiwi_user_id": "",
+    "docType": "BellNotification",
+    "subSection": [
+        {
+            "type": "PENDING_ACTIONS",
+            "text": "Pending Actions",
+            "notifications": [
+                {
+                    "title": "Verify your Email ID",
+                    "body": "Recruiters prefer to contact jobseekers with verified email",
+                    "key": "VERIFY_EMAIL_ID",
+                    "actionTaken": false,
+                    "action_taken_on": "1562759738",
+                    "modified_at  ": "1562759738",
+                    "weightagePercent": 7,
+                    "deliveryStatus": "DELIVERED"
+                },
+                {
+                    "title": "Verify your mobile",
+                    "body": "Want recruiters to contact you for jobs? Verify your mobile number",
+                    "key": "VERIFY_MOBILE_NUMBER",
+                    "actionTaken": false,
+                    "modified_at": "1562359738",
+                    "weightagePercent": 12,
+                    "deliveryStatus": "DELIVERED"
+                },
+                {
+                    "title": "Upload Your Resume",
+                    "body": "Add your resume to increase your profile score by 30%",
+                    "key": "RESUME",
+                    "actionTaken": false,
+                    "modified_at": "1562359738",
+                    "weightagePercent": 30,
+                    "deliveryStatus": "DELIVERED"
+                },
+                {
+                    "title": "Pending actions",
+                    "body": "You have 3 other pending actions. Impress recruiters with a stronger profile!",
+                    "key": "OTHER_PENDING_ACTIONS",
+                    "prevCount": 5,
+                    "newCount": 3,
+                    "modified_at": "1562359738",
+                    "deliveryStatus": "DELIVERED"
+                }
+            ],
+            "accessed_at": "1562359738",
+            "prevCount": 4,
+            "newCount": 4,
+            "modified_at": "1562359738",
+            "key": "Pending_Action_Notifications",
+            "deliveryStatus": "DELIVERED"
+        },
+        {
+            "type": "RECOMMENDED_JOBS",
+            "text": "25 new jobs based on your activity",
+            "accessed_at": "1562359738",
+            "prevCount": 10,
+            "newCount": 25,
+            "modified_at": "1562359738",
+            "key": "Job_Alert_Notifications",
+            "deliveryStatus": "DELIVERED"
+        },
+        {
+            "type": "SIMILAR_JOBS",
+            "text": "15 New jobs based on your activity",
+            "accessed_at": "1562259738",
+            "prevCount": 5,
+            "newCount": 15,
+            "similarJobId": 1017519,
+            "modified_at": "1562259738",
+            "key": "Job_Similar_Notifications",
+            "deliveryStatus": "DELIVERED"
+        },
+        {
+            "type": "JOB_ALERTS",
+            "text": "Job Alerts",
+            "notifications": [
+                {
+                    "title": "Job Alert - name1",
+                    "body": "<count> new jobs matching your alert",
+                    "key": "JOB_ALERTS",
+                    "actionTaken": false,
+                    "action_taken_on": "1562359738",
+                    "modified_at": "1562159738",
+                    "deliveryStatus": "DELIVERED",
+                    "jobSearchRequest": {
+                        "query": "Java"
+                    }
+                },
+                {
+                    "title": "Job Alert - name2",
+                    "body": "<count> new jobs matching your alert",
+                    "key": "JOB_ALERTS",
+                    "actionTaken": false,
+                    "action_taken_on": "1562359738",
+                    "modified_at": "1562359738",
+                    "deliveryStatus": "DELIVERED",
+                    "jobSearchRequest": {
+                        "query": "Java"
+                    }
+                }
+            ],
+            "accessed_at": "1562159738",
+            "prevCount": 2,
+            "newCount": 2,
+            "modified_at": "1562159738",
+            "key": "Job_Alert_Notifications",
+            "deliveryStatus": "DELIVERED"
+        }
+    ],
+    "seen": false,
+    "created_at": "1562359738",
+    "modified_at": "1562359738",
+    "new_count": 8
+}

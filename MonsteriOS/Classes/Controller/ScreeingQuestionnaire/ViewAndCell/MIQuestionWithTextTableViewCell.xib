@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="MIQuestionWithTextTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5Y-xJ-qTR">
+                        <rect key="frame" x="15" y="10" width="290" height="73"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9dT-Hr-VWH" customClass="RSKPlaceholderTextView" customModule="MonsteriOS" customModuleProvider="target">
+                        <rect key="frame" x="15" y="91.5" width="290" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="dPz-NU-zRl"/>
+                        </constraints>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                <color key="value" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                <color key="value" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="widthBorder">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="colorBorder">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eP-dm-cyn">
+                        <rect key="frame" x="15" y="133.5" width="290" height="0.5"/>
+                        <color key="backgroundColor" red="0.2901960784" green="0.12941176469999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="sDh-3F-sZS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9dT-Hr-VWH" secondAttribute="bottom" constant="8" id="4LB-zm-VAy"/>
+                    <constraint firstItem="1eP-dm-cyn" firstAttribute="top" secondItem="9dT-Hr-VWH" secondAttribute="bottom" constant="2" id="6XT-qf-Cpw"/>
+                    <constraint firstAttribute="trailing" secondItem="p5Y-xJ-qTR" secondAttribute="trailing" constant="15" id="FMj-sa-rJY"/>
+                    <constraint firstItem="1eP-dm-cyn" firstAttribute="leading" secondItem="9dT-Hr-VWH" secondAttribute="leading" id="IVb-sg-yMo"/>
+                    <constraint firstItem="p5Y-xJ-qTR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="QgF-cZ-J70"/>
+                    <constraint firstItem="p5Y-xJ-qTR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gID-jC-8hM"/>
+                    <constraint firstItem="9dT-Hr-VWH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jhb-8x-8rm"/>
+                    <constraint firstItem="9dT-Hr-VWH" firstAttribute="top" secondItem="p5Y-xJ-qTR" secondAttribute="bottom" constant="8.5" id="o1r-Of-w2C"/>
+                    <constraint firstAttribute="trailing" secondItem="9dT-Hr-VWH" secondAttribute="trailing" constant="15" id="quY-pk-shY"/>
+                    <constraint firstItem="1eP-dm-cyn" firstAttribute="trailing" secondItem="9dT-Hr-VWH" secondAttribute="trailing" id="sGU-r2-StB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="floatLebelTextView" destination="9dT-Hr-VWH" id="RB9-vx-5Yz"/>
+                <outlet property="questionTitle" destination="p5Y-xJ-qTR" id="nKu-uy-3vP"/>
+                <outlet property="textViewHeight" destination="dPz-NU-zRl" id="DgH-RI-0en"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="172.71364317841082"/>
+        </tableViewCell>
+    </objects>
+</document>

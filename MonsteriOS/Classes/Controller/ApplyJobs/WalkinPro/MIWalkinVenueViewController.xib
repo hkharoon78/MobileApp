@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MIWalkinVenueViewController" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="dateTextField" destination="alr-SA-d83" id="Je4-uY-0qs"/>
+                <outlet property="errorLabel1" destination="HAY-wg-wLQ" id="tLa-eq-CJR"/>
+                <outlet property="errorLabel2" destination="vi5-Vi-TWd" id="gta-Cj-0DA"/>
+                <outlet property="errorLabel3" destination="EPw-0I-xuf" id="hLq-LO-2b3"/>
+                <outlet property="submitButton" destination="J25-kN-rVX" id="bCO-SR-7WR"/>
+                <outlet property="timeTextField" destination="cnA-Od-8bL" id="R3u-z5-Qh5"/>
+                <outlet property="titleLabel" destination="IRp-5Q-T8N" id="QAV-GU-kbc"/>
+                <outlet property="venueTextField" destination="rpF-c7-k9W" id="5H5-gj-tDL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRp-5Q-T8N">
+                    <rect key="frame" x="15" y="15" width="345" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rpF-c7-k9W" customClass="RightViewTextField" customModule="MonsteriOS" customModuleProvider="target">
+                    <rect key="frame" x="15" y="42" width="345" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QsG-Mv-5TG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAY-wg-wLQ">
+                    <rect key="frame" x="15" y="90" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                    <color key="textColor" red="0.85882352939999995" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alr-SA-d83" customClass="RightViewTextField" customModule="MonsteriOS" customModuleProvider="target">
+                    <rect key="frame" x="15" y="105" width="345" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8bo-He-E3m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi5-Vi-TWd">
+                    <rect key="frame" x="15" y="153" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                    <color key="textColor" red="0.85882352939999995" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cnA-Od-8bL" customClass="RightViewTextField" customModule="MonsteriOS" customModuleProvider="target">
+                    <rect key="frame" x="15" y="168" width="345" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bcP-Dk-Wqu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPw-0I-xuf">
+                    <rect key="frame" x="15" y="216" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                    <color key="textColor" red="0.85882352939999995" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J25-kN-rVX">
+                    <rect key="frame" x="15" y="238" width="345" height="40"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="submitButtonAction:" destination="-1" eventType="touchUpInside" id="fgD-7s-HfA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IRp-5Q-T8N" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="16F-zA-bMZ"/>
+                <constraint firstItem="rpF-c7-k9W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="6fz-YO-46S"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IRp-5Q-T8N" secondAttribute="trailing" constant="15" id="A0G-Aa-z53"/>
+                <constraint firstItem="EPw-0I-xuf" firstAttribute="leading" secondItem="cnA-Od-8bL" secondAttribute="leading" id="D1N-1x-qBb"/>
+                <constraint firstItem="alr-SA-d83" firstAttribute="trailing" secondItem="rpF-c7-k9W" secondAttribute="trailing" id="Fos-tv-9Hc"/>
+                <constraint firstItem="EPw-0I-xuf" firstAttribute="top" secondItem="cnA-Od-8bL" secondAttribute="bottom" constant="8" id="Hbd-om-856"/>
+                <constraint firstItem="alr-SA-d83" firstAttribute="leading" secondItem="rpF-c7-k9W" secondAttribute="leading" id="Ihc-Er-cKa"/>
+                <constraint firstItem="cnA-Od-8bL" firstAttribute="leading" secondItem="alr-SA-d83" secondAttribute="leading" id="NvI-YR-S88"/>
+                <constraint firstItem="J25-kN-rVX" firstAttribute="height" secondItem="cnA-Od-8bL" secondAttribute="height" id="Oqw-Xe-GI7"/>
+                <constraint firstItem="cnA-Od-8bL" firstAttribute="trailing" secondItem="alr-SA-d83" secondAttribute="trailing" id="PQm-NS-hwq"/>
+                <constraint firstItem="alr-SA-d83" firstAttribute="top" secondItem="HAY-wg-wLQ" secondAttribute="bottom" constant="15" id="TIE-T1-oUq"/>
+                <constraint firstItem="J25-kN-rVX" firstAttribute="leading" secondItem="cnA-Od-8bL" secondAttribute="leading" id="TRd-P7-X0Y"/>
+                <constraint firstItem="HAY-wg-wLQ" firstAttribute="top" secondItem="rpF-c7-k9W" secondAttribute="bottom" constant="8" id="ZGV-Pe-2Q6"/>
+                <constraint firstItem="cnA-Od-8bL" firstAttribute="top" secondItem="vi5-Vi-TWd" secondAttribute="bottom" constant="15" id="bHd-8b-32L"/>
+                <constraint firstItem="IRp-5Q-T8N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="gDD-sc-W82"/>
+                <constraint firstItem="vi5-Vi-TWd" firstAttribute="leading" secondItem="alr-SA-d83" secondAttribute="leading" id="jFb-Qx-yxi"/>
+                <constraint firstItem="J25-kN-rVX" firstAttribute="trailing" secondItem="cnA-Od-8bL" secondAttribute="trailing" id="jwU-MA-v0u"/>
+                <constraint firstItem="HAY-wg-wLQ" firstAttribute="leading" secondItem="rpF-c7-k9W" secondAttribute="leading" id="mwV-i4-KwB"/>
+                <constraint firstItem="rpF-c7-k9W" firstAttribute="top" secondItem="IRp-5Q-T8N" secondAttribute="bottom" constant="8" id="qMV-eM-5ke"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rpF-c7-k9W" secondAttribute="trailing" constant="15" id="rRc-8c-j1N"/>
+                <constraint firstItem="J25-kN-rVX" firstAttribute="top" secondItem="cnA-Od-8bL" secondAttribute="bottom" constant="30" id="t1O-l9-ZYQ"/>
+                <constraint firstItem="vi5-Vi-TWd" firstAttribute="top" secondItem="alr-SA-d83" secondAttribute="bottom" constant="8" id="zG0-FN-sea"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="142" y="154"/>
+        </view>
+    </objects>
+</document>

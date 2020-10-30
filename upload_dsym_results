@@ -1,0 +1,22 @@
+uploading map to new relic
+executing upload_map_file_to_new_relic
+New Relic: map file upload attempt #1 (of 3)
+Using URL: https://mobile-symbol-upload.newrelic.com
+New Relic: Successfully uploaded map files
+/Users/anupamkatiyar/Documents/Projects/ios/Pods/NewRelicAgent/NewRelicAgent/NewRelicAgent.framework/Versions/A/Resources/generateMap.py", line 96, in <module>
+    os.mkdir(workDir)
+OSError: [Errno 17] File exists: '/Users/anupamkatiyar/Library/Developer/Xcode/DerivedData/MonsteriOS-bavdphkqfqqoskgzpmxgtnpsxsar/Build/Intermediates.noindex/ArchiveIntermediates/MonsteriOS/IntermediateBuildFilesPath/MonsteriOS.build/Release-iphoneos/MonsteriOS.build/tmp'
+New Relic: map file upload attempt #2 (of 3)
+Using URL: https://mobile-symbol-upload.newrelic.com
+Traceback (most recent call last):
+  File "/Users/anupamkatiyar/Documents/Projects/ios/Pods/NewRelicAgent/NewRelicAgent/NewRelicAgent.framework/Versions/A/Resources/generateMap.py", line 96, in <module>
+    os.mkdir(workDir)
+OSError: [Errno 17] File exists: '/Users/anupamkatiyar/Library/Developer/Xcode/DerivedData/MonsteriOS-bavdphkqfqqoskgzpmxgtnpsxsar/Build/Intermediates.noindex/ArchiveIntermediates/MonsteriOS/IntermediateBuildFilesPath/MonsteriOS.build/Release-iphoneos/MonsteriOS.build/tmp'
+New Relic: map file upload attempt #3 (of 3)
+Using URL: https://mobile-symbol-upload.newrelic.com
+Traceback (most recent call last):
+  File "/Users/anupamkatiyar/Documents/Projects/ios/Pods/NewRelicAgent/NewRelicAgent/NewRelicAgent.framework/Versions/A/Resources/generateMap.py", line 96, in <module>
+    os.mkdir(workDir)
+OSError: [Errno 17] File exists: '/Users/anupamkatiyar/Library/Developer/Xcode/DerivedData/MonsteriOS-bavdphkqfqqoskgzpmxgtnpsxsar/Build/Intermediates.noindex/ArchiveIntermediates/MonsteriOS/IntermediateBuildFilesPath/MonsteriOS.build/Release-iphoneos/MonsteriOS.build/tmp'
+executing upload_dsym_to_new_relic
+new relic: successfully uploaded dsym files

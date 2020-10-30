@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MITableSectionView" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="sectionTitlelabel" destination="hN0-ZT-Qss" id="h9s-o2-3T7"/>
+                <outlet property="viewAllButton" destination="db6-bU-7mp" id="ab3-NU-jhB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpX-HP-fnx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hN0-ZT-Qss">
+                            <rect key="frame" x="15" y="24" width="312" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db6-bU-7mp">
+                            <rect key="frame" x="337" y="13.5" width="30" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="i9a-sp-ee7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="viewAllButtonAction:" destination="-1" eventType="touchUpInside" id="LyT-aj-X1j"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="db6-bU-7mp" secondAttribute="trailing" constant="8" id="1Ne-Pn-BB0"/>
+                        <constraint firstItem="db6-bU-7mp" firstAttribute="centerY" secondItem="DpX-HP-fnx" secondAttribute="centerY" id="AYl-P0-XJM"/>
+                        <constraint firstItem="db6-bU-7mp" firstAttribute="leading" secondItem="hN0-ZT-Qss" secondAttribute="trailing" constant="10" id="EWf-6g-hbl"/>
+                        <constraint firstItem="hN0-ZT-Qss" firstAttribute="centerY" secondItem="db6-bU-7mp" secondAttribute="centerY" id="ctM-NM-iAK"/>
+                        <constraint firstItem="hN0-ZT-Qss" firstAttribute="leading" secondItem="DpX-HP-fnx" secondAttribute="leading" constant="15" id="eYF-Ex-tIl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DpX-HP-fnx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2gb-EO-saD"/>
+                <constraint firstItem="DpX-HP-fnx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WNK-A3-a7C"/>
+                <constraint firstItem="DpX-HP-fnx" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="WiC-da-kdt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DpX-HP-fnx" secondAttribute="trailing" id="dar-9U-FIG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="353.07346326836586"/>
+        </view>
+    </objects>
+</document>

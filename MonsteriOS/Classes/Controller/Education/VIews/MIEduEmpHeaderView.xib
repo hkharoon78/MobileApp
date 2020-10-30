@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MIEduEmpHeaderView" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ae-6P-zKP">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjE-IB-EFv">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                            <color key="backgroundColor" red="0.90196078431372551" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="ux1-6K-fUg"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQm-A1-40R">
+                            <rect key="frame" x="15" y="25" width="255" height="30"/>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A1-lg-caV">
+                            <rect key="frame" x="272" y="19" width="48" height="42"/>
+                            <inset key="contentEdgeInsets" minX="15" minY="10" maxX="15" maxY="10"/>
+                            <state key="normal" image="trash"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="8A1-lg-caV" secondAttribute="trailing" id="0Dv-Hl-w6T"/>
+                        <constraint firstItem="tjE-IB-EFv" firstAttribute="top" secondItem="9ae-6P-zKP" secondAttribute="top" id="82v-GJ-esI"/>
+                        <constraint firstAttribute="bottom" secondItem="MQm-A1-40R" secondAttribute="bottom" constant="5" id="Drs-fT-tIU"/>
+                        <constraint firstAttribute="trailing" secondItem="tjE-IB-EFv" secondAttribute="trailing" id="GEP-VY-4U4"/>
+                        <constraint firstItem="8A1-lg-caV" firstAttribute="centerY" secondItem="MQm-A1-40R" secondAttribute="centerY" id="P9Q-cW-yuv"/>
+                        <constraint firstItem="MQm-A1-40R" firstAttribute="leading" secondItem="9ae-6P-zKP" secondAttribute="leading" constant="15" id="Ppe-t7-y6f"/>
+                        <constraint firstItem="MQm-A1-40R" firstAttribute="top" secondItem="tjE-IB-EFv" secondAttribute="bottom" constant="15" id="Pza-6D-G2z"/>
+                        <constraint firstAttribute="trailing" secondItem="MQm-A1-40R" secondAttribute="trailing" constant="50" id="QLg-iw-uRF"/>
+                        <constraint firstItem="tjE-IB-EFv" firstAttribute="leading" secondItem="9ae-6P-zKP" secondAttribute="leading" id="noY-RL-Weo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9ae-6P-zKP" secondAttribute="trailing" id="42b-GS-1GZ"/>
+                <constraint firstItem="9ae-6P-zKP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e09-6E-5Lh"/>
+                <constraint firstItem="9ae-6P-zKP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fgC-SG-bdm"/>
+                <constraint firstAttribute="bottom" secondItem="9ae-6P-zKP" secondAttribute="bottom" id="k2o-eE-Z85"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="deleteButton" destination="8A1-lg-caV" id="TzT-J4-epF"/>
+                <outlet property="titleLabel" destination="MQm-A1-40R" id="PeU-UG-fzW"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="trash" width="18" height="21"/>
+    </resources>
+</document>

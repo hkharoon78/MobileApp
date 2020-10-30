@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MIJobDetailsTableViewCell" rowHeight="154" id="KGk-i7-Jjw" customClass="MIJobDetailsTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="153.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGX-79-cWK">
+                        <rect key="frame" x="14" y="14" width="325" height="62"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7Y-im-v25">
+                        <rect key="frame" x="14" y="90" width="325" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyg-1G-2Yx">
+                        <rect key="frame" x="14" y="104" width="325" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h26-JK-7Ys">
+                        <rect key="frame" x="14" y="118" width="325" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.5" id="HXk-WH-vxh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fyg-1G-2Yx" secondAttribute="trailing" constant="14" id="3M9-vs-cuX"/>
+                    <constraint firstAttribute="bottom" secondItem="h26-JK-7Ys" secondAttribute="bottom" constant="15" id="DEe-Y3-pAO"/>
+                    <constraint firstAttribute="trailing" secondItem="h7Y-im-v25" secondAttribute="trailing" constant="14" id="EsI-h0-CKD"/>
+                    <constraint firstAttribute="trailing" secondItem="nGX-79-cWK" secondAttribute="trailing" constant="14" id="Gtf-Il-y0v"/>
+                    <constraint firstItem="h26-JK-7Ys" firstAttribute="leading" secondItem="fyg-1G-2Yx" secondAttribute="leading" id="Pim-gz-EhJ"/>
+                    <constraint firstItem="h7Y-im-v25" firstAttribute="top" secondItem="nGX-79-cWK" secondAttribute="bottom" constant="14" id="VrB-vw-gHA"/>
+                    <constraint firstItem="fyg-1G-2Yx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="XPH-kL-bly"/>
+                    <constraint firstItem="fyg-1G-2Yx" firstAttribute="top" secondItem="h7Y-im-v25" secondAttribute="bottom" constant="14" id="Y1r-md-xB3"/>
+                    <constraint firstItem="h26-JK-7Ys" firstAttribute="top" secondItem="fyg-1G-2Yx" secondAttribute="bottom" constant="14" id="YKT-cu-NiG"/>
+                    <constraint firstItem="nGX-79-cWK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="aPz-1Z-O9G"/>
+                    <constraint firstItem="h7Y-im-v25" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="d7o-3M-WDf"/>
+                    <constraint firstItem="h26-JK-7Ys" firstAttribute="trailing" secondItem="fyg-1G-2Yx" secondAttribute="trailing" id="q3C-Bb-1eJ"/>
+                    <constraint firstItem="nGX-79-cWK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="q7v-Tu-FSJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="expeLevelHeight" destination="HXk-WH-vxh" id="rLb-Mp-xQz"/>
+                <outlet property="experienceLabel" destination="h26-JK-7Ys" id="UXH-Xm-w2s"/>
+                <outlet property="experienceLabelBottom" destination="DEe-Y3-pAO" id="z89-WG-4rp"/>
+                <outlet property="functionLabel" destination="h7Y-im-v25" id="NTw-MC-NGq"/>
+                <outlet property="industryLabel" destination="nGX-79-cWK" id="LlP-yN-kAf"/>
+                <outlet property="roleLabel" destination="fyg-1G-2Yx" id="Tdf-Po-LPb"/>
+            </connections>
+            <point key="canvasLocation" x="111.2" y="150.22488755622189"/>
+        </tableViewCell>
+    </objects>
+</document>

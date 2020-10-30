@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MINonLoginApplyViewController" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="r0L-4Y-o2f" id="pJO-Ro-6Xg"/>
+                <outlet property="titleLabel" destination="E8O-zf-L08" id="g05-pi-lCT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r0L-4Y-o2f">
+                    <rect key="frame" x="15" y="99" width="384" height="748"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8O-zf-L08">
+                    <rect key="frame" x="15" y="60" width="384" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="E8O-zf-L08" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="4Ec-ue-SM4"/>
+                <constraint firstItem="r0L-4Y-o2f" firstAttribute="top" secondItem="E8O-zf-L08" secondAttribute="bottom" constant="20" id="86G-gh-YN2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r0L-4Y-o2f" secondAttribute="trailing" constant="15" id="Fab-cm-aCy"/>
+                <constraint firstItem="E8O-zf-L08" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Tj4-eA-Rrg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="r0L-4Y-o2f" secondAttribute="bottom" constant="15" id="i3L-ab-Tko"/>
+                <constraint firstItem="r0L-4Y-o2f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="leg-Yb-DOB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E8O-zf-L08" secondAttribute="trailing" constant="15" id="p2R-0G-Yqf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="50.724637681159422" y="41.517857142857139"/>
+        </view>
+    </objects>
+</document>

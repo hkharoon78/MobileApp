@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MIJobPreferencePopup" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="md7-we-Wpt">
+                    <rect key="frame" x="37.5" y="196" width="300" height="275"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Kgc-kQ-ocy">
+                            <rect key="frame" x="20" y="30" width="260" height="215"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get better jobs!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0e5-PU-HB3">
+                                    <rect key="frame" x="75" y="0.0" width="110" height="19"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y06-qN-k2y">
+                                    <rect key="frame" x="7.5" y="35" width="245" height="49.5"/>
+                                    <string key="text">Completing your profile makes 
+you searchable for recruiters &amp; lets you create job applications.</string>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-A0-YzC">
+                                    <rect key="frame" x="121" y="100.5" width="18.5" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                    <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zh-k2-s1e">
+                                    <rect key="frame" x="10" y="133" width="240" height="37"/>
+                                    <color key="backgroundColor" red="0.10196078431372549" green="0.58431372549019611" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                    <state key="normal" title="I will complete my profile">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="completeProfileClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Hgd-ns-rhK"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5j-nY-okg">
+                                    <rect key="frame" x="96.5" y="186" width="67" height="29"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <state key="normal" title="Be Ignored">
+                                        <color key="titleColor" red="0.10196078431372549" green="0.58431372549019611" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="ignoreClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="StH-Te-0x8"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="3zh-k2-s1e" firstAttribute="leading" secondItem="Kgc-kQ-ocy" secondAttribute="leading" constant="10" id="HOk-0A-lFX"/>
+                                <constraint firstAttribute="trailing" secondItem="3zh-k2-s1e" secondAttribute="trailing" constant="10" id="mNZ-JI-nlb"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Kgc-kQ-ocy" secondAttribute="bottom" constant="30" id="7Ck-Ju-hsO"/>
+                        <constraint firstAttribute="width" constant="300" id="8EE-PA-E9x"/>
+                        <constraint firstItem="Kgc-kQ-ocy" firstAttribute="leading" secondItem="md7-we-Wpt" secondAttribute="leading" constant="20" id="KQN-j4-Yxa"/>
+                        <constraint firstAttribute="trailing" secondItem="Kgc-kQ-ocy" secondAttribute="trailing" constant="20" id="M9b-Mh-wz7"/>
+                        <constraint firstItem="Kgc-kQ-ocy" firstAttribute="top" secondItem="md7-we-Wpt" secondAttribute="top" constant="30" id="ftQ-wH-uYK"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycN-Gm-gsf">
+                    <rect key="frame" x="329.5" y="185" width="16" height="22"/>
+                    <state key="normal" image="crossblue"/>
+                    <connections>
+                        <action selector="closeButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="aff-Mi-CV0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ycN-Gm-gsf" firstAttribute="centerX" secondItem="md7-we-Wpt" secondAttribute="trailing" id="2Q4-Pe-OTG"/>
+                <constraint firstItem="md7-we-Wpt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="B1P-6a-ldm"/>
+                <constraint firstItem="md7-we-Wpt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KAH-7U-ARx"/>
+                <constraint firstItem="ycN-Gm-gsf" firstAttribute="centerY" secondItem="md7-we-Wpt" secondAttribute="top" id="k4j-Eq-WX9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btn_Primary" destination="3zh-k2-s1e" id="CuV-9g-l4p"/>
+                <outlet property="btn_secondary" destination="U5j-nY-okg" id="Fki-Sg-bPE"/>
+                <outlet property="closeBtn" destination="ycN-Gm-gsf" id="MXE-or-7nL"/>
+                <outlet property="lbl_description" destination="Y06-qN-k2y" id="vcy-5A-arq"/>
+                <outlet property="lbl_title" destination="0e5-PU-HB3" id="au5-7W-Oan"/>
+                <outlet property="orLabel" destination="fOI-A0-YzC" id="45w-Jw-7qX"/>
+                <outlet property="topView" destination="md7-we-Wpt" id="r9o-7W-r7y"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="117.39130434782609"/>
+        </view>
+        <view contentMode="scaleToFill" id="ijj-2Y-hfw" customClass="MIJobPreferencePopup" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sO-Da-ejg">
+                    <rect key="frame" x="35" y="226" width="305" height="215.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="HFy-7o-312">
+                            <rect key="frame" x="10" y="30" width="285" height="155.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get better jobs!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCe-ZV-o9d">
+                                    <rect key="frame" x="87.5" y="0.0" width="110" height="19"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDa-XG-gYz">
+                                    <rect key="frame" x="0.0" y="44" width="285" height="49.5"/>
+                                    <string key="text">Completing your profile makes 
+you searchable for recruiters &amp; lets you create job applications.</string>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="43D-Tp-do4">
+                                    <rect key="frame" x="15.5" y="118.5" width="254" height="37"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-bT-MzU">
+                                            <rect key="frame" x="0.0" y="0.0" width="122" height="37"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                            <state key="normal" title="Claim Number">
+                                                <color key="titleColor" red="0.10196078431372549" green="0.58431372549019611" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="ignoreClicked:" destination="ijj-2Y-hfw" eventType="touchUpInside" id="5jo-LM-dlG"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIJ-Ah-MtB">
+                                            <rect key="frame" x="132" y="0.0" width="122" height="37"/>
+                                            <color key="backgroundColor" red="0.10196078431372549" green="0.58431372549019611" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                            <state key="normal" title="Change Number">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="completeProfileClicked:" destination="ijj-2Y-hfw" eventType="touchUpInside" id="R3F-QU-r9j"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="HFy-7o-312" firstAttribute="top" secondItem="9sO-Da-ejg" secondAttribute="top" constant="30" id="3mM-3e-pfU"/>
+                        <constraint firstItem="HFy-7o-312" firstAttribute="leading" secondItem="9sO-Da-ejg" secondAttribute="leading" constant="10" id="PSe-ea-qfm"/>
+                        <constraint firstAttribute="bottom" secondItem="HFy-7o-312" secondAttribute="bottom" constant="30" id="TpB-Pf-mua"/>
+                        <constraint firstAttribute="width" constant="305" id="UdD-L5-DEp"/>
+                        <constraint firstAttribute="trailing" secondItem="HFy-7o-312" secondAttribute="trailing" constant="10" id="rkb-VK-mkb"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tth-sA-6jj">
+                    <rect key="frame" x="330" y="215" width="20" height="22"/>
+                    <state key="normal" image="crossblue"/>
+                    <connections>
+                        <action selector="closeButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Mv7-in-oy9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tth-sA-6jj" firstAttribute="centerY" secondItem="9sO-Da-ejg" secondAttribute="top" id="InL-fW-1gr"/>
+                <constraint firstItem="Tth-sA-6jj" firstAttribute="centerX" secondItem="9sO-Da-ejg" secondAttribute="trailing" id="aZ1-Ca-q4H"/>
+                <constraint firstItem="9sO-Da-ejg" firstAttribute="centerX" secondItem="ijj-2Y-hfw" secondAttribute="centerX" id="m1r-5B-DJj"/>
+                <constraint firstItem="9sO-Da-ejg" firstAttribute="centerY" secondItem="ijj-2Y-hfw" secondAttribute="centerY" id="t2U-1w-Ax4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="8N3-Pm-fId"/>
+            <connections>
+                <outlet property="btn_Primary" destination="xIJ-Ah-MtB" id="Wgv-1d-E1r"/>
+                <outlet property="btn_secondary" destination="D6c-bT-MzU" id="fTl-XA-AWB"/>
+                <outlet property="lbl_description" destination="HDa-XG-gYz" id="Ie3-vC-2m3"/>
+                <outlet property="lbl_title" destination="cCe-ZV-o9d" id="yJE-LB-BiV"/>
+                <outlet property="topView" destination="9sO-Da-ejg" id="xpJ-Eb-4WW"/>
+            </connections>
+            <point key="canvasLocation" x="837.60000000000002" y="116.49175412293854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="crossblue" width="20" height="20"/>
+    </resources>
+</document>

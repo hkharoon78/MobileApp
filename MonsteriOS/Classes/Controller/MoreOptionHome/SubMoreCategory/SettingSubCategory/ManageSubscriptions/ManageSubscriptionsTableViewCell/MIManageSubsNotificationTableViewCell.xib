@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="113" id="KGk-i7-Jjw" customClass="MIManageSubsNotificationTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="112.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeu-st-EQA">
+                        <rect key="frame" x="0.0" y="0.0" width="331" height="112.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ieo-1C-Zgg">
+                                <rect key="frame" x="16" y="10" width="238" height="87.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.16862745098039217" blue="0.21176470588235294" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLM-yj-oYB">
+                                <rect key="frame" x="266" y="10" width="51" height="31"/>
+                                <color key="onTintColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GLM-yj-oYB" firstAttribute="top" secondItem="Ieo-1C-Zgg" secondAttribute="top" id="F9d-It-wnG"/>
+                            <constraint firstAttribute="trailing" secondItem="GLM-yj-oYB" secondAttribute="trailing" constant="16" id="NyG-La-qKS"/>
+                            <constraint firstItem="Ieo-1C-Zgg" firstAttribute="top" secondItem="xeu-st-EQA" secondAttribute="top" constant="10" id="Ouy-hz-pZG"/>
+                            <constraint firstAttribute="bottom" secondItem="Ieo-1C-Zgg" secondAttribute="bottom" constant="15" id="Q6t-HJ-Bld"/>
+                            <constraint firstItem="GLM-yj-oYB" firstAttribute="leading" secondItem="Ieo-1C-Zgg" secondAttribute="trailing" constant="12" id="tKV-OD-jGa"/>
+                            <constraint firstItem="Ieo-1C-Zgg" firstAttribute="leading" secondItem="xeu-st-EQA" secondAttribute="leading" constant="16" id="xTF-3L-WDV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xeu-st-EQA" secondAttribute="bottom" id="3E4-Yw-5De"/>
+                    <constraint firstAttribute="trailing" secondItem="xeu-st-EQA" secondAttribute="trailing" id="EaJ-J1-l5D"/>
+                    <constraint firstItem="xeu-st-EQA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dBx-zP-qgM"/>
+                    <constraint firstItem="xeu-st-EQA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xJ7-3p-joy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblNotification" destination="Ieo-1C-Zgg" id="tAN-if-NRC"/>
+                <outlet property="switchOnOff" destination="GLM-yj-oYB" id="32O-hh-pIx"/>
+            </connections>
+            <point key="canvasLocation" x="146.40000000000001" y="157.87106446776613"/>
+        </tableViewCell>
+    </objects>
+</document>

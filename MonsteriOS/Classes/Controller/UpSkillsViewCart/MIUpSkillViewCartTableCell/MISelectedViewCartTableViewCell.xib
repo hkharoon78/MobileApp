@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MISelectedViewCartTableViewCell" rowHeight="150" id="KGk-i7-Jjw" customClass="MISelectedViewCartTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6H4-6O-gH7">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="149.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="You Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bU-Wb-Kxt">
+                                <rect key="frame" x="18" y="14" width="335" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.08235294118" green="0.16078431369999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Xpress Resume National" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtL-5Y-cLv">
+                                <rect key="frame" x="18" y="38.5" width="154.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.38823529411764707" green="0.45098039215686275" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Rs. 999.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twi-jt-xLG">
+                                <rect key="frame" x="175.5" y="47.5" width="123.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.082352941176470587" green="0.16078431372549018" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9l-BG-Oqy">
+                                <rect key="frame" x="324" y="46" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Ati-qT-Pms"/>
+                                    <constraint firstAttribute="width" constant="20" id="qz7-PI-123"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <connections>
+                                    <action selector="btnDeleteResumePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="n6B-8P-uX5"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LR-cj-Qqd">
+                                <rect key="frame" x="18" y="90" width="326" height="1"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ryC-IL-GpJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Right Resume For Freshers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhd-d7-vk3">
+                                <rect key="frame" x="18" y="108" width="169" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.38823529410000002" green="0.45098039220000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Rs. 749.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmv-RQ-VF5">
+                                <rect key="frame" x="190" y="108" width="109" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.08235294118" green="0.16078431369999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWs-RF-xL1">
+                                <rect key="frame" x="324" y="106.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Sj6-sc-KMO"/>
+                                    <constraint firstAttribute="width" constant="20" id="e9G-ga-JHK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <connections>
+                                    <action selector="btnDeleteResumeFresherPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="O8T-wE-RD4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Jhd-d7-vk3" secondAttribute="bottom" constant="25" id="1ha-cF-0dH"/>
+                            <constraint firstItem="fWs-RF-xL1" firstAttribute="leading" secondItem="wmv-RQ-VF5" secondAttribute="trailing" constant="25" id="9kk-Fh-6op"/>
+                            <constraint firstAttribute="trailing" secondItem="C9l-BG-Oqy" secondAttribute="trailing" constant="18" id="CnM-a5-0Mk"/>
+                            <constraint firstAttribute="trailing" secondItem="0LR-cj-Qqd" secondAttribute="trailing" constant="18" id="DMX-DV-rH2"/>
+                            <constraint firstAttribute="trailing" secondItem="fWs-RF-xL1" secondAttribute="trailing" constant="18" id="Edz-AL-aAh"/>
+                            <constraint firstAttribute="trailing" secondItem="3bU-Wb-Kxt" secondAttribute="trailing" constant="9" id="FyP-1D-gcO"/>
+                            <constraint firstItem="wmv-RQ-VF5" firstAttribute="leading" secondItem="Jhd-d7-vk3" secondAttribute="trailing" constant="3" id="IkI-yE-Ldt"/>
+                            <constraint firstItem="gtL-5Y-cLv" firstAttribute="leading" secondItem="3bU-Wb-Kxt" secondAttribute="leading" id="JjN-3j-svG"/>
+                            <constraint firstItem="Twi-jt-xLG" firstAttribute="leading" secondItem="gtL-5Y-cLv" secondAttribute="trailing" constant="3" id="Lfp-pZ-Sfz"/>
+                            <constraint firstItem="Jhd-d7-vk3" firstAttribute="top" secondItem="0LR-cj-Qqd" secondAttribute="bottom" constant="17" id="Ozk-fT-ADh"/>
+                            <constraint firstItem="0LR-cj-Qqd" firstAttribute="top" secondItem="gtL-5Y-cLv" secondAttribute="bottom" constant="17" id="QMZ-1l-HhM"/>
+                            <constraint firstItem="Jhd-d7-vk3" firstAttribute="leading" secondItem="0LR-cj-Qqd" secondAttribute="leading" id="RwY-FE-d1e"/>
+                            <constraint firstItem="C9l-BG-Oqy" firstAttribute="leading" secondItem="Twi-jt-xLG" secondAttribute="trailing" constant="25" id="ULx-Mj-eX4"/>
+                            <constraint firstItem="3bU-Wb-Kxt" firstAttribute="top" secondItem="6H4-6O-gH7" secondAttribute="top" constant="14" id="Udl-Qn-jdA"/>
+                            <constraint firstItem="0LR-cj-Qqd" firstAttribute="leading" secondItem="6H4-6O-gH7" secondAttribute="leading" constant="18" id="VZK-2G-foR"/>
+                            <constraint firstItem="Twi-jt-xLG" firstAttribute="centerY" secondItem="gtL-5Y-cLv" secondAttribute="centerY" id="Waw-AG-ZiR"/>
+                            <constraint firstItem="C9l-BG-Oqy" firstAttribute="centerY" secondItem="Twi-jt-xLG" secondAttribute="centerY" id="axW-bG-6Mt"/>
+                            <constraint firstItem="fWs-RF-xL1" firstAttribute="centerY" secondItem="wmv-RQ-VF5" secondAttribute="centerY" id="evE-n4-Qc6"/>
+                            <constraint firstItem="wmv-RQ-VF5" firstAttribute="centerY" secondItem="Jhd-d7-vk3" secondAttribute="centerY" id="hXW-T9-GtM"/>
+                            <constraint firstItem="3bU-Wb-Kxt" firstAttribute="leading" secondItem="6H4-6O-gH7" secondAttribute="leading" constant="18" id="i3v-WS-av1"/>
+                            <constraint firstItem="gtL-5Y-cLv" firstAttribute="top" secondItem="3bU-Wb-Kxt" secondAttribute="bottom" constant="8" id="p0p-YM-SQM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6H4-6O-gH7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jaz-le-KNQ"/>
+                    <constraint firstAttribute="bottom" secondItem="6H4-6O-gH7" secondAttribute="bottom" id="KDD-zV-6tq"/>
+                    <constraint firstItem="6H4-6O-gH7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LWO-Rv-qHK"/>
+                    <constraint firstAttribute="trailing" secondItem="6H4-6O-gH7" secondAttribute="trailing" id="bhr-af-frF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDeleteResume" destination="C9l-BG-Oqy" id="Y1j-R4-Tpb"/>
+                <outlet property="btnDeleteResumeFresher" destination="fWs-RF-xL1" id="j0h-12-3aX"/>
+                <outlet property="lblResume" destination="gtL-5Y-cLv" id="ux8-h8-Bjk"/>
+                <outlet property="lblResumeFresher" destination="Jhd-d7-vk3" id="Sx9-T2-YFH"/>
+                <outlet property="lblResumeFresherValue" destination="wmv-RQ-VF5" id="bek-pg-RwR"/>
+                <outlet property="lblResumeValue" destination="Twi-jt-xLG" id="keO-bn-qxi"/>
+            </connections>
+            <point key="canvasLocation" x="166.40000000000001" y="85.457271364317847"/>
+        </tableViewCell>
+    </objects>
+</document>

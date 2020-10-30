@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="MIEditProfileDetailsCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="494" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="494" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1I8-6a-T3C" customClass="JVFloatLabeledTextField">
+                        <rect key="frame" x="64" y="44" width="348" height="39"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+91" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9V9-Vn-qnz">
+                        <rect key="frame" x="13" y="44" width="31.5" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="39" id="kja-id-t4s"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQd-1i-if4">
+                        <rect key="frame" x="13" y="85" width="31.5" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="3y8-Ha-7Kg"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLI-AF-ND6">
+                        <rect key="frame" x="64" y="85" width="417" height="1"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0Nm-eE-x9h"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfH-3b-c9l">
+                        <rect key="frame" x="442" y="44" width="41" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="wia-fn-pK2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <state key="normal" title="Verify">
+                            <color key="titleColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="changeBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fUn-Ik-NGY"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8l4-wa-L44">
+                        <rect key="frame" x="15" y="15" width="109.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ORa-f6-Pn6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <color key="textColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8l4-wa-L44" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2QW-u4-gux"/>
+                    <constraint firstAttribute="trailing" secondItem="1I8-6a-T3C" secondAttribute="trailing" constant="82" id="2d4-BT-zTl"/>
+                    <constraint firstItem="9V9-Vn-qnz" firstAttribute="bottom" secondItem="1I8-6a-T3C" secondAttribute="bottom" id="6V6-T9-PDS"/>
+                    <constraint firstItem="1I8-6a-T3C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="44" id="A8T-V6-RkW"/>
+                    <constraint firstAttribute="trailing" secondItem="qfH-3b-c9l" secondAttribute="trailing" constant="11" id="Aps-8e-PyF"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8l4-wa-L44" secondAttribute="trailing" constant="13" id="ELc-Mc-Kqf"/>
+                    <constraint firstAttribute="bottom" secondItem="WLI-AF-ND6" secondAttribute="bottom" constant="5.5" id="GOD-QN-Sv9"/>
+                    <constraint firstAttribute="bottom" secondItem="qfH-3b-c9l" secondAttribute="bottom" constant="9.5" id="Lp8-c8-UU6"/>
+                    <constraint firstAttribute="bottom" secondItem="VQd-1i-if4" secondAttribute="bottom" constant="5.5" id="U40-wZ-vCQ"/>
+                    <constraint firstItem="VQd-1i-if4" firstAttribute="width" secondItem="9V9-Vn-qnz" secondAttribute="width" id="UYq-40-zYc"/>
+                    <constraint firstAttribute="bottom" secondItem="1I8-6a-T3C" secondAttribute="bottom" constant="8.5" id="g1J-Vd-upA"/>
+                    <constraint firstItem="WLI-AF-ND6" firstAttribute="leading" secondItem="1I8-6a-T3C" secondAttribute="leading" id="kF6-sV-QQO"/>
+                    <constraint firstItem="9V9-Vn-qnz" firstAttribute="top" secondItem="1I8-6a-T3C" secondAttribute="top" id="o2I-nu-4h6"/>
+                    <constraint firstItem="8l4-wa-L44" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="pSD-OF-B6o"/>
+                    <constraint firstItem="1I8-6a-T3C" firstAttribute="leading" secondItem="9V9-Vn-qnz" secondAttribute="trailing" constant="19.5" id="sbM-jf-2X0"/>
+                    <constraint firstItem="9V9-Vn-qnz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="uZp-b5-YWz"/>
+                    <constraint firstItem="VQd-1i-if4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="zgq-Bw-rl0"/>
+                    <constraint firstAttribute="trailing" secondItem="WLI-AF-ND6" secondAttribute="trailing" constant="13" id="zzg-tb-oho"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="changeBtn" destination="qfH-3b-c9l" id="PJs-bM-66V"/>
+                <outlet property="countryFieldLeadingConstrint" destination="uZp-b5-YWz" id="A9u-Zs-vFS"/>
+                <outlet property="titleLbl" destination="8l4-wa-L44" id="I4G-H2-T2Q"/>
+                <outlet property="txtFieldCountryCode" destination="9V9-Vn-qnz" id="mdc-II-mfD"/>
+                <outlet property="txtFieldMobileNo" destination="1I8-6a-T3C" id="1gM-8u-Qdp"/>
+                <outlet property="txtFieldTrailingConstraint" destination="2d4-BT-zTl" id="UKR-L3-GBv"/>
+            </connections>
+            <point key="canvasLocation" x="278.39999999999998" y="15.292353823088456"/>
+        </tableViewCell>
+    </objects>
+</document>

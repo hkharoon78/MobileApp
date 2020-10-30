@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KOH-Yc-w8e" customClass="MISingleButtonView" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="607" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUX-ys-iRt">
+                    <rect key="frame" x="30" y="23" width="547" height="44"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                    <state key="normal" title="Delete">
+                        <color key="titleColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClickedAction:" destination="KOH-Yc-w8e" eventType="touchUpInside" id="dxe-CS-srY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fsP-D8-7OA" firstAttribute="trailing" secondItem="vUX-ys-iRt" secondAttribute="trailing" constant="30" id="18H-bx-D33"/>
+                <constraint firstItem="vUX-ys-iRt" firstAttribute="top" secondItem="KOH-Yc-w8e" secondAttribute="top" constant="23" id="GXV-c4-RIr"/>
+                <constraint firstItem="vUX-ys-iRt" firstAttribute="leading" secondItem="fsP-D8-7OA" secondAttribute="leading" constant="30" id="S1q-oP-tLM"/>
+                <constraint firstAttribute="bottom" secondItem="vUX-ys-iRt" secondAttribute="bottom" constant="20" id="d58-VF-N2Z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fsP-D8-7OA"/>
+            <connections>
+                <outlet property="btn_delete" destination="vUX-ys-iRt" id="TCt-oj-v94"/>
+                <outlet property="btn_leadingConstraint" destination="S1q-oP-tLM" id="Wp0-p4-7Xd"/>
+                <outlet property="btn_trailingConstairnt" destination="18H-bx-D33" id="tTn-RR-R5y"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="91"/>
+        </view>
+        <view contentMode="scaleToFill" id="Sh7-dR-zep" customClass="MIDoubleButtonView" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="187"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJG-rD-Du4">
+                    <rect key="frame" x="20" y="20" width="374" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Jc7-1k-3eY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="13"/>
+                    <state key="normal" title="+ Add Previous Employment">
+                        <color key="titleColor" red="0.10196078431372549" green="0.58431372549019611" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addAnotherBtnClicked:" destination="Sh7-dR-zep" eventType="touchUpInside" id="Cme-0F-nPh"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeA-cj-rVV">
+                    <rect key="frame" x="0.0" y="70" width="414" height="117"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X5-fE-uW1">
+                            <rect key="frame" x="30" y="35" width="354" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Znc-Rj-ZXY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Next">
+                                <color key="titleColor" red="0.0" green="0.56862745100000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="nextBtnClicked:" destination="Sh7-dR-zep" eventType="touchUpInside" id="5pP-ho-tTD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5X5-fE-uW1" firstAttribute="top" secondItem="OeA-cj-rVV" secondAttribute="top" constant="35" id="1dQ-9B-L9I"/>
+                        <constraint firstAttribute="trailing" secondItem="5X5-fE-uW1" secondAttribute="trailing" constant="30" id="QeB-QV-8sj"/>
+                        <constraint firstItem="5X5-fE-uW1" firstAttribute="leading" secondItem="OeA-cj-rVV" secondAttribute="leading" constant="30" id="aXF-RP-UbI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.90196078431372551" green="0.92549019607843142" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OeA-cj-rVV" firstAttribute="trailing" secondItem="5Ni-Ru-chA" secondAttribute="trailing" id="0hH-NX-km2"/>
+                <constraint firstItem="OeA-cj-rVV" firstAttribute="top" secondItem="Sh7-dR-zep" secondAttribute="top" constant="70" id="7se-9J-mxj"/>
+                <constraint firstAttribute="bottom" secondItem="OeA-cj-rVV" secondAttribute="bottom" id="Cs1-t6-k83"/>
+                <constraint firstItem="OeA-cj-rVV" firstAttribute="leading" secondItem="5Ni-Ru-chA" secondAttribute="leading" id="NcA-cC-koa"/>
+                <constraint firstItem="QJG-rD-Du4" firstAttribute="top" secondItem="Sh7-dR-zep" secondAttribute="top" constant="20" id="f4Q-rI-uTB"/>
+                <constraint firstItem="QJG-rD-Du4" firstAttribute="leading" secondItem="5Ni-Ru-chA" secondAttribute="leading" constant="20" id="glm-ra-Hgy"/>
+                <constraint firstItem="5Ni-Ru-chA" firstAttribute="trailing" secondItem="QJG-rD-Du4" secondAttribute="trailing" constant="20" id="qz9-6A-5wB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="5Ni-Ru-chA"/>
+            <connections>
+                <outlet property="btnAddAnother_leadingConstraint" destination="glm-ra-Hgy" id="ww3-lG-K2l"/>
+                <outlet property="btnAddAnother_trailingConstairnt" destination="qz9-6A-5wB" id="Ws6-G7-Y0M"/>
+                <outlet property="btnSecondryHtConstraint" destination="Jc7-1k-3eY" id="gX6-M7-t38"/>
+                <outlet property="btn_addAnother" destination="QJG-rD-Du4" id="pwW-2g-dOm"/>
+                <outlet property="btn_leadingConstraint" destination="aXF-RP-UbI" id="2y6-K7-lE1"/>
+                <outlet property="btn_next" destination="5X5-fE-uW1" id="d9U-sQ-pnQ"/>
+                <outlet property="btn_trailingConstairnt" destination="QeB-QV-8sj" id="id4-Vs-qEB"/>
+                <outlet property="nxtBtnBgView_TopConstraint" destination="7se-9J-mxj" id="xLn-Lc-Q0I"/>
+                <outlet property="nxtBtnTopConsttaint" destination="1dQ-9B-L9I" id="D02-BI-A45"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="232.03125"/>
+        </view>
+    </objects>
+</document>

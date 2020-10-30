@@ -1,0 +1,335 @@
+{
+    "personalDetailSection": {
+        "personalDetails": {
+            "uuid": "7de9fda6-1337-417a-84c2-a6bf746a515a",
+            "fullName": "projects",
+            "firstName": "test project",
+            "lastName": "client 123",
+            "displayName": "projects",
+            "site": "monster",
+            "country": "in",
+            "emails": [
+                {
+                    "createdAt": 1547744763701,
+                    "updatedAt": 1547744763701,
+                    "primary": 1,
+                    "email": "spanhawk35@gmail.com"
+                }
+            ],
+            "mobileNumbers": [
+                {
+                    "createdAt": 1547744763709,
+                    "updatedAt": 1547744763709,
+                    "primary": 1,
+                    "countryCode": "91",
+                    "mobileNumber": "999999"
+                }
+            ],
+            "homeTown": {
+                "id": "0fb3f865-7da3-424a-8f14-a0d9db705ec1",
+                "text": "Pune"
+            },
+            "disability": {
+                "type": {
+                    "id": "0a4cb04b-fc76-11e8-92d8-000c290b6677",
+                    "text": "Visual Impairment"
+                },
+                "description": "hsfuhf",
+                "certificate": "shdgk",
+                "issuer": "jdgksj"
+            },
+            "additionalPersonalDetail": {
+                "profileTitle": "Java developer with 6 years extensive experience",
+                "gender": {},
+                "dob": "2011-10-10",
+                "maritalStatus": {},
+                "languages": [
+                    {
+                        "id": 20,
+                        "read": 1,
+                        "write": 1,
+                        "speak": 1
+                    }
+                ],
+                "passportNumber": "hfifkd",
+                "permanentAddress": "gdfsghiusb  udhg",
+                "pincode": "123123",
+                "differentlyAbled": true
+            }
+        }
+    },
+    "pendingActionSection": {
+        "pendingActions": [
+            {
+                "name": "EDUCATION",
+                "weightage": 10
+            },
+            {
+                "name": "PROJECT",
+                "weightage": 10
+            },
+            {
+                "name": "PERSONAL",
+                "weightage": 10
+            },
+            {
+                "name": "VERIFY_EMAIL_ID",
+                "weightage": 10
+            }
+        ]
+    },
+    "manageProfileSection": {
+        "profiles": [
+            {
+                "id": 175,
+                "title": "Java developer with 6 years extensive experience"
+            }
+        ]
+    },
+    "resumeSection": {
+        "resume": {
+            "filename": "test",
+            "filePath": "test"
+        }
+    },
+    "skillSection": {
+        "skills": [
+            {
+                "id": 16,
+                "skill": {
+                    "id": "1e50db85-d2f7-40a9-8623-3ed62d2f51ef",
+                    "text": "active directory windows server"
+                }
+            },
+            {
+                "id": 17,
+                "skill": {
+                    "id": "1e50db85-d2f7-40a9-8623-3ed62d2f51ef",
+                    "text": "active directory windows server"
+                }
+            },
+            {
+                "id": 18,
+                "skill": {
+                    "id": "1e50db85-d2f7-40a9-8623-3ed62d2f51ef",
+                    "text": "active directory windows server"
+                }
+            },
+            {
+                "id": 19,
+                "skill": {
+                    "id": "1e50db85-d2f7-40a9-8623-3ed62d2f51ef",
+                    "text": "active directory windows server"
+                }
+            },
+            {
+                "id": 20,
+                "skill": {
+                    "id": "1e50db85-d2f7-40a9-8623-3ed62d2f51ef",
+                    "text": "active directory windows server"
+                }
+            }
+        ]
+    },
+    "itSkillSection": {},
+    "employmentDetailSection": {
+        "employments": [
+            {
+                "id": 1,
+                "designation": {
+                    "id": "93dffe99-ebca-4f77-a1e4-e641a9d90f6a",
+                    "text": "Executive Sales Channels"
+                },
+                "salary": {
+                    "currency": "india",
+                    "lakhs": 1,
+                    "thousands": 1
+                },
+                "startDate": "2019-02-02",
+                "offeredSalary": {
+                    "currency": "india",
+                    "lakhs": 5,
+                    "thousands": 5
+                },
+                "offeredDesignation": {
+                    "id": "93dffe99-ebca-4f77-a1e4-e641a9d90f6a",
+                    "text": "Executive Sales Channels"
+                },
+                "title": "test",
+                "noticePeriod": {
+                    "days": 30,
+                    "serving": false,
+                    "lastWorkingDay": "2019-12-12"
+                }
+            }
+        ]
+    },
+    "educationDetailSection": {
+        "educations": [
+            {
+                "id": 1,
+                "specialization": {
+                    "id": "cbdfaea4-43bd-450f-9688-d5e1f4622552",
+                    "text": "Computers"
+                },
+                "college": {
+                    "id": "d55036f3-1db2-4450-b4fe-89eec7581725",
+                    "text": "IIT,Delhi"
+                },
+                "educationType": {
+                    "id": "f583b140-fc6b-11e8-92d8-000c290b6677",
+                    "text": "Full time"
+                },
+                "board": {
+                    "id": "38d155ca-212d-4846-8a80-bdd75aa78274",
+                    "text": " Indian Certificate of Secondary Education(ICSE)"
+                },
+                "yearOfPassing": 2013,
+                "percentage": 50
+            }
+        ]
+    },
+    "projectDetailSection": {
+        "projects": [
+            {
+                "id": 1,
+                "title": "test",
+                "client": "client 123",
+                "endDate": "2013-12-12",
+                "description": "test",
+                "url": "testt",
+                "mediaUUID": []
+            }
+        ]
+    },
+    "courseAndCertificationSection": {
+        "courseAndCertifications": [
+            {
+                "id": 1,
+                "name": "48",
+                "issuer": "test"
+            },
+            {
+                "id": 2,
+                "name": "test",
+                "issuer": "test"
+            }
+        ]
+    },
+    "jobPreferenceSection": {
+        "jobPreference": {
+            "id": "7bcbb1f8-ad52-482f-a2c3-d45214047980",
+            "locations": [
+                {
+                    "id": "ebf96beb-8913-4844-b751-9e43ea11cef3"
+                }
+            ],
+            "industries": [
+                {
+                    "id": "6f1c33fb-87f6-45c6-892e-2503a5c36172"
+                }
+            ],
+            "functions": [
+                {
+                    "id": "a6f9a5eb-ad76-4482-bcce-a1ee8eb71c99"
+                }
+            ],
+            "roles": [
+                {
+                    "id": "d78e1e14-da1e-4d9e-86d5-31ff9522fcda"
+                }
+            ],
+            "jobType": {
+                "id": "a93cd4f6-fc6a-11e8-92d8-000c290b6677"
+            },
+            "employmentType": {
+                "id": "52dfd5af-fc6b-11e8-92d8-000c290b6677"
+            },
+            "preferredShift": {
+                "id": "95538b0e-fc7d-11e8-92d8-000c290b6677"
+            },
+            "expectedSalary": {
+                "currency": "InLakhs"
+            },
+            "sixDayWeek": false,
+            "ssoId": "e04df106-792d-4adf-b945-2902934456d5",
+            "userId": 61318625,
+            "profileId": 56828006
+        }
+    },
+    "languageSection": {
+        "languages": [
+            {
+                "id": 20,
+                "read": 1,
+                "write": 1,
+                "speak": 1,
+                "proficiency": {
+                    "id": "bb8a31e1-fc72-11e8-92d8-000c290b6677",
+                    "text": "Expert"
+                }
+            }
+        ]
+    },
+    "awardSection": {
+        "awards": [
+            {
+                "id": 1,
+                "title": "award title",
+                "description": "hsdfjk lkjdlf oodsp"
+            }
+        ]
+    },
+    "socialPresenceSection": {
+        "presences": [
+            {
+                "id": 1,
+                "name": "test",
+                "url": "http://www.linkedin.com",
+                "description": "hsdfjk lkjdlf oodsp"
+            }
+        ]
+    },
+    "savedSearchSection": {
+        "searches": [
+            {
+                "skills": [
+                    "java"
+                ],
+                "locations": [
+                    "Bengaluru"
+                ],
+                "industries": [
+                    "4"
+                ],
+                "functions": [
+                    "5"
+                ],
+                "keywords": [
+                    "java"
+                ],
+                "qualifications": [
+                    "test"
+                ],
+                "employerTypes": [
+                    "java"
+                ],
+                "jobTypes": [
+                    "test"
+                ],
+                "experienceRanges": [
+                    "0~1",
+                    "1~2"
+                ],
+                "salaryRanges": [
+                    "0~300000",
+                    "300000~600000"
+                ],
+                "roles": [
+                    "software"
+                ]
+            }
+        ]
+    }
+}
+

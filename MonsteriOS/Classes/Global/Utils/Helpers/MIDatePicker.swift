@@ -1,0 +1,304 @@
+//
+//  MIDatePicker.swift
+//  MonsteriOS
+//
+//  Created by Rakesh on 02/01/19.
+//  Copyright © 2019 Monster. All rights reserved.
+//
+
+import UIKit
+
+let pickerAnimationDuration: TimeInterval = 0.3
+let viewTransperantTag: Int = 9099
+let pickerHeight: CGFloat = 216
+
+class MIDatePicker: NSObject {
+
+    static private let sharedInstance = MIDatePicker()
+    
+    class func selectDate(title: String = "",
+                          hideCancel: Bool = false,
+                          datePickerMode: UIDatePicker.Mode = UIDatePicker.Mode.date,
+                          selectedDate: Date? = Date(),
+                          minDate: Date? = nil,
+                          maxDate: Date? = nil,
+                          didSelectDate : ((_ date: Date)->())?)  {
+        
+        if let currentController = UIWindow.currentController {
+            
+            if let _ = currentController.view.viewWithTag(viewTransperantTag) {
+                return
+            }
+            
+            
+            let datePicker = UIDatePicker()
+            datePicker.datePickerMode = datePickerMode
+            datePicker.backgroundColor = UIColor.white
+            
+            datePicker.minimumDate = minDate
+            datePicker.maximumDate = maxDate
+            
+            if let selectedDate = selectedDate {
+                datePicker.date = selectedDate
+            } else {
+                datePicker.date = Date()
+            }
+            
+            //Screen Size
+            let screenWidth = currentController.view.bounds.size.width
+            let screenHeight = currentController.view.bounds.size.height
+            
+            // Add background view
+            
+            let closeFrame = CGRect(x: 0, y: screenHeight + 50, width: screenWidth, height: screenHeight)
+            
+            let viewTransperant = UIView()
+            let view = currentController.view
+            
+            //viewTransperant.alpha = 0.0
+            view?.addSubview(viewTransperant)
+            viewTransperant.tag = viewTransperantTag
+            view?.addBGViewConstraints(viewTransperant)
+            
+            // Add date picker view
+            
+            viewTransperant.addSubview(datePicker)
+            viewTransperant.addPickerViewConstraints(datePicker)
+            
+            // Add tool bar with done and cancel buttons
+            
+            let toolBar = MIToolBar()
+            viewTransperant.addSubview(toolBar)
+            viewTransperant.addToolBarConstraints(toolBar, -pickerHeight)
+            toolBar.addToolBar(hideCancelButton: hideCancel)
+            toolBar.title = title
+            
+            // show picker
+            var openPickerFrame = viewTransperant.frame
+            openPickerFrame.origin.y = 0
+            
+            UIView.animate(withDuration: pickerAnimationDuration, animations: {
+                viewTransperant.frame = openPickerFrame
+                
+            }, completion: { (_) in
+                UIView.animate(withDuration: pickerAnimationDuration, animations: {
+                  //  viewTransperant.backgroundColor = UIColor(red: (0/255.0), green: (0/255.0), blue: (0/255.0), alpha: 0.1)
+                })
+            })
+            
+            toolBar.didSelectDone = {
+                didSelectDate!(datePicker.date)
+                remove()
+            }
+            
+            toolBar.didCancelled = {
+                
+                remove()
+            }
+            
+            func remove() {
+                
+                UIView.animate(withDuration: pickerAnimationDuration, animations: {
+                    viewTransperant.backgroundColor = UIColor.clear
+                    
+                }, completion: { (_) in
+                    UIView.animate(withDuration: pickerAnimationDuration, animations: {
+                        viewTransperant.frame = closeFrame
+                    }, completion: { (_) in
+                        viewTransperant.removeFromSuperview()
+                    })
+                })
+            }
+        }
+    }
+}
+
+class MIToolBar: UIView {
+    
+    open var didSelectDone: (() -> Void)?
+    open var didCancelled: (() -> Void)?
+    
+    var toolBarTitleItem: ToolBarTitleItem?
+    
+    private var hideCancelButton: Bool = false
+    
+    var title = "" {
+        didSet {
+            guard let toolBarTitleItem = toolBarTitleItem else {
+                return
+            }
+            
+            toolBarTitleItem.label.text = title
+        }
+    }
+    
+    func addToolBar(hideCancelButton: Bool = false) {
+        self.hideCancelButton = hideCancelButton
+        let toolbarL = toolbar
+        self.addSubview(toolbarL)
+        self.addToolBarConstraints(toolbarL)
+    }
+    
+    open var toolbar: UIToolbar {
+        
+        let toolBarL = ToolBar(frame: frame, target: self)
+        
+        if !hideCancelButton {
+            toolBarL.appendButton(buttonItem: toolBarL.buttonItem(systemItem: .cancel, selector: #selector(self.cancelAction)))
+        }
+        
+        //toolBar.appendButton(buttonItem: toolBar.buttonItem(systemItem: .camera, selector: #selector(self.doneAction)))
+        toolBarL.appendButton(buttonItem: toolBarL.flexibleSpace)
+        
+        let toolBarTitleItem = toolBarL.titleItem(text: "", font: UIFont(name: "HelveticaNeue-Medium", size: 15.0)!, color: UIColor.black)
+        
+        self.toolBarTitleItem = toolBarTitleItem as? ToolBarTitleItem
+        toolBarL.appendButton(buttonItem: toolBarTitleItem)
+        toolBarL.appendButton(buttonItem: toolBarL.flexibleSpace)
+        toolBarL.appendButton(buttonItem: toolBarL.buttonItem(systemItem: .done, selector: #selector(self.doneAction)))
+        
+        return toolBarL
+    }
+    
+    @objc func doneAction() {
+        didSelectDone?()
+    }
+    
+    @objc func cancelAction() {
+        
+        if !hideCancelButton {
+            didCancelled?()
+        }
+    }
+}
+class ToolBar: UIToolbar {
+    
+    let target: Any?
+    
+    init(frame: CGRect, target: Any?) {
+        self.target = target
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func buttonItem(systemItem: UIBarButtonItem.SystemItem, selector: Selector?) -> UIBarButtonItem {
+        
+        return UIBarButtonItem(barButtonSystemItem: systemItem, target: target, action: selector)
+    }
+    
+    var flexibleSpace: UIBarButtonItem {
+        return buttonItem(systemItem: UIBarButtonItem.SystemItem.flexibleSpace, selector:nil)
+    }
+    
+    func titleItem (text: String, font: UIFont, color: UIColor) -> UIBarButtonItem {
+        return ToolBarTitleItem(text: text, font: font, color: color)
+    }
+    
+    func appendButton(buttonItem: UIBarButtonItem) {
+        if items == nil {
+            items = [UIBarButtonItem]()
+        }
+        
+        buttonItem.setTitleTextAttributes([
+            NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Medium", size: 14.0)!,
+            NSAttributedString.Key.foregroundColor: UIColor(red: (49/255.0), green: (118/255.0), blue: 239, alpha: 1)],
+                                          for: .normal)
+        
+        items!.append(buttonItem)
+    }
+}
+
+class ToolBarTitleItem: UIBarButtonItem {
+    
+    var label: UILabel
+    
+    init(text: String, font: UIFont, color: UIColor) {
+        
+        var frame = UIScreen.main.bounds
+        frame.size.width = UIScreen.main.bounds.width - 140
+        
+        label =  UILabel(frame: frame)
+        label.text = text
+        //label.sizeToFit()
+        label.font = font
+        label.textColor = color
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        
+        super.init()
+        
+        customView = label
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+extension UIWindow {
+    
+    static var currentController: UIViewController? {
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        return appDelegate?.window?.currentController
+    }
+    
+    var currentController: UIViewController? {
+        if let vc = self.rootViewController {
+            return topViewController(controller: vc)
+        }
+        return nil
+    }
+    
+    func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+        if let nc = controller as? UINavigationController {
+            if nc.viewControllers.count > 0 {
+                return topViewController(controller: nc.viewControllers.last!)
+            } else {
+                return nc
+            }
+        }
+        if let tabController = controller as? UITabBarController {
+            if let selected = tabController.selectedViewController {
+                return topViewController(controller: selected)
+            }
+        }
+        if let presented = controller?.presentedViewController {
+            return topViewController(controller: presented)
+        }
+        return controller
+    }
+}
+extension UIView {
+    
+    func addBGViewConstraints(_ relativeToView: UIView) {
+        
+        relativeToView.translatesAutoresizingMaskIntoConstraints = false
+        let horizontalConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
+        let verticalConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1, constant: 0)
+        let widthConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1, constant: 0)
+        let heightConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1, constant: 0)
+        self.addConstraints([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
+    }
+    
+    func addPickerViewConstraints(_ relativeToView: UIView) {
+        
+        relativeToView.translatesAutoresizingMaskIntoConstraints = false
+        let horizontalConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
+        let verticalConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.bottomMargin, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.bottomMargin, multiplier: 1, constant: 0)
+        let widthConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1, constant: 0)
+        let heightConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1, constant: pickerHeight)
+        self.addConstraints([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
+    }
+    func addToolBarConstraints(_ relativeToView: UIView,_ bottomConst: CGFloat = 0) {
+        
+        relativeToView.translatesAutoresizingMaskIntoConstraints = false
+        let horizontalConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
+        let verticalConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.bottomMargin, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.bottomMargin, multiplier: 1, constant: bottomConst)
+        let widthConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1, constant: 0)
+        let heightConstraint = NSLayoutConstraint(item: relativeToView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1, constant: 48)
+        self.addConstraints([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
+    }
+    
+}

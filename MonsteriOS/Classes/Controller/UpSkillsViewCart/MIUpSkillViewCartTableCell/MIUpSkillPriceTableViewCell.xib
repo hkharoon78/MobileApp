@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MIUpSkillPriceTableViewCell" rowHeight="293" id="KGk-i7-Jjw" customClass="MIUpSkillPriceTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="293"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="292.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pev-mH-76V">
+                        <rect key="frame" x="0.0" y="0.0" width="358" height="272.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfZ-Ju-Tyl">
+                                <rect key="frame" x="18" y="14" width="331" height="54.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.08235294118" green="0.16078431369999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Gross Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mx-b1-eqg">
+                                <rect key="frame" x="18" y="76.5" width="72.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.38823529410000002" green="0.45098039220000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Rs 1574.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkJ-Og-2Yl">
+                                <rect key="frame" x="110.5" y="76.5" width="232.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.08235294118" green="0.16078431369999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyL-S1-zAE">
+                                <rect key="frame" x="18" y="110" width="322" height="1"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qkk-yD-NLd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="253" horizontalCompressionResistancePriority="749" text="IGST (Intregrated Goods and Service Tax) at 18%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZo-Q1-Irb">
+                                <rect key="frame" x="18" y="128" width="231.5" height="33"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.38823529410000002" green="0.45098039220000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Rs 283.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tua-2w-aq4">
+                                <rect key="frame" x="269.5" y="136.5" width="73.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.08235294118" green="0.16078431369999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ta1-fd-WNJ">
+                                <rect key="frame" x="18" y="178" width="325" height="1"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="6PV-ef-JB1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="253" text="TOTAL PRICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGH-IF-Wl8">
+                                <rect key="frame" x="18" y="196" width="85" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.082352941176470587" green="0.16078431372549018" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Rs 1857.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feA-VM-pDS">
+                                <rect key="frame" x="127" y="192.5" width="221.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.08235294118" green="0.16078431369999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="You have selected Right Resume &amp; Xpress Resume. You saved Rs. 174 off on combo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZR-V7-Yus">
+                                <rect key="frame" x="15" y="229" width="329" height="28.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.62352941176470589" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PkJ-Og-2Yl" secondAttribute="trailing" constant="15" id="1i3-5d-nIs"/>
+                            <constraint firstItem="feA-VM-pDS" firstAttribute="leading" secondItem="mGH-IF-Wl8" secondAttribute="trailing" constant="24" id="3yq-82-WZY"/>
+                            <constraint firstItem="mGH-IF-Wl8" firstAttribute="top" secondItem="Ta1-fd-WNJ" secondAttribute="bottom" constant="17" id="5uo-He-mig"/>
+                            <constraint firstItem="rZo-Q1-Irb" firstAttribute="leading" secondItem="iyL-S1-zAE" secondAttribute="leading" id="816-rg-lpK"/>
+                            <constraint firstItem="Tua-2w-aq4" firstAttribute="leading" secondItem="rZo-Q1-Irb" secondAttribute="trailing" constant="20" id="GCb-IQ-NM7"/>
+                            <constraint firstItem="mGH-IF-Wl8" firstAttribute="leading" secondItem="Ta1-fd-WNJ" secondAttribute="leading" id="HfH-ZZ-Ixv"/>
+                            <constraint firstAttribute="trailing" secondItem="feA-VM-pDS" secondAttribute="trailing" constant="9.5" id="MJd-Ra-n3f"/>
+                            <constraint firstItem="Ta1-fd-WNJ" firstAttribute="leading" secondItem="rZo-Q1-Irb" secondAttribute="leading" id="Pnt-pz-RRr"/>
+                            <constraint firstAttribute="trailing" secondItem="GZR-V7-Yus" secondAttribute="trailing" constant="14" id="SrR-nQ-irX"/>
+                            <constraint firstItem="yfZ-Ju-Tyl" firstAttribute="leading" secondItem="pev-mH-76V" secondAttribute="leading" constant="18" id="TTn-vH-Fqu"/>
+                            <constraint firstItem="3Mx-b1-eqg" firstAttribute="leading" secondItem="yfZ-Ju-Tyl" secondAttribute="leading" id="U7s-7r-gGy"/>
+                            <constraint firstItem="GZR-V7-Yus" firstAttribute="leading" secondItem="pev-mH-76V" secondAttribute="leading" constant="15" id="Vzg-26-1Gw"/>
+                            <constraint firstItem="3Mx-b1-eqg" firstAttribute="top" secondItem="yfZ-Ju-Tyl" secondAttribute="bottom" constant="8" id="YcX-mO-fbl"/>
+                            <constraint firstAttribute="trailing" secondItem="Tua-2w-aq4" secondAttribute="trailing" constant="15" id="adt-bw-DIm"/>
+                            <constraint firstItem="PkJ-Og-2Yl" firstAttribute="centerY" secondItem="3Mx-b1-eqg" secondAttribute="centerY" id="d2n-bb-pUU"/>
+                            <constraint firstItem="GZR-V7-Yus" firstAttribute="top" secondItem="mGH-IF-Wl8" secondAttribute="bottom" constant="16.5" id="dzY-ua-YRA"/>
+                            <constraint firstItem="rZo-Q1-Irb" firstAttribute="top" secondItem="iyL-S1-zAE" secondAttribute="bottom" constant="17" id="ecP-ae-Hzz"/>
+                            <constraint firstItem="Tua-2w-aq4" firstAttribute="centerY" secondItem="rZo-Q1-Irb" secondAttribute="centerY" id="eoT-1x-Ai5"/>
+                            <constraint firstItem="feA-VM-pDS" firstAttribute="centerY" secondItem="mGH-IF-Wl8" secondAttribute="centerY" constant="-3.5" id="jMw-1K-3O7"/>
+                            <constraint firstAttribute="trailing" secondItem="iyL-S1-zAE" secondAttribute="trailing" constant="18" id="jYg-5q-A7P"/>
+                            <constraint firstItem="Ta1-fd-WNJ" firstAttribute="top" secondItem="rZo-Q1-Irb" secondAttribute="bottom" constant="17" id="kbb-q8-wWf"/>
+                            <constraint firstAttribute="bottom" secondItem="GZR-V7-Yus" secondAttribute="bottom" constant="15" id="mmd-Q7-e6o"/>
+                            <constraint firstItem="iyL-S1-zAE" firstAttribute="leading" secondItem="pev-mH-76V" secondAttribute="leading" constant="18" id="sHU-hG-Mgm"/>
+                            <constraint firstItem="PkJ-Og-2Yl" firstAttribute="leading" secondItem="3Mx-b1-eqg" secondAttribute="trailing" constant="20" id="vS7-6M-RPc"/>
+                            <constraint firstAttribute="trailing" secondItem="yfZ-Ju-Tyl" secondAttribute="trailing" constant="9" id="wqj-l4-K4W"/>
+                            <constraint firstItem="yfZ-Ju-Tyl" firstAttribute="top" secondItem="pev-mH-76V" secondAttribute="top" constant="14" id="xYR-iT-CFQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ta1-fd-WNJ" secondAttribute="trailing" constant="15" id="xbw-IS-FiF"/>
+                            <constraint firstItem="iyL-S1-zAE" firstAttribute="top" secondItem="3Mx-b1-eqg" secondAttribute="bottom" constant="17" id="z0v-La-ehD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pev-mH-76V" secondAttribute="trailing" id="2B3-x4-soJ"/>
+                    <constraint firstAttribute="bottom" secondItem="pev-mH-76V" secondAttribute="bottom" constant="20" id="Sq4-KL-YEp"/>
+                    <constraint firstItem="pev-mH-76V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dWI-QC-tIe"/>
+                    <constraint firstItem="pev-mH-76V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hto-cm-pVj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblGrossPrice" destination="3Mx-b1-eqg" id="1yk-H2-wC8"/>
+                <outlet property="lblGrossPriceValue" destination="PkJ-Og-2Yl" id="Dfh-Qw-CIw"/>
+                <outlet property="lblIGST" destination="rZo-Q1-Irb" id="ToQ-lH-Wun"/>
+                <outlet property="lblIGSTValue" destination="Tua-2w-aq4" id="a6F-d9-H2V"/>
+                <outlet property="lblSelectedREsumeCombo" destination="GZR-V7-Yus" id="2tU-qe-lFf"/>
+                <outlet property="lblTotalPrice" destination="mGH-IF-Wl8" id="nMU-ce-2uS"/>
+                <outlet property="lblTotalPriceValue" destination="feA-VM-pDS" id="lcL-cQ-CmZ"/>
+            </connections>
+            <point key="canvasLocation" x="168" y="266.71664167916043"/>
+        </tableViewCell>
+    </objects>
+</document>

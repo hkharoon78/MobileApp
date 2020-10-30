@@ -1,0 +1,120 @@
+{
+    "data":[
+        {
+            "key": "COMPANY",
+            "doc_count": 9999
+        },
+        {
+            "key": "DESIGNATION",
+            "doc_count": 9999
+        },
+        {
+            "key": "SKILL",
+            "doc_count": 4036
+        },
+        {
+            "key": "FUNCTION",
+            "doc_count": 1037
+        },
+        {
+            "key": "ROLE",
+            "doc_count": 1013
+        },
+        {
+            "key": "COLLEGE",
+            "doc_count": 683
+        },
+        {
+            "key": "LOCATION",
+            "doc_count": 678
+        },
+        {
+            "key": "COUNTRY",
+            "doc_count": 239
+        },
+        {
+            "key": "SPECIALIZATION",
+            "doc_count": 196
+        },
+        {
+            "key": "NATIONALITY",
+            "doc_count": 194
+        },
+        {
+            "key": "BOARD",
+            "doc_count": 156
+        },
+        {
+            "key": "INDUSTRY",
+            "doc_count": 79
+        },
+        {
+            "key": "HIGHEST_QUALIFICATION",
+            "doc_count": 64
+        },
+        {
+            "key": "DISABILITY",
+            "doc_count": 16
+        },
+        {
+            "key": "LANGUAGE",
+            "doc_count": 15
+        },
+        {
+            "key": "MEDIUM",
+            "doc_count": 13
+        },
+        {
+            "key": "MARITIAL_STATUS",
+            "doc_count": 6
+        },
+        {
+            "key": "EMPLOYMENT_SHIFT",
+            "doc_count": 4
+        },
+        {
+            "key": "PROBLEM_WITH_SITE",
+            "doc_count": 4
+        },
+        {
+            "key": "RESERVATION_CATEGORY",
+            "doc_count": 4
+        },
+        {
+            "key": "EDUCATION_TYPE",
+            "doc_count": 3
+        },
+        {
+            "key": "IT_SKILL_EXPERIENCE",
+            "doc_count": 3
+        },
+        {
+            "key": "JOB_ALERT_FREQUENCY",
+            "doc_count": 3
+        },
+        {
+            "key": "LANGUAGE_LEVEL",
+            "doc_count": 3
+        },
+        {
+            "key": "LANGUAGE_PROFICIENCY",
+            "doc_count": 3
+        },
+        {
+            "key": "EMPLOYMENT_TYPE",
+            "doc_count": 2
+        },
+        {
+            "key": "GENDER",
+            "doc_count": 2
+        },
+        {
+            "key": "JOB_TYPE",
+            "doc_count": 2
+        },
+        {
+            "key": "VISA_TYPE",
+            "doc_count": 2
+        }
+    ]
+}    

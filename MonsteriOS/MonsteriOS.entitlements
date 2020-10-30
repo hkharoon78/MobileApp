@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.applesignin</key>
+	<array>
+		<string>Default</string>
+	</array>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:monsterindia.com</string>
+		<string>applinks:www.monsterindia.com</string>
+		<string>applinks:*.monsterindia.com</string>
+		<string>applinks:monstergulf.com</string>
+		<string>applinks:www.monstergulf.com</string>
+		<string>applinks:*.monstergulf.com</string>
+		<string>applinks:www.monster.com.hk</string>
+		<string>applinks:monster.com.hk</string>
+		<string>applinks:www.monster.com.sg</string>
+		<string>applinks:monster.com.sg</string>
+		<string>applinks:www.monster.com.ph</string>
+		<string>applinks:monster.com.ph</string>
+		<string>applinks:www.monster.co.th</string>
+		<string>applinks:monster.co.th</string>
+		<string>applinks:www.monster.com.vn</string>
+		<string>applinks:monster.com.vn</string>
+		<string>applinks:*.monster.com.vn</string>
+		<string>applinks:www.monster.com.my</string>
+		<string>applinks:monster.com.my</string>
+		<string>applinks:www.monster.co.id</string>
+		<string>applinks:monster.co.id</string>
+		<string>applinks:*.monster.co</string>
+		<string>applinks:*.monster.com</string>
+	</array>
+	<key>com.apple.developer.icloud-container-identifiers</key>
+	<array/>
+	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
+</dict>
+</plist>

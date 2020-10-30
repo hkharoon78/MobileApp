@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MIProgressView" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMQ-g1-a9y">
+                    <rect key="frame" x="45" y="10" width="285" height="15"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Experience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-sY-UuD">
+                    <rect key="frame" x="4" y="42" width="84" height="15"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="dI1-gu-GlM"/>
+                        <constraint firstAttribute="width" constant="84" id="s19-3I-9us"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="9"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Preferences" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwz-P2-sHU">
+                    <rect key="frame" x="280" y="43" width="87" height="15"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="FPT-Gb-CqR"/>
+                        <constraint firstAttribute="width" constant="87" id="Ya6-zO-lyf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="9"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Experience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDg-5e-evc">
+                    <rect key="frame" x="146" y="43" width="84" height="15"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="T5o-wZ-Lm0"/>
+                        <constraint firstAttribute="width" constant="84" id="www-d8-Mv3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="9"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mMQ-g1-a9y" secondAttribute="bottom" constant="43" id="7UB-cr-UrS"/>
+                <constraint firstItem="mMQ-g1-a9y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="45" id="C1D-Dc-hS6"/>
+                <constraint firstItem="mMQ-g1-a9y" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Du6-Ms-835"/>
+                <constraint firstItem="gDg-5e-evc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="0.5" id="F3V-XQ-sNw"/>
+                <constraint firstItem="nbf-sY-UuD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="Hym-HT-sC8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qwz-P2-sHU" secondAttribute="trailing" constant="8" id="N3S-nV-5mS"/>
+                <constraint firstItem="qwz-P2-sHU" firstAttribute="top" secondItem="mMQ-g1-a9y" secondAttribute="bottom" constant="18" id="XMa-70-XK6"/>
+                <constraint firstItem="gDg-5e-evc" firstAttribute="top" secondItem="mMQ-g1-a9y" secondAttribute="bottom" constant="18" id="Y7M-5Z-0qO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mMQ-g1-a9y" secondAttribute="trailing" constant="45" id="qnw-ge-PAl"/>
+                <constraint firstItem="nbf-sY-UuD" firstAttribute="top" secondItem="mMQ-g1-a9y" secondAttribute="bottom" constant="17" id="uUh-bG-HNY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="topView" destination="mMQ-g1-a9y" id="mte-q9-ZEe"/>
+                <outletCollection property="segementTitle_Lbl" destination="nbf-sY-UuD" collectionClass="NSMutableArray" id="LSE-dC-4xj"/>
+                <outletCollection property="segementTitle_Lbl" destination="gDg-5e-evc" collectionClass="NSMutableArray" id="5U0-Sm-iaC"/>
+                <outletCollection property="segementTitle_Lbl" destination="qwz-P2-sHU" collectionClass="NSMutableArray" id="x6h-Kt-LBx"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="-8.0959520239880067"/>
+        </view>
+    </objects>
+</document>

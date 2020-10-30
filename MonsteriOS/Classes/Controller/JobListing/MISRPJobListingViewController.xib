@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MISRPJobListingViewController" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="createJobAlertView" destination="RaZ-bU-Vqv" id="M7F-wa-Y5V"/>
+                <outlet property="filterView" destination="fWk-Vl-gzx" id="fMZ-2M-0ac"/>
+                <outlet property="filterViewHeightConstraint" destination="bmZ-kb-Mh2" id="yOd-6v-qDi"/>
+                <outlet property="listView" destination="AeF-In-BKC" id="NWi-as-8VU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="460"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWk-Vl-gzx" customClass="MIFilterMainView" customModule="MonsteriOS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="bmZ-kb-Mh2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeF-In-BKC" customClass="MISRPTableVIew" customModule="MonsteriOS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="60" width="375" height="400"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RaZ-bU-Vqv" customClass="CreateJobAlertSRP" customModule="MonsteriOS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="410" width="375" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7NR-do-WXS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fWk-Vl-gzx" secondAttribute="trailing" id="1GQ-3E-GtT"/>
+                <constraint firstItem="RaZ-bU-Vqv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3Oj-Sz-AKB"/>
+                <constraint firstItem="AeF-In-BKC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3Zk-mt-yiW"/>
+                <constraint firstItem="fWk-Vl-gzx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="43K-iR-0zD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AeF-In-BKC" secondAttribute="bottom" id="80P-C0-SIB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RaZ-bU-Vqv" secondAttribute="bottom" id="HLw-WV-OTQ"/>
+                <constraint firstItem="AeF-In-BKC" firstAttribute="top" secondItem="fWk-Vl-gzx" secondAttribute="bottom" id="TA9-fL-NeK"/>
+                <constraint firstItem="RaZ-bU-Vqv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TVR-NG-0FE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AeF-In-BKC" secondAttribute="trailing" id="YCN-YE-Zne"/>
+                <constraint firstItem="fWk-Vl-gzx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uPy-3p-7pz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="219.49025487256372"/>
+        </view>
+    </objects>
+</document>

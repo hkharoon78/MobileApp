@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2oQ-uN-qaM" customClass="MIMasterDataSelectionView" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="63" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mm3-Fe-43v">
+                    <rect key="frame" x="15" y="4" width="16" height="29"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vW-tC-hHk">
+                    <rect key="frame" x="36" y="0.0" width="25" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="N1d-zb-sx6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                    <state key="normal" title="X"/>
+                    <connections>
+                        <action selector="closeClicked:" destination="2oQ-uN-qaM" eventType="touchUpInside" id="IR6-Dh-wjz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.42352941179999998" green="0.3294117647" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="98h-ob-rcz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7vW-tC-hHk" secondAttribute="trailing" priority="250" constant="15" id="0Lj-YF-jBF"/>
+                <constraint firstItem="mm3-Fe-43v" firstAttribute="top" secondItem="98h-ob-rcz" secondAttribute="top" constant="4" id="7nk-uW-JcP"/>
+                <constraint firstItem="98h-ob-rcz" firstAttribute="bottom" secondItem="7vW-tC-hHk" secondAttribute="bottom" id="Qv6-dD-GcT"/>
+                <constraint firstItem="7vW-tC-hHk" firstAttribute="top" secondItem="98h-ob-rcz" secondAttribute="top" id="aeB-4f-zed"/>
+                <constraint firstItem="98h-ob-rcz" firstAttribute="bottom" secondItem="mm3-Fe-43v" secondAttribute="bottom" constant="3" id="h4P-nR-Ub3"/>
+                <constraint firstItem="mm3-Fe-43v" firstAttribute="leading" secondItem="98h-ob-rcz" secondAttribute="leading" constant="15" id="tNM-ni-x1q"/>
+                <constraint firstItem="7vW-tC-hHk" firstAttribute="leading" secondItem="mm3-Fe-43v" secondAttribute="trailing" constant="5" id="uMS-u3-seC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="98h-ob-rcz"/>
+            <connections>
+                <outlet property="titleLbl" destination="mm3-Fe-43v" id="gsr-kl-6lU"/>
+            </connections>
+            <point key="canvasLocation" x="64.799999999999997" y="-13.493253373313344"/>
+        </view>
+    </objects>
+</document>

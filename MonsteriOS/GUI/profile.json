@@ -1,0 +1,126 @@
+{
+    "modules": [
+        {
+            "moduleName": "profileStrength",
+            "moduleType": "Static",
+            "data"      : []
+        },
+        {
+            "moduleName": "manageProfile",
+            "moduleType": "Static",
+            "data"      : []
+        },
+        {
+            "moduleName":  "skill",
+            "moduleType": "Static",
+            "data"      : []
+        },
+        {
+            "moduleName": "ITSkill",
+            "moduleType": "Custom",
+            "data": [
+                {
+                    "id": "1",
+                    "title": "Java",
+                    "subTitle": "Version 2.0",
+                    "titleStatus": "2016",
+                    "titleStatusDetail": "7 Year 2 month"
+                },
+                {
+                    "id": "2",
+                    "title": ".Net",
+                    "subTitle": "Version 2.0",
+                    "titleStatus": "2016",
+                    "titleStatusDetail": "7 Year 2 month"
+                }
+            ]
+        },
+        {
+            "moduleName": "jobPreference",
+            "moduleType": "Custom",
+            "data": [
+                {
+                    "id": "1",
+                    "title": "Industry:",
+                    "subTitle": "Auto/Automobile, IT, Hardware",
+                    "titleStatus": "",
+                    "titleStatusDetail": ""
+                },
+                {
+                    "id": "2",
+                    "title": "Function",
+                    "subTitle": "Analytics & Business intelligence",
+                    "titleStatus": "",
+                    "titleStatusDetail": ""
+                },
+                {
+                    "id": "2",
+                    "title": "Role",
+                    "subTitle": "Head/VP/GM analytics & Bl",
+                    "titleStatus": "",
+                    "titleStatusDetail": ""
+                }
+            ]
+        },
+        {
+            "moduleName": "workExperience",
+            "moduleType": "Custom",
+            "data": [
+                {
+                    "id": "1",
+                    "title": "Product Manager - Application:",
+                    "subTitle": "Innovaccer",
+                    "titleStatus": "Jul 2018 to Present (4 months)",
+                    "titleStatusDetail": "Serving Notice Period"
+                },
+                {
+                    "id": "1",
+                    "title": "Product Manager - Application:",
+                    "subTitle": "Innovaccer",
+                    "titleStatus": "Jul 2018 to Present (4 months)",
+                    "titleStatusDetail": "Serving Notice Period"
+                }
+            ]
+        },
+        {
+            "moduleName": "eduExperience",
+            "moduleType": "Custom",
+            "data": [
+                {
+                    "id": "1",
+                    "title": "MCA - Computers",
+                    "subTitle": "",
+                    "titleStatus": "Uttar Pradesh Technical University (UPTU)",
+                    "titleStatusDetail": "2006 (Full Time)"
+                },
+                {
+                    "id": "2",
+                    "title": "B.Sc - Match, Physics, Chemistry",
+                    "subTitle": "",
+                    "titleStatus": "Uttar Pradesh Technical University (UPTU)",
+                    "titleStatusDetail": "2006 (Full Time)"
+                }
+            ]
+        },
+        {
+            "moduleName": "onlinePresence",
+            "moduleType": "Custom",
+            "data": [
+                {
+                    "id": "1",
+                    "title": "Linkedin",
+                    "subTitle": "www.linkedin.com/rituraj",
+                    "titleStatus": "Working as a Business and Technical SPOC for Domestic and Outbound Product Holiday Teams, thereby delivering…",
+                    "titleStatusDetail": ""
+                },
+                {
+                    "id": "1",
+                    "title": "Linkedin",
+                    "subTitle": "www.linkedin.com/rituraj",
+                    "titleStatus": "Working as a Business and Technical SPOC for Domestic and Outbound Product Holiday Teams, thereby delivering…",
+                    "titleStatusDetail": ""
+                }
+            ]
+        }
+    ]
+}

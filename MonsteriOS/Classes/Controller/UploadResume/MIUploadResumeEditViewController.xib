@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MIUploadResumeEditViewController" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraButtonAction" destination="ycT-qM-mbb" id="vpj-h9-yvB"/>
+                <outlet property="collectionView" destination="shg-dR-cVZ" id="fa7-Wd-VZs"/>
+                <outlet property="darkView" destination="eV9-7e-dMS" id="vZa-qP-SG0"/>
+                <outlet property="innerView" destination="olG-QZ-KgK" id="eRu-tn-UC7"/>
+                <outlet property="uploadResumeButton" destination="ge5-H2-uEt" id="270-xV-s0Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eV9-7e-dMS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="olG-QZ-KgK">
+                            <rect key="frame" x="0.0" y="397" width="375" height="270"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmY-N8-5Ql">
+                                    <rect key="frame" x="337" y="8" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="1bP-ap-ceO"/>
+                                        <constraint firstAttribute="width" constant="30" id="Q0W-Mv-xdd"/>
+                                    </constraints>
+                                    <state key="normal" image="close-small"/>
+                                    <connections>
+                                        <action selector="viewButtonAction:" destination="-1" eventType="touchUpInside" id="TCQ-sg-N44"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uploaded Files" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vR1-pX-Iob">
+                                    <rect key="frame" x="47" y="12" width="283" height="23"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="23" id="5xe-39-Xuf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                    <color key="textColor" red="0.019607843137254902" green="0.023529411764705882" blue="0.10588235294117647" alpha="0.60442529965753422" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvc-zu-4bG">
+                                    <rect key="frame" x="8" y="80" width="359" height="110"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="shg-dR-cVZ">
+                                            <rect key="frame" x="75" y="8" width="276" height="94"/>
+                                            <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d6l-Wd-EbG">
+                                                <size key="itemSize" width="50" height="50"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                            </collectionViewFlowLayout>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.94901960784313721" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="shg-dR-cVZ" secondAttribute="trailing" constant="8" id="3Aa-PU-ueF"/>
+                                        <constraint firstItem="shg-dR-cVZ" firstAttribute="top" secondItem="hvc-zu-4bG" secondAttribute="top" constant="8" id="Hzj-lR-pam"/>
+                                        <constraint firstAttribute="bottom" secondItem="shg-dR-cVZ" secondAttribute="bottom" constant="8" id="ZQI-yy-FlX"/>
+                                        <constraint firstAttribute="height" constant="110" id="aPI-2j-PgT"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycT-qM-mbb">
+                                    <rect key="frame" x="15" y="110" width="60" height="60"/>
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="93a-Nt-phm"/>
+                                        <constraint firstAttribute="width" constant="60" id="acK-dl-7nf"/>
+                                    </constraints>
+                                    <state key="normal" image="camera-ico"/>
+                                    <connections>
+                                        <action selector="viewButtonAction:" destination="-1" eventType="touchUpInside" id="dCw-Xx-fZD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ge5-H2-uEt">
+                                    <rect key="frame" x="15" y="222" width="346" height="40"/>
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Nlo-dc-Ddv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                    <state key="normal" title="Upload my resume"/>
+                                    <connections>
+                                        <action selector="viewButtonAction:" destination="-1" eventType="touchUpInside" id="Tsy-wa-aLQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="vR1-pX-Iob" firstAttribute="top" secondItem="olG-QZ-KgK" secondAttribute="top" constant="12" id="0pv-iC-DOA"/>
+                                <constraint firstItem="ge5-H2-uEt" firstAttribute="leading" secondItem="olG-QZ-KgK" secondAttribute="leading" constant="15" id="6og-3Q-HZb"/>
+                                <constraint firstAttribute="bottom" secondItem="ge5-H2-uEt" secondAttribute="bottom" constant="8" id="7eK-qN-voQ"/>
+                                <constraint firstItem="ycT-qM-mbb" firstAttribute="leading" secondItem="olG-QZ-KgK" secondAttribute="leading" constant="15" id="PXO-9Z-RAw"/>
+                                <constraint firstAttribute="trailing" secondItem="ge5-H2-uEt" secondAttribute="trailing" constant="14" id="TZ9-fa-Rta"/>
+                                <constraint firstItem="ycT-qM-mbb" firstAttribute="centerY" secondItem="hvc-zu-4bG" secondAttribute="centerY" constant="5" id="ZI5-zz-Tp1"/>
+                                <constraint firstItem="shg-dR-cVZ" firstAttribute="leading" secondItem="ycT-qM-mbb" secondAttribute="trailing" constant="8" id="ao2-YT-AIs"/>
+                                <constraint firstItem="hvc-zu-4bG" firstAttribute="leading" secondItem="olG-QZ-KgK" secondAttribute="leading" constant="8" id="fyW-6H-enu"/>
+                                <constraint firstAttribute="trailing" secondItem="vR1-pX-Iob" secondAttribute="trailing" constant="45" id="hLl-2d-yFB"/>
+                                <constraint firstAttribute="trailing" secondItem="hvc-zu-4bG" secondAttribute="trailing" constant="8" id="kpK-Cz-pd4"/>
+                                <constraint firstAttribute="height" constant="270" id="kyO-fg-4gW"/>
+                                <constraint firstItem="vR1-pX-Iob" firstAttribute="leading" secondItem="olG-QZ-KgK" secondAttribute="leading" constant="47" id="lPy-9C-z3L"/>
+                                <constraint firstItem="jmY-N8-5Ql" firstAttribute="top" secondItem="olG-QZ-KgK" secondAttribute="top" constant="8" id="rgs-80-HpA"/>
+                                <constraint firstAttribute="trailing" secondItem="jmY-N8-5Ql" secondAttribute="trailing" constant="8" id="sgg-Rx-7z8"/>
+                                <constraint firstItem="hvc-zu-4bG" firstAttribute="centerY" secondItem="olG-QZ-KgK" secondAttribute="centerY" id="wPg-jC-PcL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.60442529965753422" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="olG-QZ-KgK" secondAttribute="bottom" id="7Jp-UG-lNf"/>
+                        <constraint firstItem="olG-QZ-KgK" firstAttribute="leading" secondItem="eV9-7e-dMS" secondAttribute="leading" id="ck3-yc-gRZ"/>
+                        <constraint firstAttribute="trailing" secondItem="olG-QZ-KgK" secondAttribute="trailing" id="z4n-fi-NTS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="eV9-7e-dMS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1hF-hI-Sa2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eV9-7e-dMS" secondAttribute="trailing" id="6Ww-L5-Dok"/>
+                <constraint firstItem="eV9-7e-dMS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bUa-Mr-Pjq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eV9-7e-dMS" secondAttribute="bottom" id="r45-5P-L0g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="5.5999999999999996" y="199.25037481259372"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera-ico" width="28" height="24"/>
+        <image name="close-small" width="20" height="20"/>
+    </resources>
+</document>

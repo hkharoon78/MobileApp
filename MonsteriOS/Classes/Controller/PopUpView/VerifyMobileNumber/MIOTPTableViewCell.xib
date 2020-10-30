@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MIOTPTableViewCell" rowHeight="160" id="KGk-i7-Jjw" customClass="MIOTPTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="495" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="495" height="214.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWN-vg-kac">
+                        <rect key="frame" x="0.0" y="0.0" width="495" height="91.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntd-Ym-eyD">
+                                <rect key="frame" x="15" y="15" width="73" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7TT-Lz-4Qt">
+                                <rect key="frame" x="20" y="36.5" width="455" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RGD-eE-b4n" customClass="OTPTextField" customModule="MonsteriOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBorder">
+                                                <color key="value" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dfq-hu-Utk" customClass="OTPTextField" customModule="MonsteriOS" customModuleProvider="target">
+                                        <rect key="frame" x="79" y="0.0" width="59.5" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBorder">
+                                                <color key="value" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FMZ-xg-8ji" customClass="OTPTextField" customModule="MonsteriOS" customModuleProvider="target">
+                                        <rect key="frame" x="158.5" y="0.0" width="59" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBorder">
+                                                <color key="value" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jrd-4U-0GL" customClass="OTPTextField" customModule="MonsteriOS" customModuleProvider="target">
+                                        <rect key="frame" x="237.5" y="0.0" width="59" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBorder">
+                                                <color key="value" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Lw-W6-Ic2" customClass="OTPTextField" customModule="MonsteriOS" customModuleProvider="target">
+                                        <rect key="frame" x="316.5" y="0.0" width="59.5" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBorder">
+                                                <color key="value" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Adt-gM-dxO" customClass="OTPTextField" customModule="MonsteriOS" customModuleProvider="target">
+                                        <rect key="frame" x="396" y="0.0" width="59" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.0" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colorBorder">
+                                                <color key="value" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Q31-eV-IzE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7TT-Lz-4Qt" firstAttribute="leading" secondItem="FWN-vg-kac" secondAttribute="leading" constant="20" id="6PX-L6-Cqp"/>
+                            <constraint firstItem="Ntd-Ym-eyD" firstAttribute="leading" secondItem="FWN-vg-kac" secondAttribute="leading" constant="15" id="OIj-4w-3uA"/>
+                            <constraint firstItem="7TT-Lz-4Qt" firstAttribute="top" secondItem="Ntd-Ym-eyD" secondAttribute="bottom" constant="5" id="Uwf-A4-qV4"/>
+                            <constraint firstAttribute="trailing" secondItem="7TT-Lz-4Qt" secondAttribute="trailing" constant="20" id="ca6-Z9-eRR"/>
+                            <constraint firstAttribute="bottom" secondItem="7TT-Lz-4Qt" secondAttribute="bottom" constant="15" id="pye-Z8-96W"/>
+                            <constraint firstItem="Ntd-Ym-eyD" firstAttribute="top" secondItem="FWN-vg-kac" secondAttribute="top" constant="15" id="tRZ-jY-RoV"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQh-0W-YmH">
+                        <rect key="frame" x="206.5" y="101.5" width="82" height="93"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                        <state key="normal" title="Resend OTP">
+                            <color key="titleColor" red="0.0" green="0.56862745098039214" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="resendButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iTP-qD-Q89"/>
+                        </connections>
+                    </button>
+                    <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cfQ-Fd-vM8">
+                        <rect key="frame" x="187.5" y="199.5" width="120" height="5"/>
+                        <color key="tintColor" red="0.96862745098039216" green="0.70980392156862748" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="3wd-bc-y06"/>
+                            <constraint firstAttribute="height" constant="5" id="44L-bq-eSk"/>
+                        </constraints>
+                        <color key="progressTintColor" red="0.96862745098039216" green="0.70980392156862748" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="trackTintColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                <real key="value" value="2.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </progressView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cfQ-Fd-vM8" firstAttribute="top" secondItem="qQh-0W-YmH" secondAttribute="bottom" constant="5" id="CTV-9U-ORg"/>
+                    <constraint firstItem="qQh-0W-YmH" firstAttribute="top" secondItem="FWN-vg-kac" secondAttribute="bottom" constant="10" id="RrF-rQ-KRa"/>
+                    <constraint firstItem="qQh-0W-YmH" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="SsR-eC-Dij"/>
+                    <constraint firstItem="FWN-vg-kac" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aHd-u6-b7p"/>
+                    <constraint firstAttribute="bottom" secondItem="cfQ-Fd-vM8" secondAttribute="bottom" constant="10" id="csm-iM-Xxe"/>
+                    <constraint firstItem="FWN-vg-kac" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hu0-zt-bDU"/>
+                    <constraint firstAttribute="trailing" secondItem="FWN-vg-kac" secondAttribute="trailing" id="o9g-hq-eJc"/>
+                    <constraint firstItem="cfQ-Fd-vM8" firstAttribute="centerX" secondItem="qQh-0W-YmH" secondAttribute="centerX" id="rgG-TT-02l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="progressBar" destination="cfQ-Fd-vM8" id="nEg-xs-4yH"/>
+                <outlet property="resendOTPButton" destination="qQh-0W-YmH" id="0eK-tH-Q40"/>
+                <outletCollection property="optTextField" destination="RGD-eE-b4n" collectionClass="NSMutableArray" id="MRx-nn-bnz"/>
+                <outletCollection property="optTextField" destination="Dfq-hu-Utk" collectionClass="NSMutableArray" id="2hh-gW-T4k"/>
+                <outletCollection property="optTextField" destination="FMZ-xg-8ji" collectionClass="NSMutableArray" id="xhd-MU-wsR"/>
+                <outletCollection property="optTextField" destination="jrd-4U-0GL" collectionClass="NSMutableArray" id="EV7-0O-JgO"/>
+                <outletCollection property="optTextField" destination="6Lw-W6-Ic2" collectionClass="NSMutableArray" id="bbt-YC-ShR"/>
+                <outletCollection property="optTextField" destination="Adt-gM-dxO" collectionClass="NSMutableArray" id="iwm-Rk-JAW"/>
+            </connections>
+            <point key="canvasLocation" x="255.07246376811597" y="119.86607142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

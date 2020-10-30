@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="MIProfileResumeDetailCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pU6-DD-BOi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="Sjy-0M-yAu"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resume" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwj-1f-0cX">
+                        <rect key="frame" x="15" y="17" width="51" height="13"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                        <color key="textColor" red="0.12941176469999999" green="0.16862745100000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d1-GL-PjI">
+                        <rect key="frame" x="245" y="13.5" width="50" height="24"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="01Q-Ct-e5J"/>
+                            <constraint firstAttribute="height" constant="24" id="e1U-Kw-SDG"/>
+                        </constraints>
+                        <state key="normal" image="resume_upload_icon">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="updateClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bsW-r5-oXa"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6v-CN-dIy">
+                        <rect key="frame" x="0.0" y="39.5" width="320" height="60"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resume_icon" translatesAutoresizingMaskIntoConstraints="NO" id="7oh-3D-lBy">
+                                <rect key="frame" x="15" y="10" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Wxu-wp-prp"/>
+                                    <constraint firstAttribute="width" constant="40" id="v9U-a8-gch"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgE-rg-0CN">
+                                <rect key="frame" x="239" y="15" width="67" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="2i5-NG-zsk"/>
+                                    <constraint firstAttribute="height" constant="30" id="UQU-xb-mBg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="11"/>
+                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <state key="normal" title="Download">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yKC-rL-qlu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resume" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLS-c6-Aor">
+                                <rect key="frame" x="63" y="22" width="168" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.27058823529411763" green="0.30980392156862746" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="1Pt-MA-1UV"/>
+                            <constraint firstItem="JLS-c6-Aor" firstAttribute="centerY" secondItem="7oh-3D-lBy" secondAttribute="centerY" id="4PK-3z-ePI"/>
+                            <constraint firstItem="TgE-rg-0CN" firstAttribute="leading" secondItem="JLS-c6-Aor" secondAttribute="trailing" constant="8" id="4f0-31-9k9"/>
+                            <constraint firstItem="7oh-3D-lBy" firstAttribute="leading" secondItem="W6v-CN-dIy" secondAttribute="leading" constant="15" id="Dog-ap-Dyf"/>
+                            <constraint firstItem="7oh-3D-lBy" firstAttribute="top" secondItem="W6v-CN-dIy" secondAttribute="top" constant="10" id="cfi-j6-FBh"/>
+                            <constraint firstItem="TgE-rg-0CN" firstAttribute="centerY" secondItem="W6v-CN-dIy" secondAttribute="centerY" id="nZ7-CM-cWb"/>
+                            <constraint firstItem="JLS-c6-Aor" firstAttribute="leading" secondItem="7oh-3D-lBy" secondAttribute="trailing" constant="8" id="oO9-9n-1Td"/>
+                            <constraint firstAttribute="trailing" secondItem="TgE-rg-0CN" secondAttribute="trailing" constant="14" id="zRW-gd-NWY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0d1-GL-PjI" firstAttribute="centerY" secondItem="Gwj-1f-0cX" secondAttribute="centerY" constant="2" id="2Wm-VP-gQt"/>
+                    <constraint firstItem="W6v-CN-dIy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Dih-Wt-UPQ"/>
+                    <constraint firstAttribute="trailing" secondItem="W6v-CN-dIy" secondAttribute="trailing" id="R7q-80-RLp"/>
+                    <constraint firstItem="Gwj-1f-0cX" firstAttribute="top" secondItem="pU6-DD-BOi" secondAttribute="bottom" constant="17" id="RDi-ld-NvJ"/>
+                    <constraint firstItem="pU6-DD-BOi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TcA-e4-nIw"/>
+                    <constraint firstItem="pU6-DD-BOi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="a0m-Eo-Hfv"/>
+                    <constraint firstAttribute="trailing" secondItem="0d1-GL-PjI" secondAttribute="trailing" constant="25" id="bCK-CH-UB5"/>
+                    <constraint firstAttribute="trailing" secondItem="pU6-DD-BOi" secondAttribute="trailing" id="dcZ-Cf-4Al"/>
+                    <constraint firstAttribute="bottom" secondItem="W6v-CN-dIy" secondAttribute="bottom" id="nAH-cQ-xr2"/>
+                    <constraint firstItem="W6v-CN-dIy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0d1-GL-PjI" secondAttribute="bottom" constant="2" id="sz2-f6-KXP"/>
+                    <constraint firstItem="Gwj-1f-0cX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="zun-Vb-cyc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="downloadBtn" destination="TgE-rg-0CN" id="ffB-65-zig"/>
+                <outlet property="resumeTitleLabel" destination="Gwj-1f-0cX" id="5lK-DJ-06H"/>
+                <outlet property="updateBtn" destination="0d1-GL-PjI" id="B4J-ed-bSu"/>
+                <outlet property="uploadLbl" destination="JLS-c6-Aor" id="jqp-47-36k"/>
+                <outlet property="uploadView" destination="W6v-CN-dIy" id="kGH-YR-gfy"/>
+                <outlet property="uploadViewHeightConstraint" destination="1Pt-MA-1UV" id="jfh-de-5Ni"/>
+            </connections>
+            <point key="canvasLocation" x="-104" y="101.64917541229386"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="resume_icon" width="29" height="38"/>
+        <image name="resume_upload_icon" width="23" height="22"/>
+    </resources>
+</document>

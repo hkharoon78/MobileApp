@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MIManageSubsReadMoreTableViewCell" rowHeight="296" id="KGk-i7-Jjw" customClass="MIManageSubsReadMoreTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="296"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="440" height="295.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3u6-Ee-ger">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="295.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4q-ap-xxt">
+                                <rect key="frame" x="15" y="10" width="410" height="45.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAh-U9-Dyi">
+                                <rect key="frame" x="15" y="70.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="f1o-df-enj"/>
+                                    <constraint firstAttribute="width" constant="40" id="pzm-fq-YcM"/>
+                                </constraints>
+                                <state key="normal" image="off-2"/>
+                                <state key="selected" image="off-1"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to Deactivate my account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdu-AI-fgN">
+                                <rect key="frame" x="55" y="80.5" width="370" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQ2-wN-iEn">
+                                <rect key="frame" x="15" y="115.5" width="40" height="40"/>
+                                <state key="normal" image="off-2"/>
+                                <state key="selected" image="off-1"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to delete my account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aL-Dm-M5i">
+                                <rect key="frame" x="55" y="125.5" width="370" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDl-kE-vFQ">
+                                <rect key="frame" x="0.0" y="155.5" width="440" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivw-67-FMM">
+                                        <rect key="frame" x="24" y="25" width="393" height="50"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="999" constant="50" id="2N0-qF-VhY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                        <state key="normal" title="Proceed">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DA9-aU-sFR">
+                                        <rect key="frame" x="24" y="100" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="Ci8-P9-ly5"/>
+                                            <constraint firstAttribute="height" constant="30" id="LOV-eg-UBf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                        <state key="normal" title="Less">
+                                            <color key="titleColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ivw-67-FMM" firstAttribute="top" secondItem="hDl-kE-vFQ" secondAttribute="top" constant="25" id="6rn-AS-tc0"/>
+                                    <constraint firstItem="DA9-aU-sFR" firstAttribute="top" secondItem="ivw-67-FMM" secondAttribute="bottom" constant="25" id="FJS-bg-5LS"/>
+                                    <constraint firstItem="ivw-67-FMM" firstAttribute="leading" secondItem="hDl-kE-vFQ" secondAttribute="leading" constant="24" id="PQr-ur-edd"/>
+                                    <constraint firstAttribute="bottom" secondItem="DA9-aU-sFR" secondAttribute="bottom" constant="10" id="c4x-xu-7aN"/>
+                                    <constraint firstItem="DA9-aU-sFR" firstAttribute="leading" secondItem="ivw-67-FMM" secondAttribute="leading" id="cVs-e9-u0k"/>
+                                    <constraint firstAttribute="trailing" secondItem="ivw-67-FMM" secondAttribute="trailing" constant="23" id="qpT-cL-UpN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hDl-kE-vFQ" secondAttribute="trailing" id="CAC-of-8kT"/>
+                            <constraint firstItem="N4q-ap-xxt" firstAttribute="top" secondItem="3u6-Ee-ger" secondAttribute="top" constant="10" id="Grf-SF-qqR"/>
+                            <constraint firstItem="sQ2-wN-iEn" firstAttribute="height" secondItem="YAh-U9-Dyi" secondAttribute="height" id="H6u-gL-pRG"/>
+                            <constraint firstAttribute="trailing" secondItem="N4q-ap-xxt" secondAttribute="trailing" constant="15" id="INg-ij-mi4"/>
+                            <constraint firstItem="YAh-U9-Dyi" firstAttribute="top" secondItem="N4q-ap-xxt" secondAttribute="bottom" constant="15" id="JrJ-pV-lrr"/>
+                            <constraint firstAttribute="trailing" secondItem="6aL-Dm-M5i" secondAttribute="trailing" constant="15" id="LHC-xT-6BA"/>
+                            <constraint firstAttribute="bottom" secondItem="hDl-kE-vFQ" secondAttribute="bottom" id="S51-JY-wDC"/>
+                            <constraint firstItem="N4q-ap-xxt" firstAttribute="leading" secondItem="3u6-Ee-ger" secondAttribute="leading" constant="15" id="SYn-Ra-TBG"/>
+                            <constraint firstItem="6aL-Dm-M5i" firstAttribute="centerY" secondItem="sQ2-wN-iEn" secondAttribute="centerY" id="TzR-11-cAJ"/>
+                            <constraint firstItem="sQ2-wN-iEn" firstAttribute="leading" secondItem="YAh-U9-Dyi" secondAttribute="leading" id="UOi-wn-odq"/>
+                            <constraint firstItem="Fdu-AI-fgN" firstAttribute="centerY" secondItem="YAh-U9-Dyi" secondAttribute="centerY" id="YIu-W5-fJ3"/>
+                            <constraint firstAttribute="trailing" secondItem="Fdu-AI-fgN" secondAttribute="trailing" constant="15" id="heH-AT-7bA"/>
+                            <constraint firstItem="hDl-kE-vFQ" firstAttribute="top" secondItem="sQ2-wN-iEn" secondAttribute="bottom" id="jtz-BD-GvU"/>
+                            <constraint firstItem="6aL-Dm-M5i" firstAttribute="leading" secondItem="sQ2-wN-iEn" secondAttribute="trailing" id="kST-6E-j8n"/>
+                            <constraint firstItem="sQ2-wN-iEn" firstAttribute="width" secondItem="YAh-U9-Dyi" secondAttribute="width" id="liB-Fu-L7k"/>
+                            <constraint firstItem="YAh-U9-Dyi" firstAttribute="leading" secondItem="N4q-ap-xxt" secondAttribute="leading" id="p8Z-Yf-shy"/>
+                            <constraint firstItem="sQ2-wN-iEn" firstAttribute="top" secondItem="YAh-U9-Dyi" secondAttribute="bottom" constant="5" id="uUL-B2-1FH"/>
+                            <constraint firstItem="hDl-kE-vFQ" firstAttribute="leading" secondItem="3u6-Ee-ger" secondAttribute="leading" id="usW-zx-1EG"/>
+                            <constraint firstItem="Fdu-AI-fgN" firstAttribute="leading" secondItem="YAh-U9-Dyi" secondAttribute="trailing" id="xLy-K3-Kmc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3u6-Ee-ger" secondAttribute="bottom" id="1Fp-Vo-K05"/>
+                    <constraint firstItem="3u6-Ee-ger" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XI0-kM-dgP"/>
+                    <constraint firstAttribute="trailing" secondItem="3u6-Ee-ger" secondAttribute="trailing" id="gCq-ce-uOY"/>
+                    <constraint firstItem="3u6-Ee-ger" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kM4-7d-nTc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnDeactivate" destination="YAh-U9-Dyi" id="UCH-fm-eJ4"/>
+                <outlet property="btnDelete" destination="sQ2-wN-iEn" id="3dl-1x-CpQ"/>
+                <outlet property="btnLess" destination="DA9-aU-sFR" id="Sop-NG-24f"/>
+                <outlet property="btnProceed" destination="ivw-67-FMM" id="LIj-EM-KA4"/>
+                <outlet property="lblDeactivateText" destination="Fdu-AI-fgN" id="ySA-RO-EbJ"/>
+                <outlet property="lblDeactivationMsg" destination="N4q-ap-xxt" id="ixZ-5N-e6F"/>
+                <outlet property="lblDeleteText" destination="6aL-Dm-M5i" id="oZX-Vs-4MH"/>
+            </connections>
+            <point key="canvasLocation" x="233.59999999999999" y="218.59070464767618"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="off-1" width="18" height="18"/>
+        <image name="off-2" width="18" height="18"/>
+    </resources>
+</document>

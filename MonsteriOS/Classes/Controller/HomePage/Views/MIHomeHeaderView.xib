@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MIHomeHeaderView" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuI-l9-wuf">
+                    <rect key="frame" x="63" y="23" width="39" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppo-67-uPQ">
+                    <rect key="frame" x="12" y="22.5" width="36" height="20"/>
+                    <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="IIM-ec-h2b"/>
+                        <constraint firstAttribute="height" constant="20" id="vcw-wb-dC9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <state key="normal" title="3">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2D-GR-tJL">
+                    <rect key="frame" x="298" y="19" width="62" height="29"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                    <state key="normal" title="VIEW ALL">
+                        <color key="titleColor" red="0.0" green="0.56862745100000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="viewAllClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="oFm-y6-Ju4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ppo-67-uPQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="AJB-Ao-tDc"/>
+                <constraint firstItem="o2D-GR-tJL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LuI-l9-wuf" secondAttribute="trailing" constant="10" id="QBp-mW-bPx"/>
+                <constraint firstItem="Ppo-67-uPQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="5" id="SOu-l4-sUd"/>
+                <constraint firstItem="LuI-l9-wuf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="63" id="ahR-P7-rl8"/>
+                <constraint firstItem="o2D-GR-tJL" firstAttribute="centerY" secondItem="Ppo-67-uPQ" secondAttribute="centerY" constant="1" id="rRW-ke-z6Y"/>
+                <constraint firstItem="LuI-l9-wuf" firstAttribute="centerY" secondItem="Ppo-67-uPQ" secondAttribute="centerY" id="xc7-PY-jZl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="o2D-GR-tJL" secondAttribute="trailing" constant="15" id="zSD-Qr-EOi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnHeaderNumber" destination="Ppo-67-uPQ" id="Zsq-uk-nti"/>
+                <outlet property="btnViewAll" destination="o2D-GR-tJL" id="7xA-dE-qUh"/>
+                <outlet property="lblTitle" destination="LuI-l9-wuf" id="imj-Tk-3QE"/>
+                <outlet property="lblTitleLeadingConstraint" destination="ahR-P7-rl8" id="5hF-7v-aSD"/>
+            </connections>
+            <point key="canvasLocation" x="327" y="77"/>
+        </view>
+        <view contentMode="scaleToFill" id="GW9-iP-PWP" customClass="MIHomeBeSafeHeaderView" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be Safe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eos-Xn-Jqj">
+                    <rect key="frame" x="15" y="15" width="55.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQb-Bl-x0w" customClass="ActiveLabel" customModule="MonsteriOS" customModuleProvider="target">
+                    <rect key="frame" x="15" y="44" width="343" height="83"/>
+                    <string key="text">Dear User,  Monster DOES NOT seek fees/Cash deposit towards any JOB OFFER/ INTERVIEW, please report such call/email to spam@monsterindia.com or Report an Abuse.   </string>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.792156862745098" blue="0.0" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eos-Xn-Jqj" firstAttribute="leading" secondItem="c5X-px-x3O" secondAttribute="leading" constant="15" id="BbS-AU-Pr6"/>
+                <constraint firstItem="c5X-px-x3O" firstAttribute="trailing" secondItem="rQb-Bl-x0w" secondAttribute="trailing" constant="17" id="GQO-cW-TF1"/>
+                <constraint firstItem="rQb-Bl-x0w" firstAttribute="top" secondItem="eos-Xn-Jqj" secondAttribute="bottom" constant="10" id="Q4S-m0-yBD"/>
+                <constraint firstItem="rQb-Bl-x0w" firstAttribute="leading" secondItem="c5X-px-x3O" secondAttribute="leading" constant="15" id="QFg-sz-b5k"/>
+                <constraint firstItem="eos-Xn-Jqj" firstAttribute="top" secondItem="c5X-px-x3O" secondAttribute="top" constant="15" id="hnb-kz-bIk"/>
+                <constraint firstItem="c5X-px-x3O" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rQb-Bl-x0w" secondAttribute="bottom" constant="20" id="qrb-v8-7fm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="c5X-px-x3O"/>
+            <connections>
+                <outlet property="lblDesc" destination="rQb-Bl-x0w" id="Q0h-QM-XKF"/>
+            </connections>
+            <point key="canvasLocation" x="327.19999999999999" y="311.24437781109447"/>
+        </view>
+    </objects>
+</document>

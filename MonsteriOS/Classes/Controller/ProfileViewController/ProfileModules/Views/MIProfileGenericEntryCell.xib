@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="MIProfileGenericEntryCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Home " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hpk-iK-bcR" customClass="JVFloatLabeledTextField">
+                        <rect key="frame" x="15" y="31.5" width="290" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="YD9-xN-OdP"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                <real key="value" value="-8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderYPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9g-PR-srR">
+                        <rect key="frame" x="10" y="59.5" width="295" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="7mY-yo-wHH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="H9g-PR-srR" firstAttribute="trailing" secondItem="Hpk-iK-bcR" secondAttribute="trailing" id="5ZU-6Y-T08"/>
+                    <constraint firstItem="Hpk-iK-bcR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="250" constant="24.5" id="81b-RA-1oU"/>
+                    <constraint firstAttribute="bottom" secondItem="H9g-PR-srR" secondAttribute="bottom" constant="1" id="Ge8-tw-Hhj"/>
+                    <constraint firstItem="H9g-PR-srR" firstAttribute="top" secondItem="Hpk-iK-bcR" secondAttribute="bottom" constant="2" id="NWw-UE-yga"/>
+                    <constraint firstItem="H9g-PR-srR" firstAttribute="leading" secondItem="Hpk-iK-bcR" secondAttribute="leading" constant="-5" id="PJ0-q9-g3m"/>
+                    <constraint firstAttribute="trailing" secondItem="Hpk-iK-bcR" secondAttribute="trailing" constant="15" id="YlX-yA-IgO"/>
+                    <constraint firstItem="Hpk-iK-bcR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="zor-Ga-adX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="txtFieldGeneric" destination="Hpk-iK-bcR" id="JJx-zI-se8"/>
+            </connections>
+            <point key="canvasLocation" x="-302.39999999999998" y="-48.575712143928037"/>
+        </tableViewCell>
+    </objects>
+</document>

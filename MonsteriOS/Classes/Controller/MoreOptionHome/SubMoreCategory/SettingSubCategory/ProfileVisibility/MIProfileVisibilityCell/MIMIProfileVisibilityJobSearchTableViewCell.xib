@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MIMIProfileVisibilityJobSearchTableViewCell" rowHeight="94" id="KGk-i7-Jjw" customClass="MIMIProfileVisibilityJobSearchTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qx7-5s-3QN">
+                        <rect key="frame" x="0.0" y="10" width="366" height="83.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you in your job search?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieH-a5-TmU">
+                                <rect key="frame" x="16" y="15" width="334" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Your career interests help determine what jobs you’re recommended." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xm-Ep-AYH">
+                                <rect key="frame" x="16" y="40.5" width="334" height="33"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1xm-Ep-AYH" secondAttribute="trailing" constant="16" id="0RY-7S-geH"/>
+                            <constraint firstItem="ieH-a5-TmU" firstAttribute="top" secondItem="Qx7-5s-3QN" secondAttribute="top" constant="15" id="I7b-KG-kEQ"/>
+                            <constraint firstAttribute="trailing" secondItem="ieH-a5-TmU" secondAttribute="trailing" constant="16" id="Qei-tC-YKM"/>
+                            <constraint firstAttribute="bottom" secondItem="1xm-Ep-AYH" secondAttribute="bottom" constant="10" id="SFX-QY-y1O"/>
+                            <constraint firstItem="1xm-Ep-AYH" firstAttribute="top" secondItem="ieH-a5-TmU" secondAttribute="bottom" id="T5S-31-Pys"/>
+                            <constraint firstItem="1xm-Ep-AYH" firstAttribute="leading" secondItem="Qx7-5s-3QN" secondAttribute="leading" constant="16" id="Vuv-xr-y3q"/>
+                            <constraint firstItem="ieH-a5-TmU" firstAttribute="leading" secondItem="Qx7-5s-3QN" secondAttribute="leading" constant="16" id="YUC-7I-vYj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Qx7-5s-3QN" secondAttribute="trailing" id="Po6-2m-7ti"/>
+                    <constraint firstItem="Qx7-5s-3QN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RO2-uP-8UV"/>
+                    <constraint firstAttribute="bottom" secondItem="Qx7-5s-3QN" secondAttribute="bottom" id="gN4-bF-I1C"/>
+                    <constraint firstItem="Qx7-5s-3QN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hgw-iT-6c8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblCareerInterest" destination="1xm-Ep-AYH" id="rFS-bF-on7"/>
+                <outlet property="lblJobSearch" destination="ieH-a5-TmU" id="qKv-YF-30l"/>
+            </connections>
+            <point key="canvasLocation" x="174.40000000000001" y="177.21139430284859"/>
+        </tableViewCell>
+    </objects>
+</document>

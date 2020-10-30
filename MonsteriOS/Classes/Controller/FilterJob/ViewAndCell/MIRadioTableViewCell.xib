@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="51" id="KGk-i7-Jjw" customClass="MIRadioTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w7z-dS-trZ">
+                        <rect key="frame" x="10" y="16" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="ZIJ-S9-0z9"/>
+                            <constraint firstAttribute="height" constant="20" id="nwy-rh-HvX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDj-S8-LaX">
+                        <rect key="frame" x="40" y="8" width="321" height="35.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mDj-S8-LaX" firstAttribute="leading" secondItem="w7z-dS-trZ" secondAttribute="trailing" constant="10" id="Omb-kg-taJ"/>
+                    <constraint firstAttribute="trailing" secondItem="mDj-S8-LaX" secondAttribute="trailing" constant="10" id="Pwu-18-44k"/>
+                    <constraint firstItem="mDj-S8-LaX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="VqM-Sk-HKd"/>
+                    <constraint firstItem="w7z-dS-trZ" firstAttribute="centerY" secondItem="mDj-S8-LaX" secondAttribute="centerY" id="gf6-dQ-Ixq"/>
+                    <constraint firstItem="mDj-S8-LaX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ocm-Iv-GJt"/>
+                    <constraint firstAttribute="bottom" secondItem="mDj-S8-LaX" secondAttribute="bottom" constant="7" id="yGE-ti-Qch"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgRadio" destination="w7z-dS-trZ" id="cVZ-dR-vjU"/>
+                <outlet property="lblTitle" destination="mDj-S8-LaX" id="jtZ-HM-sx4"/>
+            </connections>
+            <point key="canvasLocation" x="96.799999999999997" y="135.38230884557723"/>
+        </tableViewCell>
+    </objects>
+</document>

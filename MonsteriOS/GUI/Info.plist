@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Monster Jobs</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Monster Jobs</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>monsterseeker</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.591528984509-bm6cp3at5q1nfi0kkahs0eq9nqamd2iv</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string></string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb2202822979737806</string>
+				<string>fb776627922732996</string>
+				<string>fb688558738251762</string>
+				<string>fb2402443739779164</string>
+				<string>fb301538607398265</string>
+				<string>fb629624047504556</string>
+				<string>fb434863447348842</string>
+				<string>fb422628918571957</string>
+				<string>fb2321740241404008</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array/>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CLIENT_ID</key>
+	<string>591528984509-bm6cp3at5q1nfi0kkahs0eq9nqamd2iv.apps.googleusercontent.com</string>
+	<key>CleverTapAccountID</key>
+	<string>6K7-8RR-4K5Z</string>
+	<key>CleverTapToken</key>
+	<string>22b-a36</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>7832a3ef516a629bc5eed020f66c6c6f8a99c81a</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>FacebookDisplayName</key>
+	<string>Monster Jobs</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Allow Monster Job App to use your mobile phone camera to take &amp; upload image for your profile. Nothing will be shared without your permission and you can change this anytime from your phone settings.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow Monster Job App to use your mobile phone camera to take &amp; upload image for your profile. Nothing will be shared without your permission and you can change this anytime from your phone settings.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Allow Monster Job App to access your location to show jobs near you. Nothing will be shared without your permission.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allow Monster Job App to access your location to show jobs near you. Nothing will be shared without your permission.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Your speech will be detected after tapping the start button.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Allow Monster Job App to use your photo gallery to upload image for your profile. Nothing will be shared without your permission and you can change this anytime from your phone settings.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Speak and watch your words become text or say a color to see the box change colors.</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.591528984509-bm6cp3at5q1nfi0kkahs0eq9nqamd2iv</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Poppins-Bold.ttf</string>
+		<string>Poppins-SemiBold</string>
+		<string>roboto-bold.ttf</string>
+		<string>roboto-light</string>
+		<string>roboto-regular</string>
+		<string>roboto-medium</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+</dict>
+</plist>

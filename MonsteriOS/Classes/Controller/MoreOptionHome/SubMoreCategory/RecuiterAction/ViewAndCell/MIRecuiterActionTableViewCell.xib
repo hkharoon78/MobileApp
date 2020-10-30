@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="MIRecuiterActionTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="411" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4f-xW-nbD">
+                        <rect key="frame" x="15" y="10" width="334" height="44.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDf-9y-neb">
+                        <rect key="frame" x="357" y="10" width="39" height="19"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Io-pH-Fv7">
+                        <rect key="frame" x="15" y="69.5" width="381" height="19"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8Z-f9-dtM">
+                        <rect key="frame" x="40" y="103.5" width="356" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="75A-dr-cWB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RSu-rS-aUJ">
+                        <rect key="frame" x="15" y="106.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="9mI-Nb-VZx"/>
+                            <constraint firstAttribute="width" constant="15" id="qW8-d8-NKz"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y4f-xW-nbD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0xU-XI-gPL"/>
+                    <constraint firstItem="G8Z-f9-dtM" firstAttribute="leading" secondItem="RSu-rS-aUJ" secondAttribute="trailing" constant="10" id="13B-TY-mF3"/>
+                    <constraint firstItem="NDf-9y-neb" firstAttribute="leading" secondItem="Y4f-xW-nbD" secondAttribute="trailing" constant="8" id="4hb-VO-cAX"/>
+                    <constraint firstAttribute="trailing" secondItem="7Io-pH-Fv7" secondAttribute="trailing" constant="15" id="58B-Nl-cwv"/>
+                    <constraint firstItem="Y4f-xW-nbD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="FRk-ib-KLr"/>
+                    <constraint firstItem="RSu-rS-aUJ" firstAttribute="centerY" secondItem="G8Z-f9-dtM" secondAttribute="centerY" id="I40-X3-XoV"/>
+                    <constraint firstAttribute="trailing" secondItem="NDf-9y-neb" secondAttribute="trailing" constant="15" id="JXw-69-UiT"/>
+                    <constraint firstAttribute="bottom" secondItem="G8Z-f9-dtM" secondAttribute="bottom" constant="15" id="MyK-H9-3Yf"/>
+                    <constraint firstAttribute="trailing" secondItem="G8Z-f9-dtM" secondAttribute="trailing" constant="15" id="bCi-EV-0Sl"/>
+                    <constraint firstItem="7Io-pH-Fv7" firstAttribute="top" secondItem="Y4f-xW-nbD" secondAttribute="bottom" constant="15" id="iCf-rb-tmE"/>
+                    <constraint firstItem="NDf-9y-neb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="iav-2T-uZX"/>
+                    <constraint firstItem="7Io-pH-Fv7" firstAttribute="leading" secondItem="Y4f-xW-nbD" secondAttribute="leading" id="lEg-xv-bco"/>
+                    <constraint firstItem="G8Z-f9-dtM" firstAttribute="top" secondItem="7Io-pH-Fv7" secondAttribute="bottom" constant="15" id="w0g-Kv-hIy"/>
+                    <constraint firstItem="RSu-rS-aUJ" firstAttribute="leading" secondItem="7Io-pH-Fv7" secondAttribute="leading" id="wQD-Mu-dWP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="companyName" destination="7Io-pH-Fv7" id="XhN-f2-auh"/>
+                <outlet property="dateLabel" destination="NDf-9y-neb" id="P8F-Rb-Aue"/>
+                <outlet property="locationHeightConstraint" destination="75A-dr-cWB" id="dce-cS-erd"/>
+                <outlet property="locationIcon" destination="RSu-rS-aUJ" id="nQo-a8-NrC"/>
+                <outlet property="locationIconHeightConstraint" destination="9mI-Nb-VZx" id="O69-xk-jFJ"/>
+                <outlet property="locationName" destination="G8Z-f9-dtM" id="RZf-WR-VR3"/>
+                <outlet property="locationNameTopConstraint" destination="w0g-Kv-hIy" id="OEF-6A-qKZ"/>
+                <outlet property="recuiterName" destination="Y4f-xW-nbD" id="AfR-ka-G6S"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="103.44827586206897"/>
+        </tableViewCell>
+    </objects>
+</document>

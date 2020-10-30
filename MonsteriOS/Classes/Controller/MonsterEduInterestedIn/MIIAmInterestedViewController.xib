@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MIIAmInterestedViewController" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="submit_btn" destination="8zp-NA-iuQ" id="1NE-vn-Uc9"/>
+                <outlet property="tblView" destination="KWj-yc-1C0" id="9rY-0r-JET"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KWj-yc-1C0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="585"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="H4Q-hO-uwY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0Hk-z8-hoE"/>
+                        <outlet property="delegate" destination="-1" id="U4M-Ja-xXt"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zp-NA-iuQ">
+                    <rect key="frame" x="44" y="602" width="287" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="yqO-1Q-8cn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                    <state key="normal" title="Submit"/>
+                    <connections>
+                        <action selector="submitBtnClicked:" destination="-1" eventType="touchUpInside" id="XMY-4m-rXL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KWj-yc-1C0" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-82" id="28e-Fk-Dst"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8zp-NA-iuQ" secondAttribute="trailing" constant="44" id="YKz-Fd-Wdo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8zp-NA-iuQ" secondAttribute="bottom" constant="20" id="blP-Rp-g4B"/>
+                <constraint firstItem="KWj-yc-1C0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eAN-zq-Sys"/>
+                <constraint firstItem="KWj-yc-1C0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="i9e-RM-SsH"/>
+                <constraint firstItem="KWj-yc-1C0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nGj-zR-CBH"/>
+                <constraint firstItem="8zp-NA-iuQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="44" id="xtz-wA-EPH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="368.80000000000001" y="107.49625187406298"/>
+        </view>
+    </objects>
+</document>

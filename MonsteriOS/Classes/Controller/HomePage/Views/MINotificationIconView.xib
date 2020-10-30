@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MINotificationIconView" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="nitificationCountlabel" destination="gWS-Bx-amv" id="OFs-zE-aAO"/>
+                <outlet property="notificationIcon" destination="ve3-wL-G1q" id="c6q-AH-bwB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="138"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gp-6Z-kiZ">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="138"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notification_bell_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ve3-wL-G1q">
+                            <rect key="frame" x="2" y="10" width="108" height="118"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWS-Bx-amv">
+                            <rect key="frame" x="95" y="0.0" width="25" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="KI8-hH-w3g"/>
+                                <constraint firstAttribute="height" constant="20" id="mXf-lT-eAy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gWS-Bx-amv" secondAttribute="trailing" id="443-HD-fTp"/>
+                        <constraint firstItem="gWS-Bx-amv" firstAttribute="top" secondItem="9gp-6Z-kiZ" secondAttribute="top" id="IiK-oc-CEH"/>
+                        <constraint firstItem="ve3-wL-G1q" firstAttribute="top" secondItem="9gp-6Z-kiZ" secondAttribute="top" constant="10" id="ThF-Ep-5Wb"/>
+                        <constraint firstAttribute="bottom" secondItem="ve3-wL-G1q" secondAttribute="bottom" constant="10" id="dVu-yz-1yi"/>
+                        <constraint firstItem="ve3-wL-G1q" firstAttribute="leading" secondItem="9gp-6Z-kiZ" secondAttribute="leading" constant="2" id="f85-nK-TTS"/>
+                        <constraint firstAttribute="trailing" secondItem="ve3-wL-G1q" secondAttribute="trailing" constant="10" id="v2o-B1-Ym1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9gp-6Z-kiZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="c8p-9C-Kxb"/>
+                <constraint firstItem="9gp-6Z-kiZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="sjf-31-kyQ"/>
+                <constraint firstItem="9gp-6Z-kiZ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="umy-AE-9Tr"/>
+                <constraint firstItem="9gp-6Z-kiZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xLn-qI-mLg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="188.80000000000001" y="405.69715142428788"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="notification_bell_icon" width="22" height="23"/>
+    </resources>
+</document>

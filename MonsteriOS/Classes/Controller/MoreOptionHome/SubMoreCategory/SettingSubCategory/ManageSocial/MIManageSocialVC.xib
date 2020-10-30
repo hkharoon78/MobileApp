@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MIManageSocialVC" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="appleImageView" destination="uLD-g9-K94" id="ttK-9W-sLr"/>
+                <outlet property="appleLabel" destination="Uqr-FH-jJW" id="aYP-aX-FZ5"/>
+                <outlet property="appleSwitch" destination="gnI-8T-yJ1" id="jSX-ft-q3h"/>
+                <outlet property="appleView" destination="eUw-V5-ze7" id="0J8-az-4Vh"/>
+                <outlet property="fbImageView" destination="kA4-Ji-PEO" id="0FD-Pl-A4C"/>
+                <outlet property="fbLabel" destination="P9v-om-POL" id="olb-22-5vd"/>
+                <outlet property="fbSwitch" destination="dvI-X4-cqK" id="Eei-XH-WN3"/>
+                <outlet property="fbView" destination="vP3-6j-UGX" id="S5c-DP-qnF"/>
+                <outlet property="googleImageView" destination="Hhq-oc-Cuo" id="S8P-z9-XN5"/>
+                <outlet property="googleLabel" destination="9Om-yJ-2Wh" id="Adb-oi-t1e"/>
+                <outlet property="googleSwitch" destination="tbW-re-GrG" id="WY1-vI-zIi"/>
+                <outlet property="googleView" destination="ga7-CX-t6I" id="9Sh-JU-qb3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iuv-nh-ofo">
+                    <rect key="frame" x="0.0" y="10" width="375" height="185"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vP3-6j-UGX">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook-color" translatesAutoresizingMaskIntoConstraints="NO" id="kA4-Ji-PEO">
+                                    <rect key="frame" x="15" y="12.5" width="31" height="30"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9v-om-POL">
+                                    <rect key="frame" x="56" y="18" width="70" height="19"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                    <color key="textColor" red="0.12941176470588234" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dvI-X4-cqK">
+                                    <rect key="frame" x="316" y="12" width="51" height="31"/>
+                                    <color key="onTintColor" red="0.36078431372549019" green="0.29019607843137252" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="facebookSwitchAction:" destination="-1" eventType="valueChanged" id="PNr-q6-1TT"/>
+                                    </connections>
+                                </switch>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="kA4-Ji-PEO" firstAttribute="centerY" secondItem="vP3-6j-UGX" secondAttribute="centerY" id="Vdq-sh-Ddo"/>
+                                <constraint firstItem="dvI-X4-cqK" firstAttribute="centerY" secondItem="vP3-6j-UGX" secondAttribute="centerY" id="b6Q-8D-mNT"/>
+                                <constraint firstAttribute="trailing" secondItem="dvI-X4-cqK" secondAttribute="trailing" constant="10" id="dZ4-RO-HjI"/>
+                                <constraint firstItem="kA4-Ji-PEO" firstAttribute="leading" secondItem="vP3-6j-UGX" secondAttribute="leading" constant="15" id="fd8-TY-wU2"/>
+                                <constraint firstItem="P9v-om-POL" firstAttribute="leading" secondItem="kA4-Ji-PEO" secondAttribute="trailing" constant="10" id="jK5-2g-GM7"/>
+                                <constraint firstAttribute="height" constant="55" id="nyC-Fy-DRU"/>
+                                <constraint firstItem="P9v-om-POL" firstAttribute="centerY" secondItem="vP3-6j-UGX" secondAttribute="centerY" id="qM0-yl-G8c"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ga7-CX-t6I">
+                            <rect key="frame" x="0.0" y="65" width="375" height="55"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google-color" translatesAutoresizingMaskIntoConstraints="NO" id="Hhq-oc-Cuo">
+                                    <rect key="frame" x="15" y="11" width="33" height="33"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Om-yJ-2Wh">
+                                    <rect key="frame" x="58" y="18" width="51" height="19"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                    <color key="textColor" red="0.12941176469999999" green="0.16862745100000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tbW-re-GrG">
+                                    <rect key="frame" x="316" y="12" width="51" height="31"/>
+                                    <color key="onTintColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="googleSwitchAction:" destination="-1" eventType="valueChanged" id="J8l-PH-Oka"/>
+                                    </connections>
+                                </switch>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="9Om-yJ-2Wh" firstAttribute="leading" secondItem="Hhq-oc-Cuo" secondAttribute="trailing" constant="10" id="J9v-DR-acj"/>
+                                <constraint firstItem="Hhq-oc-Cuo" firstAttribute="leading" secondItem="ga7-CX-t6I" secondAttribute="leading" constant="15" id="JWg-B4-U5J"/>
+                                <constraint firstAttribute="trailing" secondItem="tbW-re-GrG" secondAttribute="trailing" constant="10" id="fl8-Zx-F7w"/>
+                                <constraint firstItem="Hhq-oc-Cuo" firstAttribute="centerY" secondItem="ga7-CX-t6I" secondAttribute="centerY" id="jZf-QS-FmJ"/>
+                                <constraint firstItem="9Om-yJ-2Wh" firstAttribute="centerY" secondItem="ga7-CX-t6I" secondAttribute="centerY" id="sEV-zJ-5Tn"/>
+                                <constraint firstItem="tbW-re-GrG" firstAttribute="centerY" secondItem="ga7-CX-t6I" secondAttribute="centerY" id="uvz-ym-uxN"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUw-V5-ze7" userLabel="Apple View">
+                            <rect key="frame" x="0.0" y="130" width="375" height="55"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple-color" translatesAutoresizingMaskIntoConstraints="NO" id="uLD-g9-K94">
+                                    <rect key="frame" x="15" y="9.5" width="30" height="36"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqr-FH-jJW">
+                                    <rect key="frame" x="55" y="18" width="41" height="19"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                    <color key="textColor" red="0.12941176469999999" green="0.16862745100000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gnI-8T-yJ1">
+                                    <rect key="frame" x="316" y="12" width="51" height="31"/>
+                                    <color key="onTintColor" red="0.36078431370000003" green="0.2901960784" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="appleSwitchAction:" destination="-1" eventType="valueChanged" id="tJA-4h-8Qp"/>
+                                    </connections>
+                                </switch>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Uqr-FH-jJW" firstAttribute="leading" secondItem="uLD-g9-K94" secondAttribute="trailing" constant="10" id="3ee-rP-i9y"/>
+                                <constraint firstItem="gnI-8T-yJ1" firstAttribute="centerY" secondItem="eUw-V5-ze7" secondAttribute="centerY" id="9Nl-Vj-u9Z"/>
+                                <constraint firstItem="Uqr-FH-jJW" firstAttribute="centerY" secondItem="eUw-V5-ze7" secondAttribute="centerY" id="CZL-I2-Xba"/>
+                                <constraint firstItem="uLD-g9-K94" firstAttribute="leading" secondItem="eUw-V5-ze7" secondAttribute="leading" constant="15" id="IBE-lW-C4I"/>
+                                <constraint firstAttribute="trailing" secondItem="gnI-8T-yJ1" secondAttribute="trailing" constant="10" id="Ufe-WO-NnX"/>
+                                <constraint firstItem="uLD-g9-K94" firstAttribute="centerY" secondItem="eUw-V5-ze7" secondAttribute="centerY" id="p4l-TC-U9i"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iuv-nh-ofo" secondAttribute="trailing" id="3tf-3W-9FH"/>
+                <constraint firstItem="iuv-nh-ofo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="YgH-1g-tlq"/>
+                <constraint firstItem="iuv-nh-ofo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pIC-qv-dy0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="142" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple-color" width="30" height="36"/>
+        <image name="facebook-color" width="31" height="30"/>
+        <image name="google-color" width="33" height="33"/>
+    </resources>
+</document>

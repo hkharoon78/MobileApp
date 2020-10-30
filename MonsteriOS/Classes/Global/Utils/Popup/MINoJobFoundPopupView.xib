@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MINoJobFoundPopupView" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_result_found" translatesAutoresizingMaskIntoConstraints="NO" id="8Rh-Ui-zzT">
+                    <rect key="frame" x="97.5" y="153.5" width="200" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="WDy-rW-9jV"/>
+                        <constraint firstAttribute="height" constant="160" id="v77-X1-gMf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Jobs Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNB-Qt-23F">
+                    <rect key="frame" x="120" y="343.5" width="135.5" height="23.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                    <color key="textColor" red="0.36470588235294116" green="0.30196078431372547" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We do not have jobs matching your preferences" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6z-2o-Znm">
+                    <rect key="frame" x="50" y="382" width="275" height="37.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="F6z-2o-Znm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="16i-FI-dXM"/>
+                <constraint firstItem="8Rh-Ui-zzT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="10" id="CLR-ld-yhk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="F6z-2o-Znm" secondAttribute="bottom" constant="20" id="Idp-ts-b56"/>
+                <constraint firstItem="HNB-Qt-23F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MXl-dk-c5B"/>
+                <constraint firstItem="8Rh-Ui-zzT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-100" id="kaV-nf-2QG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="F6z-2o-Znm" secondAttribute="trailing" constant="50" id="nrb-H4-mhz"/>
+                <constraint firstItem="HNB-Qt-23F" firstAttribute="top" secondItem="8Rh-Ui-zzT" secondAttribute="bottom" constant="30" id="rUN-YA-dI5"/>
+                <constraint firstItem="F6z-2o-Znm" firstAttribute="top" secondItem="HNB-Qt-23F" secondAttribute="bottom" constant="15" id="vme-Bb-RCY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="descLbl" destination="F6z-2o-Znm" id="zJN-0q-2iA"/>
+                <outlet property="imgView" destination="8Rh-Ui-zzT" id="vxq-NH-W3j"/>
+                <outlet property="titleLbl" destination="HNB-Qt-23F" id="aMO-jM-WN5"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="83.208395802098963"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="no_result_found" width="298" height="215"/>
+    </resources>
+</document>

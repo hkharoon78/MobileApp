@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MIHomeVideoCollectionCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="183"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXA-jS-x35">
+                        <rect key="frame" x="0.0" y="10" width="374" height="163"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" image="test1" translatesAutoresizingMaskIntoConstraints="NO" id="nSw-ay-O3H">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="110.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110.5" id="vRV-1t-nv4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2t-zG-jNN">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="110.5"/>
+                                <state key="normal" image="play_video_icon"/>
+                                <connections>
+                                    <action selector="videoBtnPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="RrH-kb-9gz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="3 Simple Ways To Save A Bunch Of Money on hiring" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFq-Ve-fRY">
+                                <rect key="frame" x="10" y="120.5" width="354" height="32.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CFq-Ve-fRY" firstAttribute="leading" secondItem="gXA-jS-x35" secondAttribute="leading" constant="10" id="3Xz-Vw-asn"/>
+                            <constraint firstItem="F2t-zG-jNN" firstAttribute="centerY" secondItem="nSw-ay-O3H" secondAttribute="centerY" id="FeV-rl-yWB"/>
+                            <constraint firstItem="F2t-zG-jNN" firstAttribute="width" secondItem="nSw-ay-O3H" secondAttribute="width" id="PPI-jU-SYL"/>
+                            <constraint firstAttribute="trailing" secondItem="nSw-ay-O3H" secondAttribute="trailing" id="Tcb-26-29R"/>
+                            <constraint firstItem="F2t-zG-jNN" firstAttribute="centerX" secondItem="nSw-ay-O3H" secondAttribute="centerX" id="X6B-jM-aEO"/>
+                            <constraint firstItem="CFq-Ve-fRY" firstAttribute="top" secondItem="nSw-ay-O3H" secondAttribute="bottom" constant="10" id="YSg-oq-i5G"/>
+                            <constraint firstItem="nSw-ay-O3H" firstAttribute="leading" secondItem="gXA-jS-x35" secondAttribute="leading" id="bvw-Md-DXB"/>
+                            <constraint firstAttribute="trailing" secondItem="CFq-Ve-fRY" secondAttribute="trailing" constant="10" id="c3Y-fP-kov"/>
+                            <constraint firstAttribute="bottom" secondItem="CFq-Ve-fRY" secondAttribute="bottom" constant="10" id="fIR-JW-dxU"/>
+                            <constraint firstItem="F2t-zG-jNN" firstAttribute="height" secondItem="nSw-ay-O3H" secondAttribute="height" id="ngf-B9-VVe"/>
+                            <constraint firstItem="nSw-ay-O3H" firstAttribute="top" secondItem="gXA-jS-x35" secondAttribute="top" id="ypZ-1k-iF1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gXA-jS-x35" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="EGB-wa-0Ed"/>
+                <constraint firstAttribute="bottom" secondItem="gXA-jS-x35" secondAttribute="bottom" constant="10" id="h9D-rW-9Jb"/>
+                <constraint firstAttribute="trailing" secondItem="gXA-jS-x35" secondAttribute="trailing" id="mbm-9F-M9A"/>
+                <constraint firstItem="gXA-jS-x35" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sZ8-2N-DXL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="374" height="183"/>
+            <connections>
+                <outlet property="backView" destination="gXA-jS-x35" id="PBr-0J-SlP"/>
+                <outlet property="btnVideoIcon" destination="F2t-zG-jNN" id="kpC-vQ-rCA"/>
+                <outlet property="imgView" destination="nSw-ay-O3H" id="X8f-Gc-gRm"/>
+                <outlet property="lblTitle" destination="CFq-Ve-fRY" id="HPL-7L-MiD"/>
+            </connections>
+            <point key="canvasLocation" x="375.36231884057975" y="150.33482142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play_video_icon" width="42" height="42"/>
+        <image name="test1" width="99.5" height="30"/>
+    </resources>
+</document>

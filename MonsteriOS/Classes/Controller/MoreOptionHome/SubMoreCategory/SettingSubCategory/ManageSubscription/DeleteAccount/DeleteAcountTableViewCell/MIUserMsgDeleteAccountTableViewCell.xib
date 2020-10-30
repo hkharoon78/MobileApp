@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MIUserMsgDeleteAccountTableViewCell" rowHeight="168" id="KGk-i7-Jjw" customClass="MIUserMsgDeleteAccountTableViewCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="167.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hlu-wb-e6X">
+                        <rect key="frame" x="0.0" y="0.0" width="434" height="167.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Ritu Raj Srivastava, sure you want to leave?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55J-Ei-QQX">
+                                <rect key="frame" x="16" y="12" width="402" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.16862745098039217" blue="0.21176470588235294" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="On deleting your account, all your profile details will be lost." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAB-ga-5wv">
+                                <rect key="frame" x="16" y="41" width="402" height="37.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                                <color key="textColor" red="0.49803921568627452" green="0.55686274509803924" blue="0.58039215686274503" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please tell us why you want to delete your account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0U-dD-A6v">
+                                <rect key="frame" x="16" y="93.5" width="402" height="69"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" red="0.082352941176470587" green="0.16078431372549018" blue="0.20784313725490194" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="55J-Ei-QQX" secondAttribute="trailing" constant="16" id="F5a-MP-l4O"/>
+                            <constraint firstItem="G0U-dD-A6v" firstAttribute="leading" secondItem="Hlu-wb-e6X" secondAttribute="leading" constant="16" id="K7M-X3-ibK"/>
+                            <constraint firstItem="RAB-ga-5wv" firstAttribute="top" secondItem="55J-Ei-QQX" secondAttribute="bottom" constant="10" id="NL0-zS-VXi"/>
+                            <constraint firstItem="55J-Ei-QQX" firstAttribute="leading" secondItem="Hlu-wb-e6X" secondAttribute="leading" constant="16" id="P5d-Q3-IJV"/>
+                            <constraint firstAttribute="trailing" secondItem="G0U-dD-A6v" secondAttribute="trailing" constant="16" id="Qbu-HS-8pQ"/>
+                            <constraint firstAttribute="bottom" secondItem="G0U-dD-A6v" secondAttribute="bottom" constant="5" id="aoi-RE-EEw"/>
+                            <constraint firstItem="RAB-ga-5wv" firstAttribute="leading" secondItem="Hlu-wb-e6X" secondAttribute="leading" constant="16" id="fZr-ad-jE3"/>
+                            <constraint firstAttribute="trailing" secondItem="RAB-ga-5wv" secondAttribute="trailing" constant="16" id="l3q-N5-fV2"/>
+                            <constraint firstItem="55J-Ei-QQX" firstAttribute="top" secondItem="Hlu-wb-e6X" secondAttribute="top" constant="12" id="rre-sP-qZH"/>
+                            <constraint firstItem="G0U-dD-A6v" firstAttribute="top" secondItem="RAB-ga-5wv" secondAttribute="bottom" constant="15" id="yT7-J2-maq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Hlu-wb-e6X" secondAttribute="trailing" id="KiF-DP-5wc"/>
+                    <constraint firstItem="Hlu-wb-e6X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PYG-LR-dET"/>
+                    <constraint firstAttribute="bottom" secondItem="Hlu-wb-e6X" secondAttribute="bottom" id="VHx-We-fGS"/>
+                    <constraint firstItem="Hlu-wb-e6X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dNZ-0K-1wJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblUserMsgDeleteAccount" destination="55J-Ei-QQX" id="5Bz-v6-UnP"/>
+            </connections>
+            <point key="canvasLocation" x="99.200000000000003" y="41.379310344827587"/>
+        </tableViewCell>
+    </objects>
+</document>

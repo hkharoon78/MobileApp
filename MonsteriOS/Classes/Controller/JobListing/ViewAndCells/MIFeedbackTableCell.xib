@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MIFeedbackTableCell" rowHeight="108" id="KGk-i7-Jjw" customClass="MIFeedbackTableCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Are these jobs right for you ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdn-iW-niC">
+                        <rect key="frame" x="18" y="18" width="180" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                        <color key="textColor" red="0.023529411764705882" green="0.023529411764705882" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6Q-lr-ddB">
+                        <rect key="frame" x="18" y="42.5" width="180" height="50.5"/>
+                        <string key="text">We’ll use your feedback to 
+improve future recommendations</string>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" red="0.31372549019607843" green="0.34509803921568627" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUO-74-u3o">
+                        <rect key="frame" x="216" y="34" width="81" height="40"/>
+                        <state key="normal" image="like"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1I-e7-wZv">
+                        <rect key="frame" x="315" y="34" width="39" height="40"/>
+                        <state key="normal" image="dislike"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="tUO-74-u3o" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5VA-vE-aCl"/>
+                    <constraint firstAttribute="trailing" secondItem="l1I-e7-wZv" secondAttribute="trailing" constant="16" id="9eh-5j-kUI"/>
+                    <constraint firstItem="x6Q-lr-ddB" firstAttribute="top" secondItem="zdn-iW-niC" secondAttribute="bottom" constant="8" id="Jib-uF-DCa"/>
+                    <constraint firstItem="l1I-e7-wZv" firstAttribute="leading" secondItem="tUO-74-u3o" secondAttribute="trailing" constant="18" id="K7E-HW-fd3"/>
+                    <constraint firstAttribute="bottom" secondItem="x6Q-lr-ddB" secondAttribute="bottom" constant="15" id="MzB-91-v8S"/>
+                    <constraint firstItem="x6Q-lr-ddB" firstAttribute="leading" secondItem="zdn-iW-niC" secondAttribute="leading" id="ROP-la-37s"/>
+                    <constraint firstItem="zdn-iW-niC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="SJ0-e6-Kvu"/>
+                    <constraint firstItem="x6Q-lr-ddB" firstAttribute="trailing" secondItem="zdn-iW-niC" secondAttribute="trailing" id="XX6-rh-pCQ"/>
+                    <constraint firstItem="tUO-74-u3o" firstAttribute="leading" secondItem="zdn-iW-niC" secondAttribute="trailing" constant="18" id="YIn-iT-gRI"/>
+                    <constraint firstItem="zdn-iW-niC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="pU6-0n-vbW"/>
+                    <constraint firstItem="l1I-e7-wZv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tQI-Q8-D5b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dislikeButton" destination="l1I-e7-wZv" id="5v6-vD-Ffd"/>
+                <outlet property="likeButton" destination="tUO-74-u3o" id="cpK-OI-8Ly"/>
+            </connections>
+            <point key="canvasLocation" x="177.59999999999999" y="215.8920539730135"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dislike" width="39" height="40"/>
+        <image name="like" width="39" height="40"/>
+    </resources>
+</document>

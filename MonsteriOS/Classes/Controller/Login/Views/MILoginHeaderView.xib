@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MILoginHeaderView" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmV-Uc-Y0j">
+                    <rect key="frame" x="187" y="0.0" width="1" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="iG7-14-aoE"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log-in Faster Using Social Login." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCl-he-xn8">
+                    <rect key="frame" x="20" y="20" width="335" height="19"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <color key="textColor" red="0.5490196078431373" green="0.54575825048329185" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pNT-MQ-lkp">
+                    <rect key="frame" x="20" y="59" width="335" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkU-PL-nhU">
+                            <rect key="frame" x="0.0" y="0.0" width="98.5" height="36"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="facebook">
+                                <color key="titleColor" red="0.082352941176470587" green="0.16078431372549018" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="fbClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="gQL-0p-I3C"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obv-ky-hYR">
+                            <rect key="frame" x="118.5" y="0.0" width="98" height="36"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="gmail">
+                                <color key="titleColor" red="0.082352941176470587" green="0.16078431372549018" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="gmailClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="pg0-qS-2cQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug1-V4-9An">
+                            <rect key="frame" x="236.5" y="0.0" width="98.5" height="36"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="regApple">
+                                <color key="titleColor" red="0.08235294118" green="0.16078431369999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="YxX-ZF-Atb"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log-in Faster Using Social Login." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOP-qm-WlB">
+                    <rect key="frame" x="20" y="111.5" width="335" height="14.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                    <color key="textColor" red="0.5490196078431373" green="0.54509803921568623" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pNT-MQ-lkp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="1yh-Vd-VGD"/>
+                <constraint firstItem="cmV-Uc-Y0j" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Bbe-xL-6t6"/>
+                <constraint firstItem="cmV-Uc-Y0j" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LfI-1J-amV"/>
+                <constraint firstAttribute="bottom" secondItem="cmV-Uc-Y0j" secondAttribute="bottom" id="PVO-WI-MRu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BOP-qm-WlB" secondAttribute="trailing" constant="20" id="aDo-ST-hK8"/>
+                <constraint firstItem="BOP-qm-WlB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bfJ-p0-UB2"/>
+                <constraint firstItem="pNT-MQ-lkp" firstAttribute="top" secondItem="bCl-he-xn8" secondAttribute="bottom" constant="20" id="es7-TP-DHg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pNT-MQ-lkp" secondAttribute="trailing" constant="20" id="fM5-WI-gcU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bCl-he-xn8" secondAttribute="trailing" constant="20" id="rhJ-YS-1ll"/>
+                <constraint firstItem="bCl-he-xn8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="wmd-xD-xNR"/>
+                <constraint firstItem="bCl-he-xn8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="yih-W3-Yha"/>
+                <constraint firstItem="BOP-qm-WlB" firstAttribute="top" secondItem="pNT-MQ-lkp" secondAttribute="bottom" constant="16.5" id="zFz-Fz-VaS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomLbl" destination="BOP-qm-WlB" id="xal-qs-iV6"/>
+                <outlet property="btnApple" destination="Ug1-V4-9An" id="M3N-QV-c9i"/>
+                <outlet property="btnFacebook" destination="XkU-PL-nhU" id="Iaw-wT-NPQ"/>
+                <outlet property="btnGoogle" destination="Obv-ky-hYR" id="Ued-eY-dHH"/>
+                <outlet property="topLbl" destination="bCl-he-xn8" id="ZGU-Oa-2gu"/>
+            </connections>
+            <point key="canvasLocation" x="-106" y="46"/>
+        </view>
+        <view contentMode="scaleToFill" id="iCx-8w-4bJ" customClass="MILoginFooterView" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8w-1l-ATQ">
+                    <rect key="frame" x="187" y="0.0" width="1" height="90"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="W8o-Ya-gkP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OH-TL-Cfa" customClass="AKLoadingButton" customModule="MonsteriOS" customModuleProvider="target">
+                    <rect key="frame" x="12" y="20" width="351" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2C5-wa-XtI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="16"/>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnClicked:" destination="iCx-8w-4bJ" eventType="touchUpInside" id="qcV-Zj-KCQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awJ-sK-9d2">
+                    <rect key="frame" x="20" y="65" width="335" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="5TO-sT-lvS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto Light" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Agree to T&amp;C" image="agree">
+                        <color key="titleColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="t8w-1l-ATQ" firstAttribute="top" secondItem="iCx-8w-4bJ" secondAttribute="top" id="3e0-hY-mGa"/>
+                <constraint firstItem="t8w-1l-ATQ" firstAttribute="centerX" secondItem="iCx-8w-4bJ" secondAttribute="centerX" id="5Xp-38-Aej"/>
+                <constraint firstItem="3OH-TL-Cfa" firstAttribute="top" secondItem="bHp-Fa-cMS" secondAttribute="top" constant="20" id="KfZ-a8-44y"/>
+                <constraint firstAttribute="bottom" secondItem="t8w-1l-ATQ" secondAttribute="bottom" id="NSm-hn-fD0"/>
+                <constraint firstItem="bHp-Fa-cMS" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3OH-TL-Cfa" secondAttribute="bottom" constant="20" id="O40-QS-Qr3"/>
+                <constraint firstItem="awJ-sK-9d2" firstAttribute="leading" secondItem="bHp-Fa-cMS" secondAttribute="leading" constant="20" id="Vcl-Pt-2J6"/>
+                <constraint firstItem="bHp-Fa-cMS" firstAttribute="trailing" secondItem="awJ-sK-9d2" secondAttribute="trailing" constant="20" id="al2-Ht-66m"/>
+                <constraint firstItem="3OH-TL-Cfa" firstAttribute="leading" secondItem="bHp-Fa-cMS" secondAttribute="leading" constant="12" id="thf-vp-vbO"/>
+                <constraint firstItem="bHp-Fa-cMS" firstAttribute="trailing" secondItem="3OH-TL-Cfa" secondAttribute="trailing" constant="12" id="wKT-YC-gg2"/>
+                <constraint firstItem="awJ-sK-9d2" firstAttribute="top" secondItem="3OH-TL-Cfa" secondAttribute="bottom" constant="5" id="yx7-Tf-fFU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="bHp-Fa-cMS"/>
+            <connections>
+                <outlet property="btn" destination="3OH-TL-Cfa" id="Xf2-AM-Q2E"/>
+                <outlet property="btnAgree" destination="awJ-sK-9d2" id="ZZh-qf-coQ"/>
+                <outlet property="leadingConstraint" destination="thf-vp-vbO" id="bAc-86-gTf"/>
+                <outlet property="trailingConstraint" destination="wKT-YC-gg2" id="408-iU-37u"/>
+            </connections>
+            <point key="canvasLocation" x="-106.40000000000001" y="241.97901049475263"/>
+        </view>
+        <view contentMode="scaleToFill" id="xXI-7K-N6Z" customClass="MILoginORView" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Sl-UP-ior">
+                    <rect key="frame" x="20" y="0.0" width="335" height="30"/>
+                    <subviews>
+                        <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWJ-pY-n4u">
+                            <rect key="frame" x="0.0" y="15" width="335" height="0.5"/>
+                            <color key="backgroundColor" red="0.54901960780000003" green="0.5450980392" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="zUG-Gu-Ees"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRj-2c-4Bk">
+                            <rect key="frame" x="142.5" y="0.0" width="50" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="adn-Nu-S4W"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <color key="textColor" red="0.56862745098039214" green="0.61960784313725492" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="CWJ-pY-n4u" firstAttribute="centerY" secondItem="1Sl-UP-ior" secondAttribute="centerY" id="1P7-Mo-p30"/>
+                        <constraint firstAttribute="trailing" secondItem="CWJ-pY-n4u" secondAttribute="trailing" id="7ay-kA-dMm"/>
+                        <constraint firstAttribute="bottom" secondItem="pRj-2c-4Bk" secondAttribute="bottom" id="SQh-ly-CFj"/>
+                        <constraint firstAttribute="height" constant="30" id="TBL-qx-qRX"/>
+                        <constraint firstItem="pRj-2c-4Bk" firstAttribute="top" secondItem="1Sl-UP-ior" secondAttribute="top" id="bli-Wy-QZJ"/>
+                        <constraint firstItem="pRj-2c-4Bk" firstAttribute="centerX" secondItem="1Sl-UP-ior" secondAttribute="centerX" id="uRL-P6-r0E"/>
+                        <constraint firstItem="CWJ-pY-n4u" firstAttribute="leading" secondItem="1Sl-UP-ior" secondAttribute="leading" id="vaF-Kk-gfQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1Sl-UP-ior" firstAttribute="leading" secondItem="lLt-kP-n2X" secondAttribute="leading" constant="20" id="CZO-5K-ojH"/>
+                <constraint firstItem="lLt-kP-n2X" firstAttribute="trailing" secondItem="1Sl-UP-ior" secondAttribute="trailing" constant="20" id="DUJ-If-vqO"/>
+                <constraint firstItem="1Sl-UP-ior" firstAttribute="bottom" secondItem="lLt-kP-n2X" secondAttribute="bottom" id="c4W-Ho-PWn"/>
+                <constraint firstItem="1Sl-UP-ior" firstAttribute="top" secondItem="lLt-kP-n2X" secondAttribute="top" id="tnV-3T-g25"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="lLt-kP-n2X"/>
+            <point key="canvasLocation" x="-106" y="345"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="agree" width="15" height="15"/>
+        <image name="facebook" width="11" height="21"/>
+        <image name="gmail" width="21" height="20"/>
+        <image name="regApple" width="18" height="22"/>
+    </resources>
+</document>

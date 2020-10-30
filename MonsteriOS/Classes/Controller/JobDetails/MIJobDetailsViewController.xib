@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MIJobDetailsViewController" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="applieddetailsLabel" destination="D0k-Q3-qe4" id="K3e-AC-Wtb"/>
+                <outlet property="applyButton" destination="Z07-nv-9lP" id="cR0-PF-Q5Q"/>
+                <outlet property="bottomView" destination="6yp-5Y-jvY" id="ax3-9B-qxh"/>
+                <outlet property="listView" destination="EGm-35-lzG" id="emt-IK-HXr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yp-5Y-jvY">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z07-nv-9lP">
+                            <rect key="frame" x="15" y="10" width="345" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8TA-Sb-A92"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="applyButtonAction:" destination="-1" eventType="touchUpInside" id="F6y-GS-zgr"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0k-Q3-qe4">
+                            <rect key="frame" x="15" y="21" width="345" height="18"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="D0k-Q3-qe4" firstAttribute="centerY" secondItem="6yp-5Y-jvY" secondAttribute="centerY" id="IEp-rX-OoF"/>
+                        <constraint firstItem="D0k-Q3-qe4" firstAttribute="leading" secondItem="6yp-5Y-jvY" secondAttribute="leading" constant="15" id="cPz-hd-SXr"/>
+                        <constraint firstAttribute="trailing" secondItem="D0k-Q3-qe4" secondAttribute="trailing" constant="15" id="hrO-Fe-A9i"/>
+                        <constraint firstItem="Z07-nv-9lP" firstAttribute="centerY" secondItem="6yp-5Y-jvY" secondAttribute="centerY" id="kgU-Ix-Oyf"/>
+                        <constraint firstAttribute="trailing" secondItem="Z07-nv-9lP" secondAttribute="trailing" constant="15" id="mlT-MJ-YF1"/>
+                        <constraint firstAttribute="height" constant="60" id="nLM-wc-I7e"/>
+                        <constraint firstItem="Z07-nv-9lP" firstAttribute="leading" secondItem="6yp-5Y-jvY" secondAttribute="leading" constant="15" id="rm7-sl-XG0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGm-35-lzG" customClass="MIJobDetailsTableView" customModule="MonsteriOS" customModuleProvider="target">
+                    <rect key="frame" x="8" y="28" width="359" height="571"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6yp-5Y-jvY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ehd-Hb-R6b"/>
+                <constraint firstItem="EGm-35-lzG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="VDs-80-WWZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6yp-5Y-jvY" secondAttribute="trailing" id="aJL-1h-tdE"/>
+                <constraint firstItem="EGm-35-lzG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="c71-Qa-7j0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EGm-35-lzG" secondAttribute="trailing" constant="8" id="dIf-4y-Ogt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6yp-5Y-jvY" secondAttribute="bottom" id="kWG-ge-Z33"/>
+                <constraint firstItem="6yp-5Y-jvY" firstAttribute="top" secondItem="EGm-35-lzG" secondAttribute="bottom" constant="8" id="wPM-jl-6ad"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

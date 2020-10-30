@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="192" id="KGk-i7-Jjw" customClass="MIVisaTypeCell" customModule="MonsteriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08h-lb-Nsf">
+                        <rect key="frame" x="16" y="15" width="288" height="162.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Do you have a work visa for Gulf ?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwn-Lm-bUB">
+                                <rect key="frame" x="8" y="10" width="272" height="50.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oec-7N-uxG">
+                                <rect key="frame" x="8" y="74.5" width="121" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="SgZ-rL-s7x"/>
+                                    <constraint firstAttribute="width" constant="121" id="gLm-SF-QYT"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Yes"/>
+                                    <segment title="No"/>
+                                </segments>
+                                <color key="tintColor" red="0.1019607843" green="0.58431372550000005" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="visaSegmentValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="PR1-x8-Moi"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iE-Z7-X9z" customClass="RightViewTextField" customModule="MonsteriOS" customModuleProvider="target">
+                                <rect key="frame" x="8" y="65.5" width="267" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="w3f-nT-mRR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdX-xY-pDS">
+                                <rect key="frame" x="8" y="111.5" width="267" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                <color key="textColor" red="0.85882352939999995" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdS-uc-bLJ">
+                                <rect key="frame" x="8" y="115.5" width="272" height="39"/>
+                                <string key="text">Since you have selected your Nationality as Algerian and Job Market as Gulf. We wanted to confirm if you have work authorization for Gulf Job Market or not.</string>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8iE-Z7-X9z" secondAttribute="trailing" constant="13" id="9L7-gz-W8c"/>
+                            <constraint firstAttribute="bottom" secondItem="zdS-uc-bLJ" secondAttribute="bottom" constant="8" id="A3C-Y4-Jhr"/>
+                            <constraint firstItem="8iE-Z7-X9z" firstAttribute="leading" secondItem="08h-lb-Nsf" secondAttribute="leading" constant="8" id="AFd-qe-pRl"/>
+                            <constraint firstAttribute="trailing" secondItem="zdS-uc-bLJ" secondAttribute="trailing" constant="8" id="BJk-Yv-fba"/>
+                            <constraint firstItem="vdX-xY-pDS" firstAttribute="leading" secondItem="8iE-Z7-X9z" secondAttribute="leading" id="Cvd-z3-3WA"/>
+                            <constraint firstItem="dwn-Lm-bUB" firstAttribute="top" secondItem="08h-lb-Nsf" secondAttribute="top" constant="10" id="E1v-3J-e9c"/>
+                            <constraint firstItem="dwn-Lm-bUB" firstAttribute="leading" secondItem="08h-lb-Nsf" secondAttribute="leading" constant="8" id="J9E-PI-8xz"/>
+                            <constraint firstItem="Oec-7N-uxG" firstAttribute="top" secondItem="dwn-Lm-bUB" secondAttribute="bottom" constant="14" id="SIK-cc-mX9"/>
+                            <constraint firstItem="zdS-uc-bLJ" firstAttribute="leading" secondItem="08h-lb-Nsf" secondAttribute="leading" constant="8" id="Z8Y-Bz-Tcw"/>
+                            <constraint firstItem="vdX-xY-pDS" firstAttribute="trailing" secondItem="8iE-Z7-X9z" secondAttribute="trailing" id="gsI-Gg-ruW"/>
+                            <constraint firstAttribute="trailing" secondItem="dwn-Lm-bUB" secondAttribute="trailing" constant="8" id="p2s-ao-Jty"/>
+                            <constraint firstItem="zdS-uc-bLJ" firstAttribute="top" secondItem="vdX-xY-pDS" secondAttribute="bottom" constant="4" id="pli-l6-4AN"/>
+                            <constraint firstItem="Oec-7N-uxG" firstAttribute="leading" secondItem="08h-lb-Nsf" secondAttribute="leading" constant="8" id="qT9-SA-SGi"/>
+                            <constraint firstItem="8iE-Z7-X9z" firstAttribute="top" secondItem="dwn-Lm-bUB" secondAttribute="bottom" constant="5" id="uJT-8y-CwU"/>
+                            <constraint firstItem="vdX-xY-pDS" firstAttribute="top" secondItem="8iE-Z7-X9z" secondAttribute="bottom" constant="6" id="woF-Hv-3A5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="08h-lb-Nsf" secondAttribute="bottom" constant="14.5" id="GnB-wQ-4In"/>
+                    <constraint firstItem="08h-lb-Nsf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="TlL-tu-YNN"/>
+                    <constraint firstItem="08h-lb-Nsf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="fmg-WY-wNB"/>
+                    <constraint firstAttribute="trailing" secondItem="08h-lb-Nsf" secondAttribute="trailing" constant="16" id="uaC-kB-yJc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="errorLabel" destination="vdX-xY-pDS" id="BcE-IR-fqu"/>
+                <outlet property="txt_SelectVisa" destination="8iE-Z7-X9z" id="Cbb-wm-e6G"/>
+                <outlet property="visaDiscription" destination="zdS-uc-bLJ" id="L5e-cc-uwz"/>
+                <outlet property="visaTitle" destination="dwn-Lm-bUB" id="K6k-cu-Qmu"/>
+                <outlet property="visaYesNo_Segment" destination="Oec-7N-uxG" id="s9U-q7-zTD"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="166.07142857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

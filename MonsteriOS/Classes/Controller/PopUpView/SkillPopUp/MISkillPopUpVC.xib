@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto-regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MISkillPopUpVC" customModule="MonsteriOS" customModuleProvider="target">
+            <connections>
+                <outlet property="skillTblView" destination="08o-NW-zp7" id="lZc-Ja-DHs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="08o-NW-zp7">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Aw1-yS-2ea"/>
+                        <outlet property="delegate" destination="-1" id="LEF-Vc-Er3"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SR-oK-fec">
+                    <rect key="frame" x="306" y="52" width="88" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="ToS-Xs-f46"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                    <state key="normal" title="Remind me later">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="remindMeLater:" destination="-1" eventType="touchUpInside" id="t8H-rf-OQg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="08o-NW-zp7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6pL-fO-yS0"/>
+                <constraint firstItem="0SR-oK-fec" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="AZA-bV-Iwq"/>
+                <constraint firstItem="08o-NW-zp7" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="HOx-Rr-4K8"/>
+                <constraint firstItem="08o-NW-zp7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="hjS-Eg-LYj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0SR-oK-fec" secondAttribute="trailing" constant="20" id="k8D-Zf-wIz"/>
+                <constraint firstItem="08o-NW-zp7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mmK-Ig-U6Q"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
+        </view>
+    </objects>
+</document>
